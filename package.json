@@ -1,0 +1,24 @@
+{
+  "name": "emoticons",
+  "description": "manages emoticons",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emiliaajax/emoticons.git"
+  },
+  "author": "Emilia Hansson <eh222yn@student.lnu.se>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emiliaajax/emoticons/issues"
+  },
+  "homepage": "https://github.com/emiliaajax/emoticons#readme",
+  "devDependencies": {
+    "@lnu/eslint-config": "^1.1.6"
+  }
+}
