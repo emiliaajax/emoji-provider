@@ -200,198 +200,263 @@
     "emoticon": "🤒"
   },
   {
+    "tag": "face-with-bandage",
     "emoticon": "🤕"
   },
   {
+    "tag": "naucious-face",
     "emoticon": "🤢"
   },
   {
+    "tag": "vomiting-face",
     "emoticon": "🤮"
   },
   {
+    "tag": "face-having-a-cold",
     "emoticon": "🤧"
   },
   {
+    "tag": "hot-face",
     "emoticon": "🥵"
   },
   {
+    "tag": "cold-face",
     "emoticon": "🥶"
   },
   {
+    "tag": "woozy-face",
     "emoticon": "🥴"
   },
   {
+    "tag": "dizzy-face",
     "emoticon": "😵"
   },
   {
+    "tag": "face-with-spiral-eyes",
     "emoticon": "😵‍💫"
   },
   {
+    "tag": "mind-blown-face",
     "emoticon": "🤯"
   },
   {
+    "tag": "face-with-cowboy-hat",
     "emoticon": "🤠"
   },
   {
+    "tag": "party-face",
     "emoticon": "🥳"
   },
   {
+    "tag": "cool-face",
     "emoticon": "😎"
   },
   {
+    "tag": "nerd-face",
     "emoticon": "🤓"
   },
   {
+    "tag": "face-with-monocle",
     "emoticon": "🧐"
   },
   {
+    "tag": "slightly-sad-face",
     "emoticon": "😕"
   },
   {
+    "tag": "worried-face",
     "emoticon": "😟"
   },
   {
+    "tag": "slightly-frowning-face",
     "emoticon": "🙁"
   },
   {
+    "tag": "frowning-face",
     "emoticon": "☹️"
   },
   {
+    "tag": "open-mouth-face",
     "emoticon": "😮"
   },
   {
+    "tag": "hushed-face",
     "emoticon": "😯"
   },
   {
+    "tag": "shocked-face",
     "emoticon": "😲"
   },
   {
+    "tag": "blush-face",
     "emoticon": "😳"
   },
   {
+    "tag": "pleading-face",
     "emoticon": "🥺"
   },
   {
+    "tag": "frowning-face-with-open-mouth",
     "emoticon": "😦"
   },
   {
+    "tag": "anguised-face",
     "emoticon": "😧"
   },
   {
+    "tag": "fearful-face",
     "emoticon": "😨"
   },
   {
+    "tag": "cold-sweat",
     "emoticon": "😰"
   },
   {
+    "tag": "disappointed-relieved-face",
     "emoticon": "😥"
   },
   {
+    "tag": "sad-face-with-tear",
     "emoticon": "😢"
   },
   {
+    "tag": "crying-face",
     "emoticon": "😭"
   },
   {
+    "tag": "screaming-face",
     "emoticon": "😱"
   },
   {
+    "tag": "confounded-face",
     "emoticon": "😖"
   },
   {
+    "tag": "persevering-face",
     "emoticon": "😣"
   },
   {
+    "tag": "sad-face",
     "emoticon": "😞"
   },
   {
+    "tag": "sad-face-with-sweat",
     "emoticon": "😓"
   },
   {
+    "tag": "weary-face",
     "emoticon": "😩"
   },
   {
+    "tag": "fed-up-face",
     "emoticon": "😫"
   },
   {
+    "tag": "steaming-nose-face",
     "emoticon": "😤"
   },
   {
+    "tag": "rage-face",
     "emoticon": "😡"
   },
   {
+    "tag": "angry-face",
     "emoticon": "😠"
   },
   {
+    "tag": "swearing-face",
     "emoticon": "🤬"
   },
   {
+    "tag": "smiling-devil-face",
     "emoticon": "😈"
   },
   {
+    "tag": "angry-devil-face",
     "emoticon": "👿"
   },
   {
+    "tag": "skull",
     "emoticon": "💀"
   },
   {
+    "tag": "skull-and-crossbones",
     "emoticon": "☠️"
   },
   {
+    "tag": "pile-of-poop",
     "emoticon": "💩"
   },
   {
+    "tag": "clown",
     "emoticon": "🤡"
   },
   {
+    "tag": "ogre",
     "emoticon": "👹"
   },
   {
+    "tag": "goblin",
     "emoticon": "👺"
   },
   {
+    "tag": "ghost",
     "emoticon": "👻"
   },
   {
+    "tag": "alien",
     "emoticon": "👽"
   },
   {
+    "tag": "space-invader",
     "emoticon": "👾"
   },
   {
+    "tag": "robot",
     "emoticon": "🤖"
   },
   {
+    "tag": "happy-cat",
     "emoticon": "😺"
   },
   {
+    "tag": "happy-cat-with-smiling-eyes",
     "emoticon": "😸"
   },
   {
+    "tag": "cat-with-tears-of-joy",
     "emoticon": "😹"
   },
   {
+    "tag": "smiley-cat-with-heart-eyes",
     "emoticon": "😻"
   },
   {
+    "tag": "smirking-cat",
     "emoticon": "😼"
   },
   {
+    "tag": "kissing-cat",
     "emoticon": "😽"
   },
   {
+    "tag": "screaming-cat",
     "emoticon": "🙀"
   },
   {
+    "tag": "sad-cat-with-tear",
     "emoticon": "😿"
   },  
   {
+    "tag": "angry-cat",
     "emoticon": "😾"
   },
   {
+    "tag": "kiss-mark",
     "emoticon": "💋"
   },
   {
+    "tag": "waiving hand",
     "emoticon": "👋"
   },
   {
@@ -1295,33 +1360,43 @@
     "emoticon": "👡"
   },
   {
+    
     "emoticon": "👢"
   },
   {
+    "tag": "crown",
     "emoticon": "👑"
   },
   {
+    "tag": "womans-hat",
     "emoticon": "👒"
   },
   {
+    "tag": "top-hat",
     "emoticon": "🎩"
   },
   {
+    "tag": "graduation-cap",
     "emoticon": "🎓"
   },
   {
+    "tag": "billed-cap",
     "emoticon": "🧢"
   },
   {
+    "tag": "helmet-with-white-cross",
     "emoticon": "⛑️"
   },
   {
+    "tag": "lipstick",
     "emoticon": "💄"
   },
   {
+    "tag": "ring",
     "emoticon": "💍"
   },
   {
+    "tag": "briefcase",
     "emoticon": "💼"
   }
 ]
