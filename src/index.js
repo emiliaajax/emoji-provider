@@ -32,5 +32,22 @@ const getAllEmoticons = () => {
   return emoticonsArray
 }
 
+/**
+ * Gets emoticon with tag name.
+ *
+ * @param {*} tag The tag of the emoticon.
+ * @returns {string} The emoticon.
+ */
+const getEmoticonByTag = (tag) => {
+  let emoticon = 'Sorry, an emoticon with given tag does not exist...'
+  for (let i = 0; i < smileysAndPeople.length; i++) {
+    if (smileysAndPeople[i].tag === tag) {
+      emoticon = smileysAndPeople[i].emoticon
+    }
+  }
+  return emoticon
+}
+
 console.log(getAllEmoticons())
 console.log(getAllEmoticonsAndTags())
+console.log(getEmoticonByTag('space-invader'))
