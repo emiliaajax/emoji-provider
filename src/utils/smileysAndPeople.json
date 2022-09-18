@@ -1,1402 +1,1405 @@
 [
   {
     "tag": "happy-face",
-    "emoticon": "😀"
+    "emoji": "😀"
   },
   {
     "tag": "happy-face-with-big-eyes",
-    "emoticon": "😃"
+    "emoji": "😃",
+    "emoticon": ":D"
   },
   {
     "tag": "happy-face-with-smiling-eyes",
-    "emoticon": "😄"
+    "emoji": "😄"
   },
   {
     "tag": "beaming-face-with-smiling-eyes",
-    "emoticon": "😁"
+    "emoji": "😁"
   },
   {
     "tag": "laughing",
-    "emoticon": "😆"
+    "emoji": "😆"
   },
   {
     "tag": "happy-sweat",
-    "emoticon": "😅"
+    "emoji": "😅"
   },
   {
     "tag": "rolling-on-the-floor-laughing",
-    "emoticon": "🤣"
+    "emoji": "🤣"
   },
   {
     "tag": "face-with-tears-of-joy",
-    "emoticon": "😂"
+    "emoji": "😂"
   },
   {
     "tag": "slightly-smiling-face",
-    "emoticon": "🙂"
+    "emoji": "🙂"
   },
   {
     "tag": "upside-down-face",
-    "emoticon": "🙃"
+    "emoji": "🙃"
   },
   {
     "tag": "winking-face",
-    "emoticon": "😉"
+    "emoji": "😉"
   },
   {
     "tag": "smiley-face",
-    "emoticon": "😊"
+    "emoji": "😊",
+    "emoticon": ":)"
   },
   {
     "tag": "smiley-face-with-halo",
-    "emoticon": "😇"
+    "emoji": "😇",
+    "emoticon": "O:)"
   },
   {
     "tag": "smiley-face-with-hearts",
-    "emoticon": "🥰"
+    "emoji": "🥰"
   },
   {
     "tag": "smiley-face-with-heart-eyes",
-    "emoticon": "😍"
+    "emoji": "😍"
   },
   {
     "tag": "star-struck",
-    "emoticon": "🤩"
+    "emoji": "🤩"
   },
   {
     "tag": "face-kissing-heart",
-    "emoticon": "😘"
+    "emoji": "😘"
   },
   {
     "tag": "kissing-face",
-    "emoticon": "😗"
+    "emoji": "😗"
   },
   {
     "tag": "smiling-face",
-    "emoticon": "☺️"
+    "emoji": "☺️"
   },
   {
     "tag": "kissing-face-with-closed-eyes",
-    "emoticon": "😚"
+    "emoji": "😚"
   },
   {
     "tag": "kissing-face-with-smiling-eyes",
-    "emoticon": "😙"
+    "emoji": "😙"
   },
   {
     "tag": "yummy-face",
-    "emoticon": "😋"
+    "emoji": "😋"
   },
   {
     "tag": "smiley-face-with-tounge",
-    "emoticon": "😛"
+    "emoji": "😛"
   },
   {
     "tag": "winking-face-with-tounge",
-    "emoticon": "😜"
+    "emoji": "😜"
   },
   {
     "tag": "goofy-face",
-    "emoticon": "🤪"
+    "emoji": "🤪"
   },
   {
     "tag": "lauging-face-with-tounge",
-    "emoticon": "😝"
+    "emoji": "😝"
   },
   {
     "tag": "money-face",
-    "emoticon": "🤑"
+    "emoji": "🤑"
   },
   {
     "tag": "hugging-face",
-    "emoticon": "🤗"
+    "emoji": "🤗"
   },
   {
     "tag": "face-with-hand-over-mouth",
-    "emoticon": "🤭"
+    "emoji": "🤭"
   },
   {
     "tag": "shushing-face",
-    "emoticon": "🤫"
+    "emoji": "🤫"
   },
   {
     "tag": "thinking-face",
-    "emoticon": "🤔"
+    "emoji": "🤔"
   },
   {
     "tag": "zipper-mouth-face",
-    "emoticon": "🤐"
+    "emoji": "🤐"
   },  
   {
     "tag": "face-with-raised-eyebrow",
-    "emoticon": "🤨"
+    "emoji": "🤨"
   },
   {
     "tag": "neutral-face",
-    "emoticon": "😐"
+    "emoji": "😐"
   },
   {
     "tag": "expressionless-face",
-    "emoticon": "😑"
+    "emoji": "😑"
   },
   {
     "tag": "blank-face",
-    "emoticon": "😶"
+    "emoji": "😶"
   },
   {
     "tag": "face-in-clouds",
-    "emoticon": "😶‍🌫️"
+    "emoji": "😶‍🌫️"
   },
   {
     "tag": "smirking-face",
-    "emoticon": "😏"
+    "emoji": "😏"
   },
   {
     "tag": "unimpressed-face",
-    "emoticon": "😒"
+    "emoji": "😒"
   },
   {
     "tag": "rolling-eyes-face",
-    "emoticon": "🙄"
+    "emoji": "🙄"
   },
   {
     "tag": "grimacing",
-    "emoticon": "😬"
+    "emoji": "😬"
   },
   {
     "tag": "sighing-face",
-    "emoticon": "😮‍💨"
+    "emoji": "😮‍💨"
   },
   {
     "tag": "lying-face",
-    "emoticon": "🤥"
+    "emoji": "🤥"
   },
   {
     "tag": "besserwisser-face",
-    "emoticon": "😌"
+    "emoji": "😌"
   },
   {
     "tag": "pensive-sad-face",
-    "emoticon": "😔"
+    "emoji": "😔"
   },
   {
     "tag": "tired-face",
-    "emoticon": "😪"
+    "emoji": "😪"
   },
   {
     "tag": "drooling-face",
-    "emoticon": "🤤"
+    "emoji": "🤤"
   },
   {
     "tag": "sleeping-face",
-    "emoticon": "😴"
+    "emoji": "😴"
   },
   {
     "tag": "face-with-mask",
-    "emoticon": "😷"
+    "emoji": "😷"
   },
   {
     "tag": "fever-face",
-    "emoticon": "🤒"
+    "emoji": "🤒"
   },
   {
     "tag": "face-with-bandage",
-    "emoticon": "🤕"
+    "emoji": "🤕"
   },
   {
     "tag": "naucious-face",
-    "emoticon": "🤢"
+    "emoji": "🤢"
   },
   {
     "tag": "vomiting-face",
-    "emoticon": "🤮"
+    "emoji": "🤮"
   },
   {
     "tag": "face-having-a-cold",
-    "emoticon": "🤧"
+    "emoji": "🤧"
   },
   {
     "tag": "hot-face",
-    "emoticon": "🥵"
+    "emoji": "🥵"
   },
   {
     "tag": "cold-face",
-    "emoticon": "🥶"
+    "emoji": "🥶"
   },
   {
     "tag": "woozy-face",
-    "emoticon": "🥴"
+    "emoji": "🥴"
   },
   {
     "tag": "dizzy-face",
-    "emoticon": "😵"
+    "emoji": "😵"
   },
   {
     "tag": "face-with-spiral-eyes",
-    "emoticon": "😵‍💫"
+    "emoji": "😵‍💫"
   },
   {
     "tag": "mind-blown-face",
-    "emoticon": "🤯"
+    "emoji": "🤯"
   },
   {
     "tag": "face-with-cowboy-hat",
-    "emoticon": "🤠"
+    "emoji": "🤠"
   },
   {
     "tag": "party-face",
-    "emoticon": "🥳"
+    "emoji": "🥳"
   },
   {
     "tag": "cool-face",
-    "emoticon": "😎"
+    "emoji": "😎"
   },
   {
     "tag": "nerd-face",
-    "emoticon": "🤓"
+    "emoji": "🤓"
   },
   {
     "tag": "face-with-monocle",
-    "emoticon": "🧐"
+    "emoji": "🧐"
   },
   {
     "tag": "slightly-sad-face",
-    "emoticon": "😕"
+    "emoji": "😕"
   },
   {
     "tag": "worried-face",
-    "emoticon": "😟"
+    "emoji": "😟"
   },
   {
     "tag": "slightly-frowning-face",
-    "emoticon": "🙁"
+    "emoji": "🙁"
   },
   {
     "tag": "frowning-face",
-    "emoticon": "☹️"
+    "emoji": "☹️"
   },
   {
     "tag": "open-mouth-face",
-    "emoticon": "😮"
+    "emoji": "😮"
   },
   {
     "tag": "hushed-face",
-    "emoticon": "😯"
+    "emoji": "😯"
   },
   {
     "tag": "shocked-face",
-    "emoticon": "😲"
+    "emoji": "😲"
   },
   {
     "tag": "blush-face",
-    "emoticon": "😳"
+    "emoji": "😳"
   },
   {
     "tag": "pleading-face",
-    "emoticon": "🥺"
+    "emoji": "🥺"
   },
   {
     "tag": "frowning-face-with-open-mouth",
-    "emoticon": "😦"
+    "emoji": "😦"
   },
   {
     "tag": "anguised-face",
-    "emoticon": "😧"
+    "emoji": "😧"
   },
   {
     "tag": "fearful-face",
-    "emoticon": "😨"
+    "emoji": "😨"
   },
   {
     "tag": "cold-sweat",
-    "emoticon": "😰"
+    "emoji": "😰"
   },
   {
     "tag": "disappointed-relieved-face",
-    "emoticon": "😥"
+    "emoji": "😥"
   },
   {
     "tag": "sad-face-with-tear",
-    "emoticon": "😢"
+    "emoji": "😢"
   },
   {
     "tag": "crying-face",
-    "emoticon": "😭"
+    "emoji": "😭"
   },
   {
     "tag": "screaming-face",
-    "emoticon": "😱"
+    "emoji": "😱"
   },
   {
     "tag": "confounded-face",
-    "emoticon": "😖"
+    "emoji": "😖"
   },
   {
     "tag": "persevering-face",
-    "emoticon": "😣"
+    "emoji": "😣"
   },
   {
     "tag": "sad-face",
-    "emoticon": "😞"
+    "emoji": "😞"
   },
   {
     "tag": "sad-face-with-sweat",
-    "emoticon": "😓"
+    "emoji": "😓"
   },
   {
     "tag": "weary-face",
-    "emoticon": "😩"
+    "emoji": "😩"
   },
   {
     "tag": "fed-up-face",
-    "emoticon": "😫"
+    "emoji": "😫"
   },
   {
     "tag": "steaming-nose-face",
-    "emoticon": "😤"
+    "emoji": "😤"
   },
   {
     "tag": "rage-face",
-    "emoticon": "😡"
+    "emoji": "😡"
   },
   {
     "tag": "angry-face",
-    "emoticon": "😠"
+    "emoji": "😠"
   },
   {
     "tag": "swearing-face",
-    "emoticon": "🤬"
+    "emoji": "🤬"
   },
   {
     "tag": "smiling-devil-face",
-    "emoticon": "😈"
+    "emoji": "😈"
   },
   {
     "tag": "angry-devil-face",
-    "emoticon": "👿"
+    "emoji": "👿"
   },
   {
     "tag": "skull",
-    "emoticon": "💀"
+    "emoji": "💀"
   },
   {
     "tag": "skull-and-crossbones",
-    "emoticon": "☠️"
+    "emoji": "☠️"
   },
   {
     "tag": "pile-of-poop",
-    "emoticon": "💩"
+    "emoji": "💩"
   },
   {
     "tag": "clown",
-    "emoticon": "🤡"
+    "emoji": "🤡"
   },
   {
     "tag": "ogre",
-    "emoticon": "👹"
+    "emoji": "👹"
   },
   {
     "tag": "goblin",
-    "emoticon": "👺"
+    "emoji": "👺"
   },
   {
     "tag": "ghost",
-    "emoticon": "👻"
+    "emoji": "👻"
   },
   {
     "tag": "alien",
-    "emoticon": "👽"
+    "emoji": "👽"
   },
   {
     "tag": "space-invader",
-    "emoticon": "👾"
+    "emoji": "👾"
   },
   {
     "tag": "robot",
-    "emoticon": "🤖"
+    "emoji": "🤖"
   },
   {
     "tag": "happy-cat",
-    "emoticon": "😺"
+    "emoji": "😺"
   },
   {
     "tag": "happy-cat-with-smiling-eyes",
-    "emoticon": "😸"
+    "emoji": "😸"
   },
   {
     "tag": "cat-with-tears-of-joy",
-    "emoticon": "😹"
+    "emoji": "😹"
   },
   {
     "tag": "smiley-cat-with-heart-eyes",
-    "emoticon": "😻"
+    "emoji": "😻"
   },
   {
     "tag": "smirking-cat",
-    "emoticon": "😼"
+    "emoji": "😼"
   },
   {
     "tag": "kissing-cat",
-    "emoticon": "😽"
+    "emoji": "😽"
   },
   {
     "tag": "screaming-cat",
-    "emoticon": "🙀"
+    "emoji": "🙀"
   },
   {
     "tag": "sad-cat-with-tear",
-    "emoticon": "😿"
+    "emoji": "😿"
   },  
   {
     "tag": "angry-cat",
-    "emoticon": "😾"
+    "emoji": "😾"
   },
   {
     "tag": "kiss-mark",
-    "emoticon": "💋"
+    "emoji": "💋"
   },
   {
     "tag": "waiving hand",
-    "emoticon": "👋"
+    "emoji": "👋"
   },
   {
-    "emoticon": "🤚"
+    "emoji": "🤚"
   },
   {
-    "emoticon": "🖐️"
+    "emoji": "🖐️"
   },
   {
-    "emoticon": "✋"
+    "emoji": "✋"
   },
   {
-    "emoticon": "🖖"
+    "emoji": "🖖"
   },
   {
-    "emoticon": "👌"
+    "emoji": "👌"
   },
   {
-    "emoticon": "✌️"
+    "emoji": "✌️"
   },
   {
-    "emoticon": "🤞"
+    "emoji": "🤞"
   },
   {
-    "emoticon": "🤟"
+    "emoji": "🤟"
   },
   {
-    "emoticon": "🤘"
+    "emoji": "🤘"
   },
   {
-    "emoticon": "🤙"
+    "emoji": "🤙"
   },
   {
-    "emoticon": "👈"
+    "emoji": "👈"
   },
   {
-    "emoticon": "👉"
+    "emoji": "👉"
   },
   {
-    "emoticon": "👆"
+    "emoji": "👆"
   },
   {
-    "emoticon": "🖕"
+    "emoji": "🖕"
   },
   {
-    "emoticon": "👇"
+    "emoji": "👇"
   },
   {
-    "emoticon": "☝️"
+    "emoji": "☝️"
   },
   {
-    "emoticon": "👍"
+    "emoji": "👍"
   },
   {
-    "emoticon": "👎"
+    "emoji": "👎"
   },
   {
-    "emoticon": "✊"
+    "emoji": "✊"
   },
   {
-    "emoticon": "👊"
+    "emoji": "👊"
   },
   {
-    "emoticon": "🤛"
+    "emoji": "🤛"
   },
   {
-    "emoticon": "🤜"
+    "emoji": "🤜"
   },
   {
-    "emoticon": "👏"
+    "emoji": "👏"
   },
   {
-    "emoticon": "🙌"
+    "emoji": "🙌"
   },
   {
-    "emoticon": "👐"
+    "emoji": "👐"
   },
   {
-    "emoticon": "🤲"
+    "emoji": "🤲"
   },
   {
-    "emoticon": "🤝"
+    "emoji": "🤝"
   },
   {
-    "emoticon": "🙏"
+    "emoji": "🙏"
   },
   {
-    "emoticon": "✍️"
+    "emoji": "✍️"
   },
   {
-    "emoticon": "💅"
+    "emoji": "💅"
   },
   {
-    "emoticon": "🤳"
+    "emoji": "🤳"
   },
   {
-    "emoticon": "💪"
+    "emoji": "💪"
   },
   {
-    "emoticon": "🦵"
+    "emoji": "🦵"
   },
   {
-    "emoticon": "🦶"
+    "emoji": "🦶"
   },
   {
-    "emoticon": "👂"
+    "emoji": "👂"
   },
   {
-    "emoticon": "👃"
+    "emoji": "👃"
   },
   {
-    "emoticon": "🧠"
+    "emoji": "🧠"
   },
   {
-    "emoticon": "🦷"
+    "emoji": "🦷"
   },
   {
-    "emoticon": "🦴"
+    "emoji": "🦴"
   },
   {
-    "emoticon": "👀"
+    "emoji": "👀"
   },
   {
-    "emoticon": "👁️"
+    "emoji": "👁️"
   },
   {
-    "emoticon": "👅"
+    "emoji": "👅"
   },
   {
-    "emoticon": "👄"
+    "emoji": "👄"
   },
   {
-    "emoticon": "👶"
+    "emoji": "👶"
   },
   {
-    "emoticon": "🧒"
+    "emoji": "🧒"
   },
   {
-    "emoticon": "👦"
+    "emoji": "👦"
   },
   {
-    "emoticon": "👧"
+    "emoji": "👧"
   },
   {
-    "emoticon": "🧑"
+    "emoji": "🧑"
   },
   {
-    "emoticon": "👱"
+    "emoji": "👱"
   },
   {
-    "emoticon": "👨"
+    "emoji": "👨"
   },
   {
-    "emoticon": "🧔"
+    "emoji": "🧔"
   },
   {
-    "emoticon": "👨‍🦰"
+    "emoji": "👨‍🦰"
   },
   {
-    "emoticon": "👨‍🦱"
+    "emoji": "👨‍🦱"
   },
   {
-    "emoticon": "👨‍🦳"
+    "emoji": "👨‍🦳"
   },
   {
-    "emoticon": "👨‍🦲"
+    "emoji": "👨‍🦲"
   },
   {
-    "emoticon": "👩"
+    "emoji": "👩"
   },
   {
-    "emoticon": "👩‍🦰"
+    "emoji": "👩‍🦰"
   },
   {
-    "emoticon": "🧑‍🦰"
+    "emoji": "🧑‍🦰"
   },
   {
-    "emoticon": "👩‍🦱"
+    "emoji": "👩‍🦱"
   },
   {
-    "emoticon": "🧑‍🦱"
+    "emoji": "🧑‍🦱"
   },
   {
-    "emoticon": "👩‍🦳"
+    "emoji": "👩‍🦳"
   },
   {
-    "emoticon": "🧑‍🦳"
+    "emoji": "🧑‍🦳"
   },
   {
-    "emoticon": "👩‍🦲"
+    "emoji": "👩‍🦲"
   },
   {
-    "emoticon": "🧑‍🦲"
+    "emoji": "🧑‍🦲"
   },
   {
-    "emoticon": "👱‍♀️"
+    "emoji": "👱‍♀️"
   },
   {
-    "emoticon": "👱‍♂️"
+    "emoji": "👱‍♂️"
   },
   {
-    "emoticon": "🧓"
+    "emoji": "🧓"
   },
   {
-    "emoticon": "👴"
+    "emoji": "👴"
   },
   {
-    "emoticon": "👵"
+    "emoji": "👵"
   },
   {
-    "emoticon": "🙍"
+    "emoji": "🙍"
   },
   {
-    "emoticon": "🙍‍♂️"
+    "emoji": "🙍‍♂️"
   },
   {
-    "emoticon": "🙍‍♀️"
+    "emoji": "🙍‍♀️"
   },
   {
-    "emoticon": "🙎"
+    "emoji": "🙎"
   },
   {
-    "emoticon": "🙎‍♂️"
+    "emoji": "🙎‍♂️"
   },
   {
-    "emoticon": "🙎‍♀️"
+    "emoji": "🙎‍♀️"
   },
   {
-    "emoticon": "🙅"
+    "emoji": "🙅"
   },
   {
-    "emoticon": "🙅‍♂️"
+    "emoji": "🙅‍♂️"
   },  
   {
-    "emoticon": "🙅‍♀️"
+    "emoji": "🙅‍♀️"
   },
   {
-    "emoticon": "🙆"
+    "emoji": "🙆"
   },
   {
-    "emoticon": "🙆‍♂️"
+    "emoji": "🙆‍♂️"
   },
   {
-    "emoticon": "🙆‍♀️"
+    "emoji": "🙆‍♀️"
   },
   {
-    "emoticon": "💁"
+    "emoji": "💁"
   },
   {
-    "emoticon": "💁‍♂️"
+    "emoji": "💁‍♂️"
   },
   {
-    "emoticon": "💁‍♀️"
+    "emoji": "💁‍♀️"
   },
   {
-    "emoticon": "🙋"
+    "emoji": "🙋"
   },
   {
-    "emoticon": "🙋‍♂️"
+    "emoji": "🙋‍♂️"
   },
   {
-    "emoticon": "🙋‍♀️"
+    "emoji": "🙋‍♀️"
   },
   {
-    "emoticon": "🙇"
+    "emoji": "🙇"
   },
   {
-    "emoticon": "🙇‍♂️"
+    "emoji": "🙇‍♂️"
   },
   {
-    "emoticon": "🙇‍♀️"
+    "emoji": "🙇‍♀️"
   },
   {
-    "emoticon": "🤦"
+    "emoji": "🤦"
   },
   {
-    "emoticon": "🤦‍♂️"
+    "emoji": "🤦‍♂️"
   },
   {
-    "emoticon": "🤦‍♀️"
+    "emoji": "🤦‍♀️"
   },
   {
-    "emoticon": "🤷"
+    "emoji": "🤷"
   },
   {
-    "emoticon": "🤷‍♂️"
+    "emoji": "🤷‍♂️"
   },
   {
-    "emoticon": "🤷‍♀️"
+    "emoji": "🤷‍♀️"
   },
   {
-    "emoticon": "🧑‍⚕️"
+    "emoji": "🧑‍⚕️"
   },
   {
-    "emoticon": "👨‍⚕️"
+    "emoji": "👨‍⚕️"
   },
   {
-    "emoticon": "👩‍⚕️"
+    "emoji": "👩‍⚕️"
   },
   {
-    "emoticon": "🧑‍🎓"
+    "emoji": "🧑‍🎓"
   },
   {
-    "emoticon": "👨‍🎓"
+    "emoji": "👨‍🎓"
   },
   {
-    "emoticon": "👩‍🎓"
+    "emoji": "👩‍🎓"
   },
   {
-    "emoticon": "🧑‍🏫"
+    "emoji": "🧑‍🏫"
   },
   {
-    "emoticon": "👨‍🏫"
+    "emoji": "👨‍🏫"
   },
   {
-    "emoticon": "👩‍🏫"
+    "emoji": "👩‍🏫"
   },
   {
-    "emoticon": "🧑‍⚖️"
+    "emoji": "🧑‍⚖️"
   },
   {
-    "emoticon": "👨‍⚖️"
+    "emoji": "👨‍⚖️"
   },
   {
-    "emoticon": "👩‍⚖️"
+    "emoji": "👩‍⚖️"
   },
   {
-    "emoticon": "🧑‍🌾"
+    "emoji": "🧑‍🌾"
   },
   {
-    "emoticon": "👨‍🌾"
+    "emoji": "👨‍🌾"
   },
   {
-    "emoticon": "👩‍🌾"
+    "emoji": "👩‍🌾"
   },
   {
-    "emoticon": "🧑‍🍳"
+    "emoji": "🧑‍🍳"
   },
   {
-    "emoticon": "👨‍🍳"
+    "emoji": "👨‍🍳"
   },
   {
-    "emoticon": "👩‍🍳"
+    "emoji": "👩‍🍳"
   },
   {
-    "emoticon": "🧑‍🔧"
+    "emoji": "🧑‍🔧"
   },
   {
-    "emoticon": "👨‍🔧"
+    "emoji": "👨‍🔧"
   },
   {
-    "emoticon": "👩‍🔧"
+    "emoji": "👩‍🔧"
   },
   {
-    "emoticon": "🧑‍🏭"
+    "emoji": "🧑‍🏭"
   },
   {
-    "emoticon": "👨‍🏭"
+    "emoji": "👨‍🏭"
   },
   {
-    "emoticon": "👩‍🏭"
+    "emoji": "👩‍🏭"
   },
   {
-    "emoticon": "🧑‍💼"
+    "emoji": "🧑‍💼"
   },
   {
-    "emoticon": "👨‍💼"
+    "emoji": "👨‍💼"
   },
   {
-    "emoticon": "👩‍💼"
+    "emoji": "👩‍💼"
   },
   {
-    "emoticon": "🧑‍🔬"
+    "emoji": "🧑‍🔬"
   },
   {
-    "emoticon": "👨‍🔬"
+    "emoji": "👨‍🔬"
   },
   {
-    "emoticon": "👩‍🔬"
+    "emoji": "👩‍🔬"
   },
   {
-    "emoticon": "🧑‍💻"
+    "emoji": "🧑‍💻"
   },
   {
-    "emoticon": "👨‍💻"
+    "emoji": "👨‍💻"
   },
   {
-    "emoticon": "👩‍💻"
+    "emoji": "👩‍💻"
   },
   {
-    "emoticon": "🧑‍🎤"
+    "emoji": "🧑‍🎤"
   },
   {
-    "emoticon": "👨‍🎤"
+    "emoji": "👨‍🎤"
   },
   {
-    "emoticon": "👩‍🎤"
+    "emoji": "👩‍🎤"
   },
   {
-    "emoticon": "🧑‍🎨"
+    "emoji": "🧑‍🎨"
   },
   {
-    "emoticon": "👨‍🎨"
+    "emoji": "👨‍🎨"
   },
   {
-    "emoticon": "👩‍🎨"
+    "emoji": "👩‍🎨"
   },
   {
-    "emoticon": "🧑‍✈️"
+    "emoji": "🧑‍✈️"
   },
   {
-    "emoticon": "👨‍✈️"
+    "emoji": "👨‍✈️"
   },
   {
-    "emoticon": "👩‍✈️"
+    "emoji": "👩‍✈️"
   },
   {
-    "emoticon": "🧑‍🚀"
+    "emoji": "🧑‍🚀"
   },
   {
-    "emoticon": "👨‍🚀"
+    "emoji": "👨‍🚀"
   },
   {
-    "emoticon": "👩‍🚀"
+    "emoji": "👩‍🚀"
   },
   {
-    "emoticon": "🧑‍🚒"
+    "emoji": "🧑‍🚒"
   },
   {
-    "emoticon": "👨‍🚒"
+    "emoji": "👨‍🚒"
   },
   {
-    "emoticon": "👩‍🚒"
+    "emoji": "👩‍🚒"
   },
   {
-    "emoticon": "👮"
+    "emoji": "👮"
   },
   {
-    "emoticon": "👮‍♂️"
+    "emoji": "👮‍♂️"
   },
   {
-    "emoticon": "👮‍♀️"
+    "emoji": "👮‍♀️"
   },
   {
-    "emoticon": "🕵️"
+    "emoji": "🕵️"
   },
   {
-    "emoticon": "🕵️‍♂️"
+    "emoji": "🕵️‍♂️"
   },
   {
-    "emoticon": "🕵️‍♀️"
+    "emoji": "🕵️‍♀️"
   },
   {
-    "emoticon": "💂"
+    "emoji": "💂"
   },
   {
-    "emoticon": "💂‍♂️"
+    "emoji": "💂‍♂️"
   },
   {
-    "emoticon": "💂‍♀️"
+    "emoji": "💂‍♀️"
   },
   {
-    "emoticon": "👷"
+    "emoji": "👷"
   },
   {
-    "emoticon": "👷‍♂️"
+    "emoji": "👷‍♂️"
   },
   {
-    "emoticon": "👷‍♀️"
+    "emoji": "👷‍♀️"
   },
   {
-    "emoticon": "🤴"
+    "emoji": "🤴"
   },  
   {
-    "emoticon": "👸"
+    "emoji": "👸"
   },
   {
-    "emoticon": "👳"
+    "emoji": "👳"
   },
   {
-    "emoticon": "👳‍♂️"
+    "emoji": "👳‍♂️"
   },
   {
-    "emoticon": "👳‍♀️"
+    "emoji": "👳‍♀️"
   },
   {
-    "emoticon": "👲"
+    "emoji": "👲"
   },
   {
-    "emoticon": "🧕"
+    "emoji": "🧕"
   },
   {
-    "emoticon": "🤵"
+    "emoji": "🤵"
   },
   {
-    "emoticon": "🤵‍♂️"
+    "emoji": "🤵‍♂️"
   },
   {
-    "emoticon": "🤵‍♀️"
+    "emoji": "🤵‍♀️"
   },
   {
-    "emoticon": "👰"
+    "emoji": "👰"
   },
   {
-    "emoticon": "👰‍♂️"
+    "emoji": "👰‍♂️"
   },
   {
-    "emoticon": "👰‍♀️"
+    "emoji": "👰‍♀️"
   },
   {
-    "emoticon": "🤰"
+    "emoji": "🤰"
   },
   {
-    "emoticon": "🤱"
+    "emoji": "🤱"
   },
   {
-    "emoticon": "👩‍🍼"
+    "emoji": "👩‍🍼"
   },
   {
-    "emoticon": "👨‍🍼"
+    "emoji": "👨‍🍼"
   },
   {
-    "emoticon": "🧑‍🍼"
+    "emoji": "🧑‍🍼"
   },
   {
-    "emoticon": "👼"
+    "emoji": "👼"
   },
   {
-    "emoticon": "🎅"
+    "emoji": "🎅"
   },
   {
-    "emoticon": "🤶"
+    "emoji": "🤶"
   },
   {
-    "emoticon": "🧑‍🎄"
+    "emoji": "🧑‍🎄"
   },
   {
-    "emoticon": "🦸"
+    "emoji": "🦸"
   },
   {
-    "emoticon": "🦸‍♂️"
+    "emoji": "🦸‍♂️"
   },
   {
-    "emoticon": "🦸‍♀️"
+    "emoji": "🦸‍♀️"
   },
   {
-    "emoticon": "🦹"
+    "emoji": "🦹"
   },
   {
-    "emoticon": "🦹‍♂️"
+    "emoji": "🦹‍♂️"
   },
   {
-    "emoticon": "🦹‍♀️"
+    "emoji": "🦹‍♀️"
   },
   {
-    "emoticon": "🧙"
+    "emoji": "🧙"
   },
   {
-    "emoticon": "🧙‍♂️"
+    "emoji": "🧙‍♂️"
   },
   {
-    "emoticon": "🧙‍♀️"
+    "emoji": "🧙‍♀️"
   },
   {
-    "emoticon": "🧚"
+    "emoji": "🧚"
   },
   {
-    "emoticon": "🧚‍♂️"
+    "emoji": "🧚‍♂️"
   },
   {
-    "emoticon": "🧚‍♀️"
+    "emoji": "🧚‍♀️"
   },
   {
-    "emoticon": "🧛"
+    "emoji": "🧛"
   },
   {
-    "emoticon": "🧛‍♂️"
+    "emoji": "🧛‍♂️"
   },
   {
-    "emoticon": "🧛‍♀️"
+    "emoji": "🧛‍♀️"
   },
   {
-    "emoticon": "🧜"
+    "emoji": "🧜"
   },
   {
-    "emoticon": "🧜‍♂️"
+    "emoji": "🧜‍♂️"
   },
   {
-    "emoticon": "🧜‍♀️"
+    "emoji": "🧜‍♀️"
   },
   {
-    "emoticon": "🧝"
+    "emoji": "🧝"
   },
   {
-    "emoticon": "🧝‍♂️"
+    "emoji": "🧝‍♂️"
   },
   {
-    "emoticon": "🧝‍♀️"
+    "emoji": "🧝‍♀️"
   },
   {
-    "emoticon": "🧞"
+    "emoji": "🧞"
   },
   {
-    "emoticon": "🧞‍♂️"
+    "emoji": "🧞‍♂️"
   },
   {
-    "emoticon": "🧞‍♀️"
+    "emoji": "🧞‍♀️"
   },
   {
-    "emoticon": "🧟"
+    "emoji": "🧟"
   },
   {
-    "emoticon": "🧟‍♂️"
+    "emoji": "🧟‍♂️"
   },
   {
-    "emoticon": "🧟‍♀️"
+    "emoji": "🧟‍♀️"
   },
   {
-    "emoticon": "💆"
+    "emoji": "💆"
   },
   {
-    "emoticon": "💆‍♂️"
+    "emoji": "💆‍♂️"
   },
   {
-    "emoticon": "💆‍♀️"
+    "emoji": "💆‍♀️"
   },
   {
-    "emoticon": "💇"
+    "emoji": "💇"
   },
   {
-    "emoticon": "💇‍♂️"
+    "emoji": "💇‍♂️"
   },
   {
-    "emoticon": "💇‍♀️"
+    "emoji": "💇‍♀️"
   },
   {
-    "emoticon": "🚶"
+    "emoji": "🚶"
   },
   {
-    "emoticon": "🚶‍♂️"
+    "emoji": "🚶‍♂️"
   },
   {
-    "emoticon": "🚶‍♀️"
+    "emoji": "🚶‍♀️"
   },
   {
-    "emoticon": "🏃"
+    "emoji": "🏃"
   },
   {
-    "emoticon": "🏃‍♂️"
+    "emoji": "🏃‍♂️"
   },
   {
-    "emoticon": "🏃‍♀️"
+    "emoji": "🏃‍♀️"
   },
   {
-    "emoticon": "💃"
+    "emoji": "💃"
   },
   {
-    "emoticon": "🕺"
+    "emoji": "🕺"
   },
   {
-    "emoticon": "🕴️"
+    "emoji": "🕴️"
   },
   {
-    "emoticon": "👯"
+    "emoji": "👯"
   },
   {
-    "emoticon": "👯‍♂️"
+    "emoji": "👯‍♂️"
   },
   {
-    "emoticon": "👯‍♀️"
+    "emoji": "👯‍♀️"
   },
   {
-    "emoticon": "🧖"
+    "emoji": "🧖"
   },
   {
-    "emoticon": "🧖‍♂️"
+    "emoji": "🧖‍♂️"
   },
   {
-    "emoticon": "🧖‍♀️"
+    "emoji": "🧖‍♀️"
   },
   {
-    "emoticon": "🧘"
+    "emoji": "🧘"
   },
   {
-    "emoticon": "🧑‍🤝‍🧑"
+    "emoji": "🧑‍🤝‍🧑"
   },
   {
-    "emoticon": "👭"
+    "emoji": "👭"
   },
   {
-    "emoticon": "👫"
+    "emoji": "👫"
   },
   {
-    "emoticon": "👬"
+    "emoji": "👬"
   },
   {
-    "emoticon": "💏"
+    "emoji": "💏"
   },
   {
-    "emoticon": "👩‍❤️‍💋‍👨"
+    "emoji": "👩‍❤️‍💋‍👨"
   },
   {
-    "emoticon": "👨‍❤️‍💋‍👨"
+    "emoji": "👨‍❤️‍💋‍👨"
   },
   {
-    "emoticon": "👩‍❤️‍💋‍👩"
+    "emoji": "👩‍❤️‍💋‍👩"
   },
   {
-    "emoticon": "💑"
+    "emoji": "💑"
   },
   {
-    "emoticon": "👩‍❤️‍👨"
+    "emoji": "👩‍❤️‍👨"
   },
   {
-    "emoticon": "👨‍❤️‍👨"
+    "emoji": "👨‍❤️‍👨"
   },
   {
-    "emoticon": "👩‍❤️‍👩"
+    "emoji": "👩‍❤️‍👩"
   },
   {
-    "emoticon": "👪"
+    "emoji": "👪"
   },
   {
-    "emoticon": "👨‍👩‍👦"
+    "emoji": "👨‍👩‍👦"
   },
   {
-    "emoticon": "👨‍👩‍👧"
+    "emoji": "👨‍👩‍👧"
   },
   {
-    "emoticon": "👨‍👩‍👧‍👦"
+    "emoji": "👨‍👩‍👧‍👦"
   },
   {
-    "emoticon": "👨‍👩‍👦‍👦"
+    "emoji": "👨‍👩‍👦‍👦"
   },
   {
-    "emoticon": "👨‍👩‍👧‍👧"
+    "emoji": "👨‍👩‍👧‍👧"
   },
   {
-    "emoticon": "👨‍👨‍👦"
+    "emoji": "👨‍👨‍👦"
   },
   {
-    "emoticon": "👨‍👨‍👧"
+    "emoji": "👨‍👨‍👧"
   },
   {
-    "emoticon": "👨‍👨‍👧‍👦"
+    "emoji": "👨‍👨‍👧‍👦"
   },
   {
-    "emoticon": "👨‍👨‍👦‍👦"
+    "emoji": "👨‍👨‍👦‍👦"
   },
   {
-    "emoticon": "👨‍👨‍👧‍👧"
+    "emoji": "👨‍👨‍👧‍👧"
   },
   {
-    "emoticon": "👩‍👩‍👦"
+    "emoji": "👩‍👩‍👦"
   },
   {
-    "emoticon": "👩‍👩‍👧"
+    "emoji": "👩‍👩‍👧"
   },
   {
-    "emoticon": "👩‍👩‍👧‍👦"
+    "emoji": "👩‍👩‍👧‍👦"
   },
   {
-    "emoticon": "👩‍👩‍👦‍👦"
+    "emoji": "👩‍👩‍👦‍👦"
   },
   {
-    "emoticon": "👩‍👩‍👧‍👧"
+    "emoji": "👩‍👩‍👧‍👧"
   },
   {
-    "emoticon": "👨‍👦"
+    "emoji": "👨‍👦"
   },
   {
-    "emoticon": "👨‍👦‍👦"
+    "emoji": "👨‍👦‍👦"
   },
   {
-    "emoticon": "👨‍👧"
+    "emoji": "👨‍👧"
   },
   {
-    "emoticon": "👨‍👧‍👦"
+    "emoji": "👨‍👧‍👦"
   },
   {
-    "emoticon": "👨‍👧‍👧"
+    "emoji": "👨‍👧‍👧"
   },
   {
-    "emoticon": "👩‍👦"
+    "emoji": "👩‍👦"
   },
   {
-    "emoticon": "👩‍👦‍👦"
+    "emoji": "👩‍👦‍👦"
   },
   {
-    "emoticon": "👩‍👧"
+    "emoji": "👩‍👧"
   },  
   {
-    "emoticon": "👩‍👧‍👦"
+    "emoji": "👩‍👧‍👦"
   },
   {
-    "emoticon": "👩‍👧‍👧"
+    "emoji": "👩‍👧‍👧"
   },
   {
-    "emoticon": "🗣️"
+    "emoji": "🗣️"
   },
   {
-    "emoticon": "👤"
+    "emoji": "👤"
   },
   {
-    "emoticon": "👥"
+    "emoji": "👥"
   },
   {
-    "emoticon": "👣"
+    "emoji": "👣"
   },
   {
-    "emoticon": "🧳"
+    "emoji": "🧳"
   },
   {
-    "emoticon": "🌂"
+    "emoji": "🌂"
   },
   {
-    "emoticon": "☂️"
+    "emoji": "☂️"
   },
   {
-    "emoticon": "🎃"
+    "emoji": "🎃"
   },
   {
-    "emoticon": "🧵"
+    "emoji": "🧵"
   },
   {
-    "emoticon": "🧶"
+    "emoji": "🧶"
   },
   {
-    "emoticon": "👓"
+    "emoji": "👓"
   },
   {
-    "emoticon": "🕶️"
+    "emoji": "🕶️"
   },
   {
-    "emoticon": "🥽"
+    "emoji": "🥽"
   },
   {
-    "emoticon": "🥼"
+    "emoji": "🥼"
   },
   {
-    "emoticon": "👔"
+    "emoji": "👔"
   },
   {
-    "emoticon": "👕"
+    "emoji": "👕"
   },
   {
-    "emoticon": "👖"
+    "emoji": "👖"
   },
   {
-    "emoticon": "🧣"
+    "emoji": "🧣"
   },
   {
-    "emoticon": "🧤"
+    "emoji": "🧤"
   },
   {
-    "emoticon": "🧥"
+    "emoji": "🧥"
   },
   {
-    "emoticon": "🧦"
+    "emoji": "🧦"
   },
   {
-    "emoticon": "👗"
+    "emoji": "👗"
   },
   {
-    "emoticon": "👘"
+    "emoji": "👘"
   },
   {
-    "emoticon": "👙"
+    "emoji": "👙"
   },
   {
-    "emoticon": "👚"
+    "emoji": "👚"
   },
   {
-    "emoticon": "👛"
+    "emoji": "👛"
   },
   {
-    "emoticon": "👜"
+    "emoji": "👜"
   },
   {
-    "emoticon": "👝"
+    "emoji": "👝"
   },
   {
-    "emoticon": "🎒"
+    "emoji": "🎒"
   },
   {
-    "emoticon": "👞"
+    "emoji": "👞"
   },
   {
-    "emoticon": "👟"
+    "emoji": "👟"
   },
   {
-    "emoticon": "🥾"
+    "emoji": "🥾"
   },
   {
-    "emoticon": "🥿"
+    "emoji": "🥿"
   },
   {
-    "emoticon": "👠"
+    "emoji": "👠"
   },
   {
-    "emoticon": "👡"
+    "emoji": "👡"
   },
   {
     
-    "emoticon": "👢"
+    "emoji": "👢"
   },
   {
     "tag": "crown",
-    "emoticon": "👑"
+    "emoji": "👑"
   },
   {
     "tag": "womans-hat",
-    "emoticon": "👒"
+    "emoji": "👒"
   },
   {
     "tag": "top-hat",
-    "emoticon": "🎩"
+    "emoji": "🎩"
   },
   {
     "tag": "graduation-cap",
-    "emoticon": "🎓"
+    "emoji": "🎓"
   },
   {
     "tag": "billed-cap",
-    "emoticon": "🧢"
+    "emoji": "🧢"
   },
   {
     "tag": "helmet-with-white-cross",
-    "emoticon": "⛑️"
+    "emoji": "⛑️"
   },
   {
     "tag": "lipstick",
-    "emoticon": "💄"
+    "emoji": "💄"
   },
   {
     "tag": "ring",
-    "emoticon": "💍"
+    "emoji": "💍"
   },
   {
     "tag": "briefcase",
-    "emoticon": "💼"
+    "emoji": "💼"
   }
 ]
