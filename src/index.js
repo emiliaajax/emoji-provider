@@ -10,10 +10,20 @@ import fs from 'fs'
 const loadJSON = (path) => JSON.parse(fs.readFileSync(new URL(path, import.meta.url)))
 const smileysAndPeople = loadJSON('./utils/smileysAndPeople.json')
 
+/**
+ * Exports smileys and people.
+ *
+ * @returns {Array} An array with tags and emoticons.
+ */
 const getAllEmoticonsAndTags = () => {
   return smileysAndPeople
 }
 
+/**
+ * Exports all emoticons.
+ *
+ * @returns {Array} An array with all emoticons.
+ */
 const getAllEmoticons = () => {
   const emoticonsArray = []
   for (let i = 0; i < smileysAndPeople.length; i++) {
