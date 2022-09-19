@@ -15,7 +15,7 @@ const smileysAndPeople = loadJSON('./utils/smileysAndPeople.json')
  *
  * @returns {Array} An array with tags and emoticons.
  */
-const getAllEmoticonsAndTags = () => {
+const getAllEmojisAndTags = () => {
   return smileysAndPeople
 }
 
@@ -24,7 +24,7 @@ const getAllEmoticonsAndTags = () => {
  *
  * @returns {Array} An array with all emoticons.
  */
-const getAllEmoticons = () => {
+const getAllEmojis = () => {
   const emoticonsArray = []
   for (let i = 0; i < smileysAndPeople.length; i++) {
     emoticonsArray.push(smileysAndPeople[i].emoticon)
@@ -38,7 +38,7 @@ const getAllEmoticons = () => {
  * @param {*} tag The tag of the emoticon.
  * @returns {string} The emoticon.
  */
-const getEmoticonByTag = (tag) => {
+const getEmojiByTag = (tag) => {
   let emoticon = 'Sorry, an emoticon with given tag does not exist...'
   for (let i = 0; i < smileysAndPeople.length; i++) {
     if (smileysAndPeople[i].tag === tag) {
@@ -48,6 +48,39 @@ const getEmoticonByTag = (tag) => {
   return emoticon
 }
 
-console.log(getAllEmoticons())
-console.log(getAllEmoticonsAndTags())
-console.log(getEmoticonByTag('space-invader'))
+/**
+ * Gets all emoticons of the emojis that have an emoticon.
+ *
+ * @returns {Array} An array with emoticons.
+ */
+const getAllEmoticons = () => {
+  const emoticonArray = []
+  for (let i = 0; i < smileysAndPeople.length; i++) {
+    if (smileysAndPeople[i].emoticon) {
+      emoticonArray.push(smileysAndPeople[i].emoticon)
+    }
+  }
+  return emoticonArray
+}
+
+/**
+ * Replaces an emoticon with an emoji.
+ *
+ * @param {string} text Text to be searched for emojis.
+ * @returns {string} The text with the emoticons replaced with emojis.
+ */
+const replaceEmoticonWithEmoji = (text) => {
+  const emoticons = getAllEmoticons()
+  for (let i = 0; i < emoticons.length; i++) {
+    const emoticon = emoticons[i]
+    if (text.includes(emoticon)) {
+      text = text.replace(emoticon, '😃')
+    }
+  }
+  return text
+}
+
+console.log(getAllEmojis())
+console.log(getAllEmojisAndTags())
+console.log(getEmojiByTag('space-invader'))
+console.log(replaceEmoticonWithEmoji('hej :D'))
