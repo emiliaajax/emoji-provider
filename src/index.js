@@ -96,7 +96,25 @@ const countEmoticonOccurences = (text, emoticon) => {
   return text.split(emoticon).length - 1
 }
 
+/**
+ * Gets emojis that matches the letters in text.
+ *
+ * @param {*} text The text.
+ * @returns {Array} An array with the matching emojis.
+ */
+const getEmojisThatMatches = (text) => {
+  const textLength = text.length
+  const emojisArray = []
+  for (let i = 0; i < smileysAndPeople.length; i++) {
+    if (text === smileysAndPeople[i].tag?.slice(0, textLength)) {
+      emojisArray.push(smileysAndPeople[i].emoji)
+    }
+  }
+  return emojisArray
+}
+
 console.log(getAllEmojis())
 console.log(getAllEmojisAndTags())
 console.log(getEmojiByTag('space-invader'))
 console.log(replaceEmoticonWithEmoji('hej på dig :D :D :D :D :D :)'))
+console.log(getEmojisThatMatches('sa'))
