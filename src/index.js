@@ -39,13 +39,13 @@ const getAllEmojis = () => {
  * @returns {string} The emoticon.
  */
 const getEmojiByTag = (tag) => {
-  let emoticon = 'Sorry, an emoticon with given tag does not exist...'
+  let emoji = 'Sorry, an emoji with given tag does not exist...'
   for (let i = 0; i < smileysAndPeople.length; i++) {
     if (smileysAndPeople[i].tag === tag) {
-      emoticon = smileysAndPeople[i].emoticon
+      emoji = smileysAndPeople[i].emoji
     }
   }
-  return emoticon
+  return emoji
 }
 
 /**
@@ -73,14 +73,30 @@ const replaceEmoticonWithEmoji = (text) => {
   const emoticons = getAllEmoticons()
   for (let i = 0; i < emoticons.length; i++) {
     const emoticon = emoticons[i]
-    if (text.includes(emoticon)) {
-      text = text.replace(emoticon, '😃')
+    const count = countEmoticonOccurences(text, emoticon)
+    if (count > 0) {
+      for (let i = 1; i <= count; i++) {
+        const index = smileysAndPeople.findIndex(element => element.emoticon === emoticon)
+        text = text.replace(emoticon, smileysAndPeople[index].emoji)
+      }
     }
   }
   return text
 }
 
+// https://stackabuse.com/javascript-how-to-count-the-number-of-substring-occurrences-in-a-string/
+/**
+ * Counts how many of one emoticon is in a text.
+ *
+ * @param {*} text The text that is searched
+ * @param {*} emoticon The emoticon to check for.
+ * @returns {number} The count.
+ */
+const countEmoticonOccurences = (text, emoticon) => {
+  return text.split(emoticon).length - 1
+}
+
 console.log(getAllEmojis())
 console.log(getAllEmojisAndTags())
 console.log(getEmojiByTag('space-invader'))
-console.log(replaceEmoticonWithEmoji('hej :D'))
+console.log(replaceEmoticonWithEmoji('hej på dig :D :D :D :D :D :)'))
