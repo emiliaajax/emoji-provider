@@ -113,6 +113,17 @@ const getEmojisThatMatches = (text) => {
   return emojisArray
 }
 
+const getEmojisByCategory = () => {
+}
+
+const getAllTags = () => {
+  const tagsArray = []
+  for (let i = 0; i < smileysAndPeople.length; i++) {
+    tagsArray.push(smileysAndPeople[i].tag)
+  }
+  return tagsArray
+}
+
 console.log(getAllEmojis())
 console.log(getAllEmojisAndTags())
 console.log(getEmojiByTag('space-invader'))
