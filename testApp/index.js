@@ -1,6 +1,5 @@
-import { replaceIt } from '../lib/index.js'
+import { emojiLib } from '../lib/index.js'
 
-console.log(replaceIt)
-const text = replaceIt('hej :D')
+const text = emojiLib.replaceEmoticonWithEmoji('hej :D')
 console.log(text)
 document.querySelector('#main').textContent = text
