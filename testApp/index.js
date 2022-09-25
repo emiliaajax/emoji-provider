@@ -1,4 +1,4 @@
-import { replaceIt } from './index.js'
+import { replaceIt } from '../lib/index.js'
 
 console.log(replaceIt)
 const text = replaceIt('hej :D')
