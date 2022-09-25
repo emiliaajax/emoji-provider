@@ -1,14 +1,5 @@
-import fs from 'fs'
-
-/**
- * Loading JSON files synchronously.
- *
- * @param {*} path The path of the JSON file.
- * @returns {*} The JSON file.
- */
-// Inspired y https://stackoverflow.com/questions/70106880/err-import-assertion-type-missing-for-import-of-json-file
-const loadJSON = (path) => JSON.parse(fs.readFileSync(new URL(path, import.meta.url)))
-const smileysAndPeople = loadJSON('./utils/smileysAndPeople.json')
+import { smileysAndPeople } from './emojis/smileysAndPeople.js'
+console.log(smileysAndPeople)
 
 /**
  * Exports smileys and people.
@@ -113,15 +104,35 @@ const getEmojisThatMatches = (text) => {
   return emojisArray
 }
 
-const getEmojisByCategory = () => {
-}
+// const getEmojisByCategory = () => {
+// }
 
-const getAllTags = () => {
-  const tagsArray = []
-  for (let i = 0; i < smileysAndPeople.length; i++) {
-    tagsArray.push(smileysAndPeople[i].tag)
+// const getAllTags = () => {
+//   const tagsArray = []
+//   for (let i = 0; i < smileysAndPeople.length; i++) {
+//     tagsArray.push(smileysAndPeople[i].tag)
+//   }
+//   return tagsArray
+// }
+
+/**
+ * Test.
+ *
+ * @param {*} text Test.
+ * @returns {*} Test.
+ */
+export const replaceIt = (text) => {
+  const emoticons = getAllEmoticons()
+  for (let i = 0; i < emoticons.length; i++) {
+    const emoticon = emoticons[i]
+    const count = countEmoticonOccurences(text, emoticon)
+    if (count > 0) {
+      for (let i = 1; i <= count; i++) {
+        text = text.replace(emoticon, 'F601')
+      }
+    }
   }
-  return tagsArray
+  return text
 }
 
 console.log(getAllEmojis())
