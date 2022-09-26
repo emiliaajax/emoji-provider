@@ -10,25 +10,25 @@ const testGettingAllEmojisArray = [smileysAndPeople, animalsAndNature, foodAndDr
 const testEmojisFromCategoriesArray = [smileysAndPeople, activity].flat()
 
 describe('get emoji from tag', () => {
-  test('tag happy-face should return 😀', () => {
+  test('happy-face should return 😀', () => {
     expect(emojiLib.getEmojiByTag('happy-face')).toBe('😀')
   })
 
-  test('tag made-up-tag should throw an error', () => {
+  test('made-up-tag should throw an error', () => {
     expect(emojiLib.getEmojiByTag('made-up-tag')).toBe('Sorry, an emoji with given tag does not exist...')
   })
 })
 
-describe('replace emoticon in text with emoji', () => {
-  test('replace emoticon with emoji', () => {
+describe('replace emoticons in text with emojis', () => {
+  test(':D should be replaced with 😃', () => {
     expect(emojiLib.replaceEmoticonWithEmoji('Hej :D')).toBe('Hej 😃')
   })
 
-  test('replace emoticon with emoji', () => {
+  test(':D :D :) should be replaced with 😃 😃 😊', () => {
     expect(emojiLib.replaceEmoticonWithEmoji('Hej :D :D :)')).toBe('Hej 😃 😃 😊')
   })
 
-  test('replace emoticon with emoji', () => {
+  test(':G should not be replaced with an emoji', () => {
     expect(emojiLib.replaceEmoticonWithEmoji('Hej :G')).toBe('Hej :G')
   })
 })
