@@ -57,8 +57,8 @@ describe('get emojis from categories', () => {
     }
     expect(test).toThrowError('The category named "noneExistingCategory" does not exist. Please provide a valid category.')
   })
+})
 
-  test('get all emojis', () => {
-    expect(emojiLib.getAllEmojisAndTags()).toEqual(testGettingAllEmojisArray)
-  })
+test('get all emojis', () => {
+  expect(emojiLib.getAllEmojisAndTags()).toEqual(testGettingAllEmojisArray)
 })
