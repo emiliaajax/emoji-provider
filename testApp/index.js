@@ -1,5 +1,7 @@
-import { emojiLib } from '../lib/index.js'
+import { emojilib } from '../lib/index.js'
 
-const text = emojiLib.replaceEmoticonWithEmoji('hej :D')
+const text = emojilib.replaceEmoticonWithUnicode('hej :D')
 console.log(text)
-document.querySelector('#main').textContent = text
+const p = document.createElement('p')
+p.textContent = text
+document.querySelector('#main').appendChild(p)

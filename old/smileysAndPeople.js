@@ -1,839 +1,611 @@
 export const smileysAndPeople = [
   {
     tag: 'happy-face',
-    emoji: ['0x1F600']
+    emoji: '😀'
   },
   {
     tag: 'happy-face-with-big-eyes',
-    emoji: ['0x1F603'],
-    emoticon: [':D', ':-D', '=D', ':d', ':-d', '=d']
+    emoji: '😃',
+    emoticon: ':D',
+    unicode: '1F600'
   },
   {
     tag: 'happy-face-with-smiling-eyes',
-    emoji: ['0x1F604']
+    emoji: '😄'
   },
   {
     tag: 'beaming-face-with-smiling-eyes',
-    emoji: ['0x1F601']
+    emoji: '😁'
   },
   {
     tag: 'laughing',
-    emoji: ['0x1F606'],
-    emoticon: ['xD', 'x-D']
+    emoji: '😆'
   },
   {
     tag: 'happy-sweat',
-    emoji: ['0x1F605']
+    emoji: '😅'
   },
   {
     tag: 'rolling-on-the-floor-laughing',
-    emoji: ['0x1F923']
+    emoji: '🤣'
   },
   {
     tag: 'face-with-tears-of-joy',
-    emoji: ['0x1F602'],
-    emoticon: ['XD', 'X-D']
+    emoji: '😂'
   },
   {
     tag: 'slightly-smiling-face',
-    emoji: ['0x1F642']
+    emoji: '🙂'
   },
   {
     tag: 'upside-down-face',
-    emoji: ['0x1F643'],
-    emoticon: ['(:', '(-:', '(=', '(=']
-  },
-  {
-    tag: 'melting-face',
-    emoji: ['0x1FAE0']
+    emoji: '🙃'
   },
   {
     tag: 'winking-face',
-    emoji: ['0x1F609'],
-    emoticon: [';)', ';-)']
+    emoji: '😉'
   },
   {
     tag: 'smiley-face',
-    emoji: ['0x1F60A'],
-    emoticon: [':)', ':-)', '=)']
+    emoji: '😊',
+    emoticon: ':)'
   },
   {
     tag: 'smiley-face-with-halo',
-    emoji: ['0x1F607'],
-    emoticon: ['O:)', 'O:-)', 'o:)', 'o:-)']
+    emoji: '😇',
+    emoticon: 'O:)'
   },
   {
     tag: 'smiley-face-with-hearts',
-    emoji: ['0x1F970']
+    emoji: '🥰'
   },
   {
     tag: 'smiley-face-with-heart-eyes',
-    emoji: ['0x1F60D']
+    emoji: '😍'
   },
   {
     tag: 'star-struck',
-    emoji: ['0x1F929']
+    emoji: '🤩'
   },
   {
     tag: 'face-kissing-heart',
-    emoji: ['0x1F618'],
-    emoticon: [':*', ';*', ':-*', ';-*']
+    emoji: '😘'
   },
   {
     tag: 'kissing-face',
-    emoji: ['0x1F617']
+    emoji: '😗'
   },
   {
     tag: 'smiling-face',
-    emoji: ['0x263A']
+    emoji: '☺️'
   },
   {
     tag: 'kissing-face-with-closed-eyes',
-    emoji: ['0x1F61A']
+    emoji: '😚'
   },
   {
     tag: 'kissing-face-with-smiling-eyes',
-    emoji: ['0x1F619']
+    emoji: '😙'
   },
   {
-    tag: 'smiling-face-with-tear',
-    emoji: ['0x1F972']
-  },
-  {
-    tag: 'face-savoring-food',
-    emoji: ['0x1F60B']
+    tag: 'yummy-face',
+    emoji: '😋'
   },
   {
     tag: 'smiley-face-with-tounge',
-    emoji: ['0x1F61B'],
-    emoticon: [':P', ':-P', ':p', ':-p']
+    emoji: '😛'
   },
   {
     tag: 'winking-face-with-tounge',
-    emoji: ['0x1F61C'],
-    emoticon: [';P', ';-P', ';p', ';-p']
+    emoji: '😜'
   },
   {
-    tag: 'zany-face',
-    emoji: ['0x1F92A']
+    tag: 'goofy-face',
+    emoji: '🤪'
   },
   {
-    tag: 'squinting-face-with-tounge',
-    emoji: ['0x1F61D'],
-    emoticon: ['XP', 'X-P', 'xP', 'x-P']
+    tag: 'lauging-face-with-tounge',
+    emoji: '😝'
   },
   {
     tag: 'money-face',
-    emoji: ['0x1F911']
+    emoji: '🤑'
   },
   {
     tag: 'hugging-face',
-    emoji: ['0x1F917']
+    emoji: '🤗'
   },
   {
     tag: 'face-with-hand-over-mouth',
-    emoji: ['0x1F92D']
-  },
-  {
-    tag: 'face-with-peeking-eye',
-    emoji: ['0x1FAE3']
+    emoji: '🤭'
   },
   {
     tag: 'shushing-face',
-    emoji: ['0x1F92B']
+    emoji: '🤫'
   },
   {
     tag: 'thinking-face',
-    emoji: ['0x1F914']
-  },
-  {
-    tag: 'saluting-face',
-    emoji: ['0x1FAE1']
+    emoji: '🤔'
   },
   {
     tag: 'zipper-mouth-face',
-    emoji: ['0x1F910']
+    emoji: '🤐'
   },
   {
     tag: 'face-with-raised-eyebrow',
-    emoji: ['0x1F928']
+    emoji: '🤨'
   },
   {
     tag: 'neutral-face',
-    emoji: ['0x1F610'],
-    emoticon: [':|', ':-|']
+    emoji: '😐'
   },
   {
     tag: 'expressionless-face',
-    emoji: ['0x1F611']
+    emoji: '😑'
   },
   {
     tag: 'blank-face',
-    emoji: ['0x1F636']
-  },
-  {
-    tag: 'dotted-line-face',
-    emoji: ['0x1FAE5']
+    emoji: '😶'
   },
   {
     tag: 'face-in-clouds',
-    emoji: ['0x1F636', '0x200D', '0x1F32B', '0xFEOF']
+    emoji: '😶‍🌫️'
   },
   {
     tag: 'smirking-face',
-    emoji: ['0x1F60F']
+    emoji: '😏'
   },
   {
-    tag: 'unamused-face',
-    emoji: ['0x1F612']
+    tag: 'unimpressed-face',
+    emoji: '😒'
   },
   {
     tag: 'rolling-eyes-face',
-    emoji: ['0x1F644']
+    emoji: '🙄'
   },
   {
     tag: 'grimacing',
-    emoji: ['0x1F62C'],
-    emotion: [':E']
+    emoji: '😬'
   },
   {
-    tag: 'face-exhaling',
-    emoji: ['0x1F62E', '0x200D', '0x1F4AB']
+    tag: 'sighing-face',
+    emoji: '😮‍💨'
   },
   {
     tag: 'lying-face',
-    emoji: ['0x1F925']
+    emoji: '🤥'
   },
   {
-    tag: 'shaking-face',
-    emoji: ['0x1FAE8']
-  },
-  {
-    tag: 'relieved-face',
-    emoji: ['0x1F60C']
+    tag: 'besserwisser-face',
+    emoji: '😌'
   },
   {
     tag: 'pensive-sad-face',
-    emoji: ['0x1F614']
+    emoji: '😔'
   },
   {
-    tag: 'sleepy-face',
-    emoji: ['0x1F62A']
+    tag: 'tired-face',
+    emoji: '😪'
   },
   {
     tag: 'drooling-face',
-    emoji: ['0x1F924']
+    emoji: '🤤'
   },
   {
     tag: 'sleeping-face',
-    emoji: ['0x1F634']
+    emoji: '😴'
   },
   {
-    tag: 'face-with-medical-mask',
-    emoji: ['0x1F637']
+    tag: 'face-with-mask',
+    emoji: '😷'
   },
   {
     tag: 'fever-face',
-    emoji: ['0x1F912'],
-    emoticon: [':#', ':-#']
+    emoji: '🤒'
   },
   {
     tag: 'face-with-bandage',
-    emoji: ['0x1F915']
+    emoji: '🤕'
   },
   {
-    tag: 'nauseated-face',
-    emoji: ['0x1F922']
+    tag: 'naucious-face',
+    emoji: '🤢'
   },
   {
     tag: 'vomiting-face',
-    emoji: ['0x1F92E']
+    emoji: '🤮'
   },
   {
-    tag: 'sneezing-face',
-    emoji: ['0x1F927']
+    tag: 'face-having-a-cold',
+    emoji: '🤧'
   },
   {
     tag: 'hot-face',
-    emoji: ['0x1F975']
+    emoji: '🥵'
   },
   {
     tag: 'cold-face',
-    emoji: ['0x1F976']
+    emoji: '🥶'
   },
   {
     tag: 'woozy-face',
-    emoji: ['0x1F974']
+    emoji: '🥴'
   },
   {
-    tag: 'face-with-crossed-out-eyes',
-    emoji: ['0x1F635']
+    tag: 'dizzy-face',
+    emoji: '😵'
   },
   {
     tag: 'face-with-spiral-eyes',
-    emoji: ['0x1F635', '0x200D', '0x1F4AB']
+    emoji: '😵‍💫'
   },
   {
     tag: 'mind-blown-face',
-    emoji: ['0x1F92F']
+    emoji: '🤯'
   },
   {
     tag: 'face-with-cowboy-hat',
-    emoji: ['0x1F920']
+    emoji: '🤠'
   },
   {
     tag: 'party-face',
-    emoji: ['0x1F973']
-  },
-  {
-    tag: 'disguised-face',
-    emoji: ['0x1F978']
+    emoji: '🥳'
   },
   {
     tag: 'cool-face',
-    emoji: ['0x1F60E'],
-    emoticon: ['B)', 'B-)']
+    emoji: '😎'
   },
   {
     tag: 'nerd-face',
-    emoji: ['0x1F913']
+    emoji: '🤓'
   },
   {
     tag: 'face-with-monocle',
-    emoji: ['0x1F9D0']
+    emoji: '🧐'
   },
   {
-    tag: 'confused-face',
-    emoji: ['0x1F615'],
-    emoticon: [':/', ':-/', '=/', '=-/']
-  },
-  {
-    tag: 'face-with-diagonal-mouth',
-    emoji: ['0x1FAE4']
+    tag: 'slightly-sad-face',
+    emoji: '😕'
   },
   {
     tag: 'worried-face',
-    emoji: ['0x1F61F']
+    emoji: '😟'
   },
   {
     tag: 'slightly-frowning-face',
-    emoji: ['0x1F641']
+    emoji: '🙁'
   },
   {
     tag: 'frowning-face',
-    emoji: ['0x2639']
+    emoji: '☹️'
   },
   {
     tag: 'open-mouth-face',
-    emoji: ['0x1F62E'],
-    emoticon: [':O, :-O', ':o', ':-o']
+    emoji: '😮'
   },
   {
     tag: 'hushed-face',
-    emoji: ['0x1F62F']
+    emoji: '😯'
   },
   {
-    tag: 'astonished-face',
-    emoji: ['0x1F632']
+    tag: 'shocked-face',
+    emoji: '😲'
   },
   {
     tag: 'blush-face',
-    emoji: ['0x1F633'],
-    emoticon: [':$', ':-$']
+    emoji: '😳'
   },
   {
     tag: 'pleading-face',
-    emoji: ['0x1F97A']
-  },
-  {
-    tag: 'face-holding-back-tears',
-    emoji: ['0x1F979']
+    emoji: '🥺'
   },
   {
     tag: 'frowning-face-with-open-mouth',
-    emoji: ['0x1F626']
+    emoji: '😦'
   },
   {
     tag: 'anguised-face',
-    emoji: ['0x1F627']
+    emoji: '😧'
   },
   {
     tag: 'fearful-face',
-    emoji: ['0x1F628']
+    emoji: '😨'
   },
   {
     tag: 'cold-sweat',
-    emoji: ['0x1F630']
+    emoji: '😰'
   },
   {
     tag: 'disappointed-relieved-face',
-    emoji: ['0x1F625']
+    emoji: '😥'
   },
   {
     tag: 'sad-face-with-tear',
-    emoji: ['0x1F622'],
-    emoticon: [':\'(', ':\'-(']
+    emoji: '😢'
   },
   {
     tag: 'crying-face',
-    emoji: ['0x1F62D'],
-    emoticon: [':=(']
+    emoji: '😭'
   },
   {
     tag: 'screaming-face',
-    emoji: ['0x1F631']
+    emoji: '😱'
   },
   {
     tag: 'confounded-face',
-    emoji: ['0x1F616']
+    emoji: '😖'
   },
   {
     tag: 'persevering-face',
-    emoji: ['0x1F623']
+    emoji: '😣'
   },
   {
     tag: 'sad-face',
-    emoji: ['0x1F61E'],
-    emoticon: [':(', ':-(']
+    emoji: '😞'
   },
   {
     tag: 'sad-face-with-sweat',
-    emoji: ['0x1F613']
+    emoji: '😓'
   },
   {
     tag: 'weary-face',
-    emoji: ['0x1F629']
+    emoji: '😩'
   },
   {
     tag: 'fed-up-face',
-    emoji: ['0x1F62B']
-  },
-  {
-    tag: 'yawning-face',
-    emoji: ['0x1F971']
+    emoji: '😫'
   },
   {
     tag: 'steaming-nose-face',
-    emoji: ['0x1F624']
+    emoji: '😤'
   },
   {
     tag: 'rage-face',
-    emoji: ['0x1F621'],
-    emoticon: ['>:[']
+    emoji: '😡'
   },
   {
     tag: 'angry-face',
-    emoji: ['0x1F620'],
-    emoticon: ['>:(']
+    emoji: '😠'
   },
   {
     tag: 'swearing-face',
-    emoji: ['0x1F92C']
+    emoji: '🤬'
   },
   {
     tag: 'smiling-devil-face',
-    emoji: ['0x1F608']
+    emoji: '😈'
   },
   {
     tag: 'angry-devil-face',
-    emoji: ['0x1F47F']
+    emoji: '👿'
   },
   {
     tag: 'skull',
-    emoji: ['0x1F480']
+    emoji: '💀'
   },
   {
     tag: 'skull-and-crossbones',
-    emoji: ['0x2620']
+    emoji: '☠️'
   },
   {
     tag: 'pile-of-poop',
-    emoji: ['0x1F4A9']
+    emoji: '💩'
   },
   {
     tag: 'clown',
-    emoji: ['0x1F921']
+    emoji: '🤡'
   },
   {
     tag: 'ogre',
-    emoji: ['0x1F479']
+    emoji: '👹'
   },
   {
     tag: 'goblin',
-    emoji: ['0x1F47A']
+    emoji: '👺'
   },
   {
     tag: 'ghost',
-    emoji: ['0x1F47B']
+    emoji: '👻'
   },
   {
     tag: 'alien',
-    emoji: ['0x1F47D']
+    emoji: '👽'
   },
   {
     tag: 'space-invader',
-    emoji: ['0x1F47E']
+    emoji: '👾'
   },
   {
     tag: 'robot',
-    emoji: ['0x1F916']
+    emoji: '🤖'
   },
   {
     tag: 'happy-cat',
-    emoji: ['0x1F63A'],
-    emoticon: [':3', ':-3']
+    emoji: '😺'
   },
   {
     tag: 'happy-cat-with-smiling-eyes',
-    emoji: ['0x1F638']
+    emoji: '😸'
   },
   {
     tag: 'cat-with-tears-of-joy',
-    emoji: ['0x1F639']
+    emoji: '😹'
   },
   {
     tag: 'smiley-cat-with-heart-eyes',
-    emoji: ['0x1F63B']
+    emoji: '😻'
   },
   {
     tag: 'smirking-cat',
-    emoji: ['0x1F63C']
+    emoji: '😼'
   },
   {
     tag: 'kissing-cat',
-    emoji: ['0x1F63D']
+    emoji: '😽'
   },
   {
     tag: 'screaming-cat',
-    emoji: ['0x1F640']
+    emoji: '🙀'
   },
   {
     tag: 'sad-cat-with-tear',
-    emoji: ['0x1F63F']
+    emoji: '😿'
   },
   {
     tag: 'angry-cat',
-    emoji: ['0x1F63E']
-  },
-  {
-    tag: 'see-no-evil-monkey',
-    emoji: ['0x1F648']
-  },
-  {
-    tag: 'hear-no-evil-monkey',
-    emoji: ['0x1F649']
-  },
-  {
-    tag: 'speak-no-evil-monkey',
-    emoji: ['0x1F64A']
-  },
-  {
-    tag: 'love-letter',
-    emoji: ['0x1F48C']
-  },
-  {
-    tag: 'heart-with-arrow',
-    emoji: ['0x1F498']
-  },
-  {
-    tag: 'heart-with-ribbon',
-    emoji: ['0x1F49D']
-  },
-  {
-    tag: 'sparkling-heart',
-    emoji: ['0x1F496']
-  },
-  {
-    tag: 'growing-heart',
-    emoji: ['0x1F497']
-  },
-  {
-    tag: 'beating-heart',
-    emoji: ['0x1F493']
-  },
-  {
-    tag: 'revolving-hearts',
-    emoji: ['0x1F49E']
-  },
-  {
-    tag: 'two-hearts',
-    emoji: ['0x1F495']
-  },
-  {
-    tag: 'heart-decoration',
-    emoji: ['0x1F49F']
-  },
-  {
-    tag: 'heart-exclamation',
-    emoji: ['0x2763']
-  },
-  {
-    tag: 'broken-heart',
-    emoji: ['0x1F494']
-  },
-  {
-    tag: 'heart-on-fire',
-    emoji: ['0x2764', '0xFE0F', '0x200D', '0x1F525']
-  },
-  {
-    tag: 'mending-heart',
-    emoji: ['0x2764', '0xFE0F', '0x200D', '0x1FA79']
-  },
-  {
-    tag: 'red-heart',
-    emoji: ['0x2764']
-  },
-  {
-    tag: 'pink-heart',
-    emoji: ['0x1FA77']
-  },
-  {
-    tag: 'orange-heart',
-    emoji: ['0x1F9E1']
-  },
-  {
-    tag: 'yellow-heart',
-    emoji: ['0x1F49B']
-  },
-  {
-    tag: 'green-heart',
-    emoji: ['0x1F49A']
-  },
-  {
-    tag: 'blue-heart',
-    emoji: ['0x1F499']
-  },
-  {
-    tag: 'light-blue-heart',
-    emoji: ['0x1FA75']
-  },
-  {
-    tag: 'purple-heart',
-    emoji: ['0x1F49C']
-  },
-  {
-    tag: 'brown-heart',
-    emoji: ['0x1F90E']
-  },
-  {
-    tag: 'black-heart',
-    emoji: ['0x1F5A4']
-  },
-  {
-    tag: 'grey-heart',
-    emoji: ['0x1FA76']
-  },
-  {
-    tag: 'white-heart',
-    emoji: ['0x1F90D']
+    emoji: '😾'
   },
   {
     tag: 'kiss-mark',
-    emoji: ['0x1F48B']
+    emoji: '💋'
   },
   {
     tag: 'waiving-hand',
-    emoji: ['0x1F44B']
+    emoji: '👋'
   },
   {
-    tag: 'raised-back-of-hand',
-    emoji: ['0x1F91A']
+    tag: 'back-of-hand',
+    emoji: '🤚'
   },
   {
     tag: 'raised-hand-with-fingers-splayed',
-    emoji: ['0x1F590']
+    emoji: '🖐️'
   },
   {
     tag: 'raised-hand',
-    emoji: ['0x270B']
+    emoji: '✋'
   },
   {
     tag: 'vulcan-salute',
-    emoji: ['0x1F596']
-  },
-  {
-    tag: 'rightwards-hand',
-    emoji: ['0x1FAF1']
-  },
-  {
-    tag: 'leftwards-hand',
-    emoji: ['0x1FAF2']
-  },
-  {
-    tag: 'palm-down-hand',
-    emoji: ['0x1FAF3']
-  },
-  {
-    tag: 'palm-up-hand',
-    emoji: ['0x1FAF4']
-  },
-  {
-    tag: 'leftwards-pushing-hand',
-    emoji: ['0x1FAF7']
-  },
-  {
-    tag: 'rightwards-pushing-hand',
-    emoji: ['0x1FAF8']
+    emoji: '🖖'
   },
   {
     tag: 'ok-hand',
-    emoji: ['0x1F44C']
-  },
-  {
-    tag: 'pinched-fingers',
-    emoji: ['0x1F90C']
-  },
-  {
-    tag: 'pinching-hand',
-    emoji: ['0x1F90F']
+    emoji: '👌'
   },
   {
     tag: 'victory-hand',
-    emoji: ['0x270C']
+    emoji: '✌️'
   },
   {
     tag: 'fingers-crossed',
-    emoji: ['0x1F91E']
-  },
-  {
-    tag: 'index-finger-and-thumb-crossed',
-    emoji: ['0x1FAF0']
+    emoji: '🤞'
   },
   {
     tag: 'i-love-you-hand-sign',
-    emoji: ['0x1F91F']
+    emoji: '🤟'
   },
   {
     tag: 'heavy-metal-hand-sign',
-    emoji: ['0x1F918']
+    emoji: '🤘'
   },
   {
     tag: 'call-me-hand-sign',
-    emoji: ['0x1F919']
+    emoji: '🤙'
   },
   {
     tag: 'backhand-pointing-left',
-    emoji: ['0x1F448']
+    emoji: '👈'
   },
   {
     tag: 'backhand-pointing-right',
-    emoji: ['0x1F449']
+    emoji: '👉'
   },
   {
     tag: 'backhand-pointing-up',
-    emoji: ['0x1F446']
+    emoji: '👆'
   },
   {
     tag: 'middle-finger',
-    emoji: ['0x1F595']
+    emoji: '🖕'
   },
   {
     tag: 'backhand-pointing-down',
-    emoji: ['0x1F447']
+    emoji: '👇'
   },
   {
     tag: 'pointing-up',
-    emoji: ['0x261D']
-  },
-  {
-    tag: 'index-pointing-at-the-viewer',
-    emoji: ['0x1FAF5']
+    emoji: '☝️'
   },
   {
     tag: 'thumbs-up',
-    emoji: ['0x1F44D']
+    emoji: '👍'
   },
   {
     tag: 'thumbs-down',
-    emoji: ['0x1F44E']
+    emoji: '👎'
   },
   {
     tag: 'raised-fist',
-    emoji: ['0x270A']
+    emoji: '✊'
   },
   {
-    tag: 'oncoming-fist',
-    emoji: ['0x1F44A']
+    tag: 'fisted-hand-sign',
+    emoji: '👊'
   },
   {
     tag: 'left-facing-fist',
-    emoji: ['0x1F91B']
+    emoji: '🤛'
   },
   {
     tag: 'right-facing-fist',
-    emoji: ['0x1F91C']
+    emoji: '🤜'
   },
   {
     tag: 'clapping-hands',
-    emoji: ['0x1F44F']
+    emoji: '👏'
   },
   {
     tag: 'hands-raised',
-    emoji: ['0x1F64C']
-  },
-  {
-    tag: 'heart-hands',
-    emoji: ['0x1FAF6']
+    emoji: '🙌'
   },
   {
     tag: 'open-hands',
-    emoji: ['0x1F450']
+    emoji: '👐'
   },
   {
     tag: 'palms-togehter-facing-up',
-    emoji: ['0x1F932']
+    emoji: '🤲'
   },
   {
     tag: 'handshake',
-    emoji: ['0x1F91D']
+    emoji: '🤝'
   },
   {
     tag: 'prayer-hand-sign',
-    emoji: ['0x1F64F']
+    emoji: '🙏'
   },
   {
     tag: 'writing-hand',
-    emoji: ['0x270D']
+    emoji: '✍️'
   },
   {
     tag: 'nail-polish',
-    emoji: ['0x1F485']
+    emoji: '💅'
   },
   {
     tag: 'selfie',
-    emoji: ['0x1F933']
+    emoji: '🤳'
   },
   {
     tag: 'muscle',
-    emoji: ['0x1F4AA']
-  },
-  {
-    tag: 'mechanical-arm',
-    emoji: ['0x1F9B']
-  },
-  {
-    tag: 'mechanical-leg',
-    emoji: ['0x1F9BF']
+    emoji: '💪'
   },
   {
     tag: 'leg',
-    emoji: ['0x1F9B5']
+    emoji: '🦵'
   },
   {
     tag: 'foot',
-    emoji: ['0x1F9B6']
+    emoji: '🦶'
   },
   {
     tag: 'ear',
-    emoji: ['0x1F442']
-  },
-  {
-    tag: 'ear-with-hearing-aid',
-    emoji: ['0x1F9BB']
+    emoji: '👂'
   },
   {
     tag: 'nose',
-    emoji: ['0x1F443']
+    emoji: '👃'
   },
   {
     tag: 'brain',
@@ -854,10 +626,6 @@ export const smileysAndPeople = [
   {
     tag: 'eye',
     emoji: '👁️'
-  },
-  {
-    tag: 'kiss-mark',
-    emoji: '💋'
   },
   {
     tag: 'tounge',

@@ -1,5 +1,17 @@
 export const animalsAndNature = [
   {
+    tag: 'see-no-evil-monkey',
+    emoji: '🙈'
+  },
+  {
+    tag: 'hear-no-evil-monkey',
+    emoji: '🙉'
+  },
+  {
+    tag: 'speak-no-evil-monkey',
+    emoji: '🙊'
+  },
+  {
     tag: 'explosion',
     emoji: '💥'
   },
