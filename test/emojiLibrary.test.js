@@ -1,5 +1,5 @@
 import { emojiLib } from '../lib/index.js'
-import { smileysAndPeople } from '../lib/emojis/smileysAndPeople.js'
+import { smileysAndPeople } from '../lib/emojis/smileysAndEmotion.js'
 import { activity } from '../lib/emojis/activity.js'
 import { animalsAndNature } from '../lib/emojis/animalsAndNature.js'
 import { foodAndDrink } from '../lib/emojis/foodAndDrink.js'
