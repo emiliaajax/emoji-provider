@@ -1,10 +1,15 @@
 import { emojilib } from '../lib/index.js'
 
-// const text = emojilib.replaceEmoticonWithUnicode('hej :D')
-// console.log(text)
-let emojis = ''
-for (const emoji of emojilib.getAllEmojis()) {
-  emojis += ' ' + emoji
+const text = emojilib.replaceEmoticonWithEmoji('hej :D <3 Hur mår du? :D')
+
+// let emojis = ''
+// for (const emoji of emojilib.getAllEmojis()) {
+//   emojis += ' ' + emoji
+// }
+
+let emojisFromInputText = ''
+for (const emoji of emojilib.getEmojisThatMatchesText('sad')) {
+  emojisFromInputText += ' ' + emoji
 }
 
 // let tags = ''
@@ -15,10 +20,13 @@ for (const emoji of emojilib.getAllEmojis()) {
 const div = document.createElement('div')
 // const pElementForTags = document.createElement('p')
 const pElementForEmojis = document.createElement('p')
+const pElementForText = document.createElement('p')
 
-pElementForEmojis.textContent = emojis
+pElementForEmojis.textContent = emojisFromInputText
+pElementForText.textContent = text
 // pElementForTags.textContent = tags
 
+div.appendChild(pElementForText)
 div.appendChild(pElementForEmojis)
 // div.appendChild(pElementForTags)
 
