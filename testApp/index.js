@@ -13,7 +13,7 @@ const text = emojilib.replaceEmoticonWithEmoji('hej :D <3 Hur mår du? :D')
 // }
 
 let emojisFromGivenCategories = ''
-for (const emoji of emojilib.getEmojisOnlyFromCategory('flags', 'activity')) {
+for (const emoji of emojilib.getEmojisOnlyFromCategory('flags')) {
   emojisFromGivenCategories += ' ' + emoji
 }
 
