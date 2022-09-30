@@ -7,9 +7,14 @@ const text = emojilib.replaceEmoticonWithEmoji('hej :D <3 Hur mår du? :D')
 //   emojis += ' ' + emoji
 // }
 
-let emojisFromInputText = ''
-for (const emoji of emojilib.getEmojisThatMatchesText('sad')) {
-  emojisFromInputText += ' ' + emoji
+// let emojisFromInputText = ''
+// for (const emoji of emojilib.getEmojisThatMatchesText('sad')) {
+//   emojisFromInputText += ' ' + emoji
+// }
+
+let emojisFromGivenCategories = ''
+for (const emoji of emojilib.getEmojisOnlyFromCategory('flags')) {
+  emojisFromGivenCategories += ' ' + emoji
 }
 
 // let tags = ''
@@ -22,7 +27,7 @@ const div = document.createElement('div')
 const pElementForEmojis = document.createElement('p')
 const pElementForText = document.createElement('p')
 
-pElementForEmojis.textContent = emojisFromInputText
+pElementForEmojis.textContent = emojisFromGivenCategories
 pElementForText.textContent = text
 // pElementForTags.textContent = tags
 
