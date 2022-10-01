@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/emiliaajax/emoticons#readme",
   "devDependencies": {
-    "@lnu/eslint-config": "^1.1.6",
+    "eslint": "^8.24.0",
     "jest": "^29.0.3"
   }
 }
