@@ -14,7 +14,7 @@ const emoji = emojilib.getEmojiByTag('coffee')
 // }
 
 let emojisFromGivenCategories = ''
-for (const emoji of emojilib.getEmojisOnlyFromCategory('activity')) {
+for (const emoji of emojilib.getEmojisOnlyFromCategory('symbols')) {
   emojisFromGivenCategories += ' ' + emoji
 }
 
