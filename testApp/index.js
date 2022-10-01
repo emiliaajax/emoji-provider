@@ -1,6 +1,6 @@
 import { emojilib } from '../lib/index.js'
 
-const text = emojilib.replaceEmoticonWithEmoji('hej :D <3 Hur mår du? :D')
+const text = emojilib.replaceEmoticonWithEmoji('hej :D <3 :d Hur mår du? :D :p ..')
 const emoji = emojilib.getEmojiByTag('coffee')
 
 // let emojis = ''
