@@ -3,20 +3,20 @@ import { emojilib } from '../lib/index.js'
 const text = emojilib.replaceEmoticonWithEmoji('hej :D <3 :d Hur mår du? :D :p ..')
 const emoji = emojilib.getEmojiByTag('coffee')
 
-// let emojis = ''
-// for (const emoji of emojilib.getAllEmojis()) {
-//   emojis += ' ' + emoji
+let emojis = ''
+for (const emoji of emojilib.getAllEmojis()) {
+  emojis += ' ' + emoji
+}
+
+// let emojisFromInputText = ''
+// for (const emoji of emojilib.getEmojisThatMatchesText('sad')) {
+//   emojisFromInputText += ' ' + emoji
 // }
 
-let emojisFromInputText = ''
-for (const emoji of emojilib.getEmojisThatMatchesText('sad')) {
-  emojisFromInputText += ' ' + emoji
-}
-
-let emojisFromGivenCategories = ''
-for (const emoji of emojilib.getEmojisOnlyFromCategory('peopleAndBody')) {
-  emojisFromGivenCategories += ' ' + emoji
-}
+// let emojisFromGivenCategories = ''
+// for (const emoji of emojilib.getEmojisOnlyFromCategory('activity')) {
+//   emojisFromGivenCategories += ' ' + emoji
+// }
 
 // let tags = ''
 // for (const tag of emojilib.getAllTags()) {
@@ -28,15 +28,15 @@ const div = document.createElement('div')
 const pElementForEmojis = document.createElement('p')
 const pElementForText = document.createElement('p')
 const pElementForTag = document.createElement('p')
-const pElementForInputText = document.createElement('p')
+// const pElementForInputText = document.createElement('p')
 
-pElementForEmojis.textContent = emojisFromGivenCategories
+pElementForEmojis.textContent = emojis
 pElementForText.textContent = text
 pElementForTag.textContent = emoji
-pElementForInputText.textContent = emojisFromInputText
+// pElementForInputText.textContent = emojisFromInputText
 // pElementForTags.textContent = tags
 
-div.appendChild(pElementForInputText)
+// div.appendChild(pElementForInputText)
 div.appendChild(pElementForTag)
 div.appendChild(pElementForText)
 div.appendChild(pElementForEmojis)
