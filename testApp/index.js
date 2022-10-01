@@ -14,7 +14,7 @@ for (const emoji of emojilib.getEmojisThatMatchesText('sad')) {
 }
 
 let emojisFromGivenCategories = ''
-for (const emoji of emojilib.getEmojisOnlyFromCategory('flags')) {
+for (const emoji of emojilib.getEmojisOnlyFromCategory('peopleAndBody')) {
   emojisFromGivenCategories += ' ' + emoji
 }
 
