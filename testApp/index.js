@@ -36,8 +36,6 @@ pElementForTag.textContent = emoji
 // pElementForInputText.textContent = emojisFromInputText
 pElementForTags.textContent = emojilib.getAllTags()
 
-console.log(emojilib.getAllTags())
-
 // div.appendChild(pElementForInputText)
 // div.appendChild(pElementForTag)
 // div.appendChild(pElementForText)

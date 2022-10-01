@@ -9,8 +9,9 @@ import { SymbolsCategory } from '../lib/resources/SymbolsCategory.js'
 import { PeopleBodyCategory } from '../lib/resources/PeopleAndBodyCategory.js'
 import { CodePointConverter } from '../lib/CodePointConverter.js'
 
-export const ERROR_MESSAGE_EMOJI_NOT_EXISTING = "Sorry, it does not a exist an emoji with given tag!"
+export const ERROR_MESSAGE_EMOJI_NOT_EXISTING = 'Sorry, it does not a exist an emoji with given tag!'
 export const ERROR_MESSAGE_NOT_VALID_CATEGORY = 'The category named "noneExistingCategory" does not exist. Please provide a valid category.'
+export const ERROR_MESSAGE_INVALID_ARGUMENT = 'Argument must be an object literal with at least properties "tag" and "emoji" where the emoji property must hold an array of strings'
 
 export const converter = new CodePointConverter()
 
