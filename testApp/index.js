@@ -3,10 +3,10 @@ import { emojilib } from '../lib/index.js'
 const text = emojilib.replaceEmoticonWithEmoji('hej :D <3 :d Hur mår du? :D :p ..')
 const emoji = emojilib.getEmojiByTag('coffee')
 
-let emojis = ''
-for (const emoji of emojilib.getAllEmojis()) {
-  emojis += ' ' + emoji
-}
+// let emojis = ''
+// for (const emoji of emojilib.getAllEmojis()) {
+//   emojis += ' ' + emoji
+// }
 
 let emojisFromInputText = ''
 for (const emoji of emojilib.getEmojisThatMatchesText('sad')) {
@@ -18,10 +18,10 @@ for (const emoji of emojilib.getEmojisOnlyFromCategory('symbols')) {
   emojisFromGivenCategories += ' ' + emoji
 }
 
-let tags = ''
-for (const tag of emojilib.getAllTags()) {
-  tags += ' :' + tag + ': '
-}
+// let tags = ''
+// for (const tag of emojilib.getAllTags()) {
+//   tags += ' :' + tag + ': '
+// }
 
 const div = document.createElement('div')
 const pElementForTags = document.createElement('p')
