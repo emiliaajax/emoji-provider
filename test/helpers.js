@@ -6,7 +6,7 @@ import { ObjectsCategory } from '../lib/resources/ObjectsCategory.js'
 import { TravelPlacesCategory } from '../lib/resources/TravelPlacesCategory.js'
 import { FlagsCategory } from '../lib/resources/FlagsCategory.js'
 import { SymbolsCategory } from '../lib/resources/SymbolsCategory.js'
-import { PeopleBodyCategory } from '../lib/resources/PeopleAndBodyCategory.js'
+import { PeopleBodyCategory } from '../lib/resources/PeopleBodyCategory.js'
 import { CodePointConverter } from '../lib/CodePointConverter.js'
 
 export const ERROR_MESSAGE_EMOJI_NOT_EXISTING = 'Sorry, it does not a exist an emoji with given tag!'

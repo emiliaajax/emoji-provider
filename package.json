@@ -3,7 +3,7 @@
   "description": "manages emoticons",
   "version": "1.0.0",
   "type": "module",
-  "main": "index.js",
+  "main": "./lib/index.js",
   "scripts": {
     "start": "node lib/index.js",
     "lint": "npx eslint ./lib || exit 0",
