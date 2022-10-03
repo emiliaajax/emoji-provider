@@ -6,6 +6,7 @@
  */
 
 import '../options-form/options-form.js'
+import '../text-input-form/text-input-form.js'
 import { emojiProvider } from '../../../lib/index.js'
 
 import '../my-emojis/index.js'
@@ -35,6 +36,7 @@ template.innerHTML = `
         <th>Tag</th>
       </tr>
     </table>
+    <text-input-form>
   </div>
   <style>
     #wrapper {
@@ -248,7 +250,6 @@ customElements.define('my-chat',
         emojiObjectsArray.push(emojiProvider.getEmojiObjectsByCategory(category))
       }
       for (const emojiObject of emojiObjectsArray.flat()) {
-        console.log(emojiObject)
         const tBody = document.createElement('tbody')
         const tableRow = document.createElement('tr')
         const emojiColumn = document.createElement('td')
