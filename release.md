@@ -54,9 +54,11 @@ Beskriv din kod på en hög abstraktionsnivå. En kort beskrivning av dina vikti
 ## Hur jag testat
 Jag har testat genom manuella tester och automatisk enhetstestning.
 
-## Manuella tester
-#### Testmatris
+### Automatiska enhetstester
+Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/tree/main/test](https://github.com/emiliaajax/emoticons/tree/main/test)
 
+### Manuella tester
+## Testmatris
 | Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC10 | UC11 |
 |------|-----|-----|-----|-----|------|-----|-----|-----|-----|
 | TC1.1 | 1/xx | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -78,220 +80,217 @@ Jag har testat genom manuella tester och automatisk enhetstestning.
 | TC11.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/xx |
 | COVERAGE & SUCCESS | 1/xx  | 3/xx  | 1/xx  | 3/xx | 2/xx | 3/xx | 2/xx | 1/xx | 1/xx |
 
-### Testfall
-
+## Testfall
 #### **TC1.1 - Lyckad generering av alla emojis**
 
 ##### **Input**
 
 - Starta testapplikationen genom att öppna ./test-app/index.html i webbläsaren.
 
-##### **Output**
+###### **Output**
 
 - Alla emojis visas i den öppna emojikomponenten.
 
 #### **TC2.1 - Lyckad generering av emojis från en tillåten kategori**
 
-##### **Input**
+###### **Input**
 
 - Klicka i checkboxen ”Flags”.
 - Klicka på OK.
 - Öppna emojikomponenten om den inte redan är öppen.
 - Bläddra igenom emojikomponenten.
 
-##### **Output**
+###### **Output**
 - Endast emojis av kategorin ”Flags” visas.
 
 #### **TC2.2 Lyckad generering av emojis från flera tillåtna kategorier**
 
-##### **Input**
+###### **Input**
 
 - Klicka i checkboxarna ”Flags” och ”Travel & Places”.
 - Klicka på OK.
 - Öppna emojikomponenten om den inte redan är öppen.
 - Bläddra igenom emojikomponenten.
 
-##### **Output**
+###### **Output**
 - Endast emojis av kategorin ”Flags” och ”Travel & Places” visas.
 
 #### **TC2.3 Misslyckad generering av emojis från en otillåten kategori**
 
-##### **Input**
+###### **Input**
 
 - Klicka i checkboxen ”Invalid option”.
 - Klicka på OK.
 - Öppna emojikomponenten om den inte redan är öppen.
 - Bläddra igenom emojikomponenten.
 
-##### **Output**
+###### **Output**
 - Emojikomponenten har inte uppdaterats.
 - Ett felmeddelande är utskrivet i konsolen.
 
 #### **TC3.1 - Lyckad generering av alla emojis**
 
-##### **Input**
+###### **Input**
 
 - Klicka i checkboxen ”Alla”.
 - Klicka på OK.
 - Se på tabellen till höger.
 
-##### **Output**
+###### **Output**
 
 - Alla emojis och taggar visas.
 
 #### **TC4.1 - Lyckad av generering av emojis och taggar från en tillåten kategori**
 
-##### **Input**
+###### **Input**
 
 - Klicka i checkboxen ”Flags”.
 - Klicka på OK.
 - Se på tabellen till höger.
 
-##### **Output**
+###### **Output**
 
 - Endast emojis och taggar av kategorin ”Flags” visas.
 
 #### **TC4.2 Lyckad generering av emojis från flera tillåtna kategorier**
 
-##### **Input**
+###### **Input**
 
 - Klicka i checkboxarna ”Flags” och ”Travel & Places”.
 - Klicka på OK.
 - Se på tabellen till höger.
 
-##### **Output**
+###### **Output**
 
 - Endast emojis av kategorin ”Flags” och ”Travel & Places” visas.
 
 #### **TC4.3 Lyckad generering av emojis och taggar från en otillåten kategori**
 
-##### **Input**
+###### **Input**
 
 - Klicka i checkboxen ”Invalid option”.
 - Klicka på OK.
 - Se på tabellen till höger.
 
-##### **Output**
+###### **Output**
 
 - Tabellen har inte uppdaterats.
 - Ett felmeddelande är utskrivet i konsolen.
 
 #### **TC5.1 - Lyckad generering av emojis som matchar en text**
 
-##### **Input**
+###### **Input**
 
 - Fyll i textfältet där det står ”Type here…” med ”sad”.
 - Klicka på OK.
 - Öppna emojikomponenten om den inte redan är öppen.
 - Bläddra igenom emojikomponenten.
 
-##### **Output**
+###### **Output**
 
 - Följande emojis visas i emojikomponenten: 😓 😿 😞 😢 
 
 #### **TC5.2 Genering av emojis som matchar text med en tom sträng**
 
-##### **Input**
+###### **Input**
 
 - Radera allt i textfältet.
 - Klicka på OK.
 - Öppna emojikomponenten.
 
-##### **Output**
+###### **Output**
 
 - Emojikomponenten öppnas inte på grund av att den är tom.
 
 #### **TC6.1 Konverting av text med en emoji**
 
-##### **Input**
+###### **Input**
 
 - Fyll i textfältet där det står ”Write a message with emoticons here…” med ”Hej :D”.
 - Klicka på symbolen för att skicka eller tryck på Enter.
 
-##### **Output**
+###### **Output**
 
 - ”Hej 😃” visas i rutan ovanför textfältet.
 
 #### **TC6.2 Konvertering av text med flera emojis**
 
-##### **Input**
+###### **Input**
 
 - Fyll i textfältet där det står ”Write a message with emoticons here…” med ”Hej :D :) :$ Hur mår du? <3 :d :p :P :O”.
 - Klicka på symbolen för att skicka eller tryck på Enter.
 
-##### **Output**
+###### **Output**
 
 - ”Hej 😃 😊 😳 Hur mår du? ❤️ 😃 😛 😛 😮” visas i rutan ovanför textfältet.
 
 #### **TC6.3 Konvertering av text utan giltig emoji**
 
-##### **Input**
+###### **Input**
 
 - Fyll i textfältet där det står ”Write a message with emoticons here…” med ”Hej :G”.
 - Klicka på symbolen för att skicka eller tryck på Enter.
 
-##### **Output**
+###### **Output**
 
 - ”Hej :G” visas i rutan ovanför textfältet.
 
 #### **TC7.1 Lyckad generering av en emoji med en existerande tagg**
 
-##### **Input**
+###### **Input**
 
 - Fyll i textfältet där det står ”Write a tag here…” med ”piano”.
 - Klicka på OK.
 
-##### **Output**
+###### **Output**
 
 - ”🎹” visas bredvid textfältet.
 
 #### **TC7.2 Misslyckad generering av en emoji med en icke-existerande tagg**
 
-##### **Input**
+###### **Input**
 
 - Fyll i textfältet där det står ”Write a tag here…” med ”fika”.
 - Klicka på OK.
 
-##### **Output**
+###### **Output**
 
 - Ingen emoji visas.
 - Ett felmeddelande visas i konsolen.
 
 #### **TC10.1 **
 
-##### **Input**
+###### **Input**
 
 - TC1.1
 - Granska att emojis visas i emojikomponenten.
 
-##### **Output**
+###### **Output**
 
 - Emojis visas i emojikomponenten.
 
 #### **TC11.1 Lyckad bekräftelse av att biblioteket inte har externa beroenden**
 
-##### **Input**
+###### **Input**
 
-- Öppna ./package.json.
+- Öppna [./package.json](https://github.com/emiliaajax/emoji-provider/blob/main/package.json)
+.
 - Leta efter fältet "dependencies".
 
-##### **Output**
+###### **Output**
 
 - Fältet "dependencies" finns inte.
 - Biblioteket har inga externa beroenden.
 
 ## Kodkvalitetskrav
-
 **Fetmarkera** de "regler" som används ur CC. Ni kan frångå tabellformat om ni vill. Skapa direktlänkar till er kod där det är lämpligt. Skriv så att jag kan förstå.
 
 ### Namngivning
-
 | Namn och förklaring  | Reflektion                                   |
 | -------------------  | ---------------------------------------------|
 |                      |                                              |
 
 ### Funktioner
-
 | Metodnamn och förklaring  | Reflektion                                   |
 | -------------------  | ---------------------------------------------|
 |                      |                                              |
