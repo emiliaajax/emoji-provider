@@ -54,8 +54,7 @@ Beskriv din kod på en hög abstraktionsnivå. En kort beskrivning av dina vikti
 ## Hur jag testat
 Jag har testat genom manuella tester och automatisk enhetstestning.
 
-### Manuella tester
-
+## Manuella tester
 #### Testmatris
 
 | Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC10 | UC11 |
