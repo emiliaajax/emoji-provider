@@ -74,7 +74,7 @@ Beskriv din kod på en hög abstraktionsnivå. En kort beskrivning av dina vikti
 | TC7.2 | 0 | 0 | 0 | 0 | 0 | 0 | 1/xx | 0 | 0 |
 | TC10.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/xx | 0 |
 | TC11.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/xx |
-
+| COVERAGE & SUCCESS | 1/xx  | 3/xx  | 1/xx  | 3/xx | 2/xx | 3/xx | 2/xx | 1/xx | 1/xx |
 
 ### Testfall
 
