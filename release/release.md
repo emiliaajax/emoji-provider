@@ -285,18 +285,14 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 ## Testrapporter
 ### Testrapport 1
 
-**Datum**: 1/10-2022
-**Version**: 1.0.0
-**Testmiljö**: Testerna utfördes i utvecklingsmiljö.
+**Datum**: 1/10-2022<br>**Version**: 1.0.0<br>**Testmiljö**: Testerna utfördes i utvecklingsmiljö.
 
 ![Autmatic Test Results 1/10-22](./images/TS1_1okt.png "Automatic test tesults 1/10-22")
 ![Autmatic Test Results 1/10-22](./images/TS1_1okt_2.png "Automatic test tesults 1/10-22")
 
 ### Testrapport 2
 
-**Datum**: 1/10-2022
-**Version**: 1.0.0
-**Testmiljö**: Testerna utfördes i utvecklingsmiljö.
+**Datum**: 3/10-2022<br>**Version**: 1.0.0<br>**Testmiljö**: Testerna utfördes i utvecklingsmiljö.
 
 | Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC10 | UC11 |
 |------|-----|-----|-----|-----|------|-----|-----|-----|-----|
