@@ -57,146 +57,172 @@ Beskriv hur du kommit fram till om din kod fungerar.
 ### Testfall
 Lista de enskilda testfallen. **Fetmarkera** sådant som du själv fyllt i. En rad per testfall. Om ni använder vertyg för testning kan ni ha en bild här med testrapporten. Tänk på att kommunicera till mig. Vad fungerar?, vad fungerar inte? Hur är det testat? Vilka delar testas inte?
 
-| Vad testas      | input | output | utfall PASS/FAIL |
-| --------- | --------- | ------ | ------- |
-|           |           |        |         |
-TC1.1 - Lyckad generering av alla emojis.
+#### **TC1.1 - Lyckad generering av alla emojis**
 
-Input
+##### **Input**
+
 - Öppna testapplikationen.
 
-Output
+##### **Output**
+
 - Alla emojis visas i den öppna emojikomponenten.
 
-TC2.1 - Lyckad generering av emojis från en tillåten kategori.
+#### **TC2.1 - Lyckad generering av emojis från en tillåten kategori**
 
-Input
+##### **Input**
+
 - Klicka i checkboxen ”Flags”.
 - Klicka på OK.
 - Öppna emojikomponenten om den inte redan är öppen.
 - Bläddra igenom emojikomponenten.
 
-Output
+##### **Output**
 - Endast emojis av kategorin ”Flags” visas.
 
-TC2.2 Lyckad generering av emojis från flera tillåtna kategorier.
+#### **TC2.2 Lyckad generering av emojis från flera tillåtna kategorier**
 
-Input
+##### **Input**
+
 - Klicka i checkboxarna ”Flags” och ”Travel & Places”.
 - Klicka på OK.
 - Öppna emojikomponenten om den inte redan är öppen.
 - Bläddra igenom emojikomponenten.
 
-Output
+##### **Output**
 - Endast emojis av kategorin ”Flags” och ”Travel & Places” visas.
 
-TC2.3 Misslyckad generering av emojis från en otillåten kategori.
-Input
+#### **TC2.3 Misslyckad generering av emojis från en otillåten kategori**
+
+##### **Input**
+
 - Klicka i checkboxen ”Invalid option”.
 - Klicka på OK.
 - Öppna emojikomponenten om den inte redan är öppen.
 - Bläddra igenom emojikomponenten.
 
-Output
+##### **Output**
 - Emojikomponenten har inte uppdaterats.
 - Ett felmeddelande är utskrivet i konsolen.
 
-TC3.1 - Lyckad generering av alla emojis.
-Input
+#### **TC3.1 - Lyckad generering av alla emojis**
+
+##### **Input**
+
 - Klicka i checkboxen ”Alla”.
 - Klicka på OK.
 - Se på tabellen till höger.
 
-Output
+##### **Output**
 - Alla emojis och taggar visas.
 
-TC4.1 - Lyckad av generering av emojis och taggar från en tillåten kategori.
+#### **TC4.1 - Lyckad av generering av emojis och taggar från en tillåten kategori**
 
-Input
+##### **Input**
+
 - Klicka i checkboxen ”Flags”.
 - Klicka på OK.
 - Se på tabellen till höger.
 
-Output
+##### **Output**
 - Endast emojis och taggar av kategorin ”Flags” visas.
 
-TC4.2 Lyckad generering av emojis från flera tillåtna kategorier.
+#### **TC4.2 Lyckad generering av emojis från flera tillåtna kategorier**
 
-Input
+##### **Input**
+
 - Klicka i checkboxarna ”Flags” och ”Travel & Places”.
 - Klicka på OK.
 - Se på tabellen till höger.
 
-Output
+##### **Output**
 - Endast emojis av kategorin ”Flags” och ”Travel & Places” visas.
 
-TC4.3 Lyckad generering av emojis och taggar från en otillåten kategori.
-Input
+#### **TC4.3 Lyckad generering av emojis och taggar från en otillåten kategori**
+
+##### **Input**
+
 - Klicka i checkboxen ”Invalid option”.
 - Klicka på OK.
 - Se på tabellen till höger.
 
-Output
+##### **Output**
 - Tabellen har inte uppdaterats.
 - Ett felmeddelande är utskrivet i konsolen.
 
-TC5.1 - Lyckad generering av emojis som matchar en text.
-Input
+#### **TC5.1 - Lyckad generering av emojis som matchar en text**
+
+##### **Input**
+
 - Fyll i textfältet där det står ”Type here…” med ”sad”.
 - Klicka på OK.
 - Öppna emojikomponenten om den inte redan är öppen.
 - Bläddra igenom emojikomponenten.
 
-Output
+##### **Output**
+
 - Följande emojis visas i emojikomponenten: 😓 😿 😞 😢 
 
-TC5.2 Genering av emojis som matchar text med en tom sträng.
-Input
+#### **TC5.2 Genering av emojis som matchar text med en tom sträng**
+
+##### **Input**
+
 - Radera allt i textfältet.
 - Klicka på OK.
 - Öppna emojikomponenten.
 
-Output
+##### **Output**
 - Emojikomponenten öppnas inte på grund av att den är tom.
 
-TC6.1 Konverting av text med en emoji.
-Input
+#### **TC6.1 Konverting av text med en emoji**
+
+##### **Input**
+
 - Fyll i textfältet där det står ”Write a message with emoticons here…” med ”Hej :D”.
 - Klicka på symbolen för att skicka eller tryck på Enter.
 
-Output
+##### **Output**
 - ”Hej 😃” visas i rutan ovanför textfältet.
 
-TC6.2 Konvertering av text med flera emojis.
-Input
+#### **TC6.2 Konvertering av text med flera emojis**
+
+##### **Input**
+
 - Fyll i textfältet där det står ”Write a message with emoticons here…” med ”Hej :D :) :$ Hur mår du? <3 :d :p :P :O”.
 - Klicka på symbolen för att skicka eller tryck på Enter.
 
-Output
+##### **Output**
+
 - ”Hej 😃 😊 😳 Hur mår du? ❤️ 😃 😛 😛 😮” visas i rutan ovanför textfältet.
 
-TC6.3 Konvertering av text utan giltig emoji.
-Input
+#### **TC6.3 Konvertering av text utan giltig emoji**
+
+##### **Input**
+
 - Fyll i textfältet där det står ”Write a message with emoticons here…” med ”Hej :G”.
 - Klicka på symbolen för att skicka eller tryck på Enter.
 
-Output
+##### **Output**
+
 - ”Hej :G” visas i rutan ovanför textfältet.
 
-TC7.1 Lyckad generering av en emoji med en existerande tagg.
-Input
+#### **TC7.1 Lyckad generering av en emoji med en existerande tagg**
+
+##### **Input**
+
 - Fyll i textfältet där det står ”Write a tag here…” med ”piano”.
 - Klicka på OK.
 
-Output
+##### **Output**
 - ”🎹” visas bredvid textfältet.
 
-TC7.2 Misslyckad generering av en emoji med en icke-existerande tagg.
-Input
+#### **TC7.2 Misslyckad generering av en emoji med en icke-existerande tagg**
+
+##### **Input**
+
 - Fyll i textfältet där det står ”Write a tag here…” med ”fika”.
 - Klicka på OK.
 
-Output
+##### **Output**
 - Ingen emoji visas.
 - Ett felmeddelande visas i konsolen.
 
