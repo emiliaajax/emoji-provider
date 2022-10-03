@@ -2,12 +2,6 @@ body {
   background-color: #222;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  padding-left: 40px;
-}
-
 my-chat {
   margin-top: 20px;
 }

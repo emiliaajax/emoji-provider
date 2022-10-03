@@ -60,6 +60,9 @@ template.innerHTML = `
       font-size: 0.9rem;
       overflow: scroll;
     }
+    button {
+      cursor: pointer;
+    }
   </style>
 `
 

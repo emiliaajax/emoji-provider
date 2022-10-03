@@ -29,11 +29,17 @@ template.innerHTML = `
       </form>
     </div>
     <options-form></options-form>
+    <table id='emojiTable'>
+      <tr>
+        <th>Emoji</th>
+        <th>Tag</th>
+      </tr>
+    </table>
   </div>
   <style>
     #wrapper {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
     }
     #chat {
       width: 500px;
@@ -43,7 +49,7 @@ template.innerHTML = `
       grid-template-rows: auto;
     }
     options-form {
-      margin-left: 80px;
+      margin-left: 50px;
     }
     #chat-output {
       background-color: white;
@@ -72,23 +78,6 @@ template.innerHTML = `
       font-family: 'Montserrat', sans-serif;
       font-size: 0.9rem;
     }
-    #chat-output p[left] {
-      display: table;
-      text-align: left;
-      margin-left: 0px;
-      margin-right: auto;
-    }
-    #chat-output p[right] {
-      display: table;
-      text-align: right;
-      margin-right: 0px;
-      margin-left: auto;
-      background-color: cornflowerblue;
-    }
-    /* chat-panel {
-      grid-column: 3/4;
-      grid-row: 2/3;
-    } */
     #chat-panel {
       display: grid;
       grid-template-columns: 4fr 1fr;
@@ -143,27 +132,20 @@ template.innerHTML = `
     #send-button img { 
       width: 50px !important;
     }
-    #notification-sound {
-      margin-left: 15px;
-      grid-column: 2/3;
-      display: flex;
-      justify-content: center;
-      border-radius: 10px;
-      width: 35px;
-      height: 35px;
-      margin-top: -50px;
-      border: none;
-      background-color: rgb(255, 255, 255, 0);
-    }
-    #notification-sound:hover {
-      cursor: pointer;
-    }
     #chat-message button img {
       width: 35px;
       display: block;
     }
-    #notification-sound img {
-      width: 30px !important;
+    #emojiTable {
+      margin-left: 50px;
+    }
+    #emojiTable th, #emojiTable td {
+      text-align: left;
+    }
+    #emojiTable tr {
+      color: white;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
     }
     .hidden {
       display: none !important;
@@ -196,7 +178,10 @@ customElements.define('my-chat',
       this.#message = this.shadowRoot.querySelector('#message')
       this.#emojis = this.shadowRoot.querySelector('my-emojis')
 
-      this.#optionsForm.addEventListener('categorySent', (event) => this.#updateEmojisByCategory(event.detail.categories))
+      this.#optionsForm.addEventListener('categorySent', (event) => {
+        this.#updateEmojisByCategory(event.detail.categories)
+        this.#updateTableWithEmojisAndTags(event.detail.categories)
+      })
       this.#optionsForm.addEventListener('textInputSent', (event) => this.#updateEmojisByTextInput(event.detail.input))
 
       this.#sendButton.addEventListener('click', event => this.#onSubmit(event))
@@ -244,6 +229,37 @@ customElements.define('my-chat',
 
     #updateEmojisByTextInput (textInput) {
       this.#emojis.generateEmojis(emojiProvider.getEmojisThatMatchesText(textInput))
+    }
+
+    #updateTableWithEmojisAndTags (categories) {
+      this.shadowRoot.querySelector('#emojiTable').textContent = ''
+      const tBodyHeader = document.createElement('tbody')
+      const tableRowHeader = document.createElement('tr')
+      const emojiColumnHeader = document.createElement('th')
+      const tagColumnHeader = document.createElement('th')
+      emojiColumnHeader.textContent = 'Emoji'
+      tagColumnHeader.textContent = 'Tag'
+      tableRowHeader.appendChild(emojiColumnHeader)
+      tableRowHeader.appendChild(tagColumnHeader)
+      tBodyHeader.appendChild(tableRowHeader)
+      this.shadowRoot.querySelector('#emojiTable').appendChild(tBodyHeader)
+      const emojiObjectsArray = []
+      for (const category of categories) {
+        emojiObjectsArray.push(emojiProvider.getEmojiObjectsByCategory(category))
+      }
+      for (const emojiObject of emojiObjectsArray.flat()) {
+        console.log(emojiObject)
+        const tBody = document.createElement('tbody')
+        const tableRow = document.createElement('tr')
+        const emojiColumn = document.createElement('td')
+        const tagColumn = document.createElement('td')
+        emojiColumn.textContent = emojiObject.emoji
+        tagColumn.textContent = emojiObject.tag
+        tableRow.appendChild(emojiColumn)
+        tableRow.appendChild(tagColumn)
+        tBody.appendChild(tableRow)
+        this.shadowRoot.querySelector('#emojiTable').appendChild(tBody)
+      }
     }
   }
 )

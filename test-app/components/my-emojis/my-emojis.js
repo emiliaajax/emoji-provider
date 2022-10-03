@@ -14,7 +14,7 @@ const template = document.createElement('template')
 template.innerHTML = `
   <div id='emojis'>
     <button id='emoji-button'>😊</button>
-    <div id='emoji-container' class='hidden'>
+    <div id='emoji-container'>
       <!-- <button class='emoji'>😊</button> -->
     </div>
   </div>
