@@ -25,9 +25,9 @@ describe('Get all emoji objects from given categories', () => {
     expect(emojiProvider.getEmojiObjectsByCategory('smileysAndEmotion', 'activity')).toEqual(helpers.emojisByCategoriesArray)
   })
 
-  test(`Passing "noneExistingCategory" should throw an error with message ${helpers.ERROR_MESSAGE_NOT_VALID_CATEGORY}`, () => {
+  test(`Passing "nonExistingCategory" should throw an error with message ${helpers.ERROR_MESSAGE_NOT_VALID_CATEGORY}`, () => {
     function test () {
-      emojiProvider.getEmojiObjectsByCategory('noneExistingCategory')
+      emojiProvider.getEmojiObjectsByCategory('nonExistingCategory')
     }
     expect(test).toThrowError(helpers.ERROR_MESSAGE_NOT_VALID_CATEGORY)
   })

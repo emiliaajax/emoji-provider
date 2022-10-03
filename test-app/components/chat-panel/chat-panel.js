@@ -99,7 +99,6 @@ customElements.define('chat-panel',
     #sendButton
     #message
     #emojis
-    #notificationSound
 
     /**
      * Creates an instance of current type.
@@ -112,7 +111,6 @@ customElements.define('chat-panel',
       this.#chatPanel = this.shadowRoot.querySelector('#chat-panel')
       this.#sendButton = this.shadowRoot.querySelector('#send-button')
       this.#message = this.shadowRoot.querySelector('#message')
-      this.#notificationSound = this.shadowRoot.querySelector('#notification-sound')
       this.#emojis = this.shadowRoot.querySelector('my-emojis')
 
       this.#sendButton.addEventListener('click', event => this.#onSubmit(event))
@@ -149,23 +147,6 @@ customElements.define('chat-panel',
     #addEmojiToMessage(event) {
       this.#message.focus()
       this.#message.value = this.#message.value + event.detail.emojiValue + ' '
-    }
-
-    /**
-     * Controls the sound of the notification.
-     *
-     * @param {Event} event
-     */
-    #soundControl(event) {
-      event.preventDefault()
-      this.#message.focus()
-      if (this.#notificationSound.getAttribute('mode') === 'on') {
-        this.shadowRoot.querySelector('#sound-on').classList.add('hidden')
-        this.shadowRoot.querySelector('#sound-off').classList.remove('hidden')
-      } else {
-        this.shadowRoot.querySelector('#sound-off').classList.add('hidden')
-        this.shadowRoot.querySelector('#sound-on').classList.remove('hidden')
-      }
     }
   }
 )

@@ -89,6 +89,7 @@ customElements.define('my-emojis',
      * @type {HTMLDivElement}
      */
     #emojiContainer
+    #optionsForm
     /**
      * Creates an instance of current type.
      */
@@ -101,7 +102,16 @@ customElements.define('my-emojis',
     }
 
     connectedCallback() {
-      this.#generateEmojis()
+      this.generateEmojis()
+    }
+
+    generateEmojis() {
+      for (const emoji of emojiProvider.getAllEmojis()) {
+        const emojiButton = document.createElement('button')
+        emojiButton.classList.add('emoji')
+        emojiButton.textContent = emoji
+        this.#emojiContainer.appendChild(emojiButton)
+      }
       this.shadowRoot.querySelectorAll('.emoji').forEach(emoji => emoji.addEventListener('click', event => {
         event.preventDefault()
         this.dispatchEvent(new CustomEvent('clicked', 
@@ -112,15 +122,6 @@ customElements.define('my-emojis',
               } 
           }))
       }))
-    }
-
-    #generateEmojis() {
-      for (const emoji of emojiProvider.getAllEmojis()) {
-        const emojiButton = document.createElement('button')
-        emojiButton.classList.add('emoji')
-        emojiButton.textContent = emoji
-        this.#emojiContainer.appendChild(emojiButton)
-      }
     }
 
     /**

@@ -6,6 +6,7 @@
  */
 
 import '../chat-panel/index.js'
+import '../options-form/options-form.js'
 import { emojiProvider } from '../../../lib/index.js'
 
 /**
@@ -17,6 +18,7 @@ template.innerHTML = `
     <div id='chat-output'></div>
     <chat-panel></chat-panel>
   </div>
+  <options-form></options-form>
   <style>
     #chat {
       width: 500px;
@@ -77,10 +79,9 @@ template.innerHTML = `
  */
 customElements.define('my-chat',
   class extends HTMLElement {
-    #sendButton
-    #message
     #chatOutput
     #chatPanel
+    #optionsForm
 
     /**
      * Creates an instance of current type.
@@ -92,7 +93,10 @@ customElements.define('my-chat',
 
       this.#chatOutput = this.shadowRoot.querySelector('#chat-output')
       this.#chatPanel = this.shadowRoot.querySelector('chat-panel')
+      this.#optionsForm = this.shadowRoot.querySelector('options-form')
 
+      this.#optionsForm.addEventListener('categorySent', (event) => updateEmojisByCategory(event.detail.categories))
+      this.#optionsForm.addEventListener('textInputSent', (event) => updateEmojisByTextInput(event.detail.input))
       this.#chatPanel.addEventListener('messageSent', event => this.#onSubmit(event.detail.message))
     }
 
@@ -106,5 +110,13 @@ customElements.define('my-chat',
       pElement.textContent = emojiProvider.replaceEmoticonWithEmoji(message)
       this.#chatOutput.appendChild(pElement)
     }
+
+    // #updateEmojisByCategory () {
+    //   this.s
+    // }
+
+    // #updateEmojisByTextInput () {
+
+    // }
   }
 )

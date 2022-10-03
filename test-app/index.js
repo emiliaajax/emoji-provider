@@ -1,3 +1,12 @@
+// import './components/my-emojis/index.js'
+
+// const optionsForm = document.querySelector('options-form')
+// optionsForm.addEventListener('categorySent', () => updateEmojis(event.detail.category))
+
+// function updateEmojis () {
+  
+// }
+
 // import { emojiProvider } from '../lib/index.js'
 
 // const text = emojiProvider.replaceEmoticonWithEmoji('hej :D <3 :d Hur mår du? :D :p ..')
