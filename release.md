@@ -48,20 +48,41 @@ Beskriv din kod på en hög abstraktionsnivå. En kort beskrivning av dina vikti
 
 | Krav | Beskrivning | Prioritet |
 |------|-------------|-----------|
-| 1 | Biblioteket ska fungera i webbläsaren | 1 |
-| 2 | Biblioteket ska inte ha några externa beroenden | 1 |
+| 10 | Biblioteket ska fungera i webbläsaren | 1 |
+| 11 | Biblioteket ska inte ha några externa beroenden | 1 |
 
 ## Hur jag testat
-Beskriv hur du kommit fram till om din kod fungerar.
+
+### Testmatris
+
+| Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | U7 | UC10 | UC11 |
+|------|-----|-----|-----|-----|------|-----|-----|-----|-----|
+| TC1.1 | 1/xx | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| TC2.1 | 0 | 1/xx | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| TC2.2 | 0 | 1/xx | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| TC2.3 | 0 | 1/xx | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| TC3.1 | 0 | 0 | 1/xx | 0 | 0 | 0 | 0 | 0 | 0 |
+| TC4.1 | 0 | 0 | 0 | 1/xx | 0 | 0 | 0 | 0 | 0 |
+| TC4.2 | 0 | 0 | 0 | 1/xx | 0 | 0 | 0 | 0 | 0 |
+| TC4.3 | 0 | 0 | 0 | 1/xx | 0 | 0 | 0 | 0 | 0 |
+| TC5.1 | 0 | 0 | 0 | 0 | 1/xx | 0 | 0 | 0 | 0 |
+| TC5.2 | 0 | 0 | 0 | 0 | 1/xx | 0 | 0 | 0 | 0 |
+| TC6.1 | 0 | 0 | 0 | 0 | 0 | 1/xx | 0 | 0 | 0 |
+| TC6.2 | 0 | 0 | 0 | 0 | 0 | 1/xx | 0 | 0 | 0 |
+| TC6.3 | 0 | 0 | 0 | 0 | 0 | 1/xx | 0 | 0 | 0 |
+| TC7.1 | 0 | 0 | 0 | 0 | 0 | 0 | 1/xx | 0 | 0 |
+| TC7.2 | 0 | 0 | 0 | 0 | 0 | 0 | 1/xx | 0 | 0 |
+| TC10.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/xx | 0 |
+| TC11.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/xx |
+
 
 ### Testfall
-Lista de enskilda testfallen. **Fetmarkera** sådant som du själv fyllt i. En rad per testfall. Om ni använder vertyg för testning kan ni ha en bild här med testrapporten. Tänk på att kommunicera till mig. Vad fungerar?, vad fungerar inte? Hur är det testat? Vilka delar testas inte?
 
 #### **TC1.1 - Lyckad generering av alla emojis**
 
 ##### **Input**
 
-- Öppna testapplikationen.
+- Starta testapplikationen genom att öppna ./test-app/index.html i webbläsaren.
 
 ##### **Output**
 
@@ -113,6 +134,7 @@ Lista de enskilda testfallen. **Fetmarkera** sådant som du själv fyllt i. En r
 - Se på tabellen till höger.
 
 ##### **Output**
+
 - Alla emojis och taggar visas.
 
 #### **TC4.1 - Lyckad av generering av emojis och taggar från en tillåten kategori**
@@ -124,6 +146,7 @@ Lista de enskilda testfallen. **Fetmarkera** sådant som du själv fyllt i. En r
 - Se på tabellen till höger.
 
 ##### **Output**
+
 - Endast emojis och taggar av kategorin ”Flags” visas.
 
 #### **TC4.2 Lyckad generering av emojis från flera tillåtna kategorier**
@@ -135,6 +158,7 @@ Lista de enskilda testfallen. **Fetmarkera** sådant som du själv fyllt i. En r
 - Se på tabellen till höger.
 
 ##### **Output**
+
 - Endast emojis av kategorin ”Flags” och ”Travel & Places” visas.
 
 #### **TC4.3 Lyckad generering av emojis och taggar från en otillåten kategori**
@@ -146,6 +170,7 @@ Lista de enskilda testfallen. **Fetmarkera** sådant som du själv fyllt i. En r
 - Se på tabellen till höger.
 
 ##### **Output**
+
 - Tabellen har inte uppdaterats.
 - Ett felmeddelande är utskrivet i konsolen.
 
@@ -171,6 +196,7 @@ Lista de enskilda testfallen. **Fetmarkera** sådant som du själv fyllt i. En r
 - Öppna emojikomponenten.
 
 ##### **Output**
+
 - Emojikomponenten öppnas inte på grund av att den är tom.
 
 #### **TC6.1 Konverting av text med en emoji**
@@ -181,6 +207,7 @@ Lista de enskilda testfallen. **Fetmarkera** sådant som du själv fyllt i. En r
 - Klicka på symbolen för att skicka eller tryck på Enter.
 
 ##### **Output**
+
 - ”Hej 😃” visas i rutan ovanför textfältet.
 
 #### **TC6.2 Konvertering av text med flera emojis**
@@ -213,6 +240,7 @@ Lista de enskilda testfallen. **Fetmarkera** sådant som du själv fyllt i. En r
 - Klicka på OK.
 
 ##### **Output**
+
 - ”🎹” visas bredvid textfältet.
 
 #### **TC7.2 Misslyckad generering av en emoji med en icke-existerande tagg**
@@ -223,8 +251,32 @@ Lista de enskilda testfallen. **Fetmarkera** sådant som du själv fyllt i. En r
 - Klicka på OK.
 
 ##### **Output**
+
 - Ingen emoji visas.
 - Ett felmeddelande visas i konsolen.
+
+#### **TC10.1 **
+
+##### **Input**
+
+- TC1.1
+- Granska att emojis visas i emojikomponenten.
+
+##### **Output**
+
+- Emojis visas i emojikomponenten.
+
+#### **TC11.1 Lyckad bekräftelse av att biblioteket inte har externa beroenden**
+
+##### **Input**
+
+- Öppna ./package.json.
+- Leta efter fältet "dependencies".
+
+##### **Output**
+
+- Fältet "dependencies" finns inte.
+- Biblioteket har inga externa beroenden.
 
 ## Kodkvalitetskrav
 

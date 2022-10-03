@@ -14,7 +14,7 @@
     "url": "git+https://github.com/emiliaajax/emoticons.git"
   },
   "author": "Emilia Hansson <eh222yn@student.lnu.se>",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/emiliaajax/emoticons/issues"
   },
