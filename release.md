@@ -58,7 +58,7 @@ Jag har testat genom manuella tester och automatisk enhetstestning.
 Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/tree/main/test](https://github.com/emiliaajax/emoticons/tree/main/test)
 
 ### Manuella tester
-## Testmatris
+#### Testmatris
 | Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC10 | UC11 |
 |------|-----|-----|-----|-----|------|-----|-----|-----|-----|
 | TC1.1 | 1/xx | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -80,7 +80,7 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 | TC11.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/xx |
 | COVERAGE & SUCCESS | 1/xx  | 3/xx  | 1/xx  | 3/xx | 2/xx | 3/xx | 2/xx | 1/xx | 1/xx |
 
-## Testfall
+#### Testfall
 #### **TC1.1 - Lyckad generering av alla emojis**
 
 ##### **Input**
