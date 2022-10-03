@@ -14,12 +14,6 @@ describe('Get emojis only', () => {
   })
 })
 
-describe('Get tags only', () => {
-  test('Call to function should return an array containing all emoji tags', () => {
-    expect(emojiProvider.getAllTags()).toEqual(helpers.tagsOnlyArray())
-  })
-})
-
 describe('Get all emoji objects from given categories', () => {
   test('Passing "smileysAndEmotion" and "activity" should return only the emojis belonging to those categories', () => {
     expect(emojiProvider.getEmojiObjectsByCategory('smileysAndEmotion', 'activity')).toEqual(helpers.emojisByCategoriesArray)
