@@ -52,8 +52,11 @@ Beskriv din kod på en hög abstraktionsnivå. En kort beskrivning av dina vikti
 | 11 | Biblioteket ska inte ha några externa beroenden | 1 |
 
 ## Hur jag testat
+Jag har testat genom manuella tester och automatisk enhetstestning.
 
-### Testmatris
+### Manuella tester
+
+#### Testmatris
 
 | Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC10 | UC11 |
 |------|-----|-----|-----|-----|------|-----|-----|-----|-----|
