@@ -89,7 +89,6 @@ customElements.define('my-emojis',
      * @type {HTMLDivElement}
      */
     #emojiContainer
-    #optionsForm
     /**
      * Creates an instance of current type.
      */
@@ -102,11 +101,12 @@ customElements.define('my-emojis',
     }
 
     connectedCallback() {
-      this.generateEmojis()
+      this.generateEmojis(emojiProvider.getAllEmojis())
     }
 
-    generateEmojis() {
-      for (const emoji of emojiProvider.getAllEmojis()) {
+    generateEmojis(array) {
+      this.#emojiContainer.textContent = ''
+      for (const emoji of array) {
         const emojiButton = document.createElement('button')
         emojiButton.classList.add('emoji')
         emojiButton.textContent = emoji
