@@ -1,12 +1,12 @@
-# Mall för inlämning laboration 1, 1dv610
+# Inlämning Laboration 1 - 1DV610
 
-## Checklista
+# Checklista
   - [ ] Jag har skrivit all kod och reflektioner själv. Jag har inte använt mig av andras kod för att lösa uppgiften.
   - [ ] Mina testresultat är skrivna utifrån utförd testning ( och inte teoretiskt: "det bör fungera" :) )
   - [ ] Koden är objektorienterad
   - [ ] Jag har skrivit en modul som riktar sig till programmerare
 
-## Egenskattning och mål
+# Egenskattning och mål
   - [ ] Jag är inte klar eftersom jag vet att jag saknar något. (Då skall du inte lämna in! Lämna då istället in på restlaboration.)
   - [ ] Jag eftersträvar med denna inlämning godkänt betyg (E-D)
     - [ ] De flesta testfall fungerar
@@ -23,13 +23,13 @@
 
 Förtydligande: Examinator kommer sätta betyg oberoende på vad ni anser. 
 
-## Återanvändning
+# Återanvändning
 Beskriv hur du anpassat din kod och instruktioner för att någon annan programmerare skall kunna använda din modul. Om du skrivit instruktioner för din användare, länka till dessa. Om inte, beskriv här hur någon skall göra för att använda din modul.
 
-## Beskrivning av min kod
+# Beskrivning av min kod
 Beskriv din kod på en hög abstraktionsnivå. En kort beskrivning av dina viktigaste klasser och metoder. Skapa gärna ett klassdiagram som bild. Använd det ni lärt er så här långt i 1dv607. Kommunicera så att jag kan förstå.
 
-## Kravspecifikation
+# Kravspecifikation
 ### Funktionella krav
 
 | Krav | Beskrivning | Prioritet |
@@ -51,14 +51,14 @@ Beskriv din kod på en hög abstraktionsnivå. En kort beskrivning av dina vikti
 | 10 | Biblioteket ska fungera i webbläsaren | 1 |
 | 11 | Biblioteket ska inte ha några externa beroenden | 1 |
 
-## Hur jag testat
+# Hur jag testat
 Jag har testat genom manuella tester och automatisk enhetstestning.
 
-### Automatiska enhetstester
-Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/tree/main/test](https://github.com/emiliaajax/emoticons/tree/main/test)
+## Automatiska enhetstester
+Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/tree/main/test](https://github.com/emiliaajax/emoticons/tree/main/test) och täcker alla implementerade krav (krav 1-7).
 
-### Manuella tester
-#### Testmatris
+## Manuella tester
+### Testmatris
 | Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC10 | UC11 |
 |------|-----|-----|-----|-----|------|-----|-----|-----|-----|
 | TC1.1 | 1/xx | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
@@ -80,10 +80,10 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 | TC11.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/xx |
 | COVERAGE & SUCCESS | 1/xx  | 3/xx  | 1/xx  | 3/xx | 2/xx | 3/xx | 2/xx | 1/xx | 1/xx |
 
-#### Testfall
+### Testfall
 #### **TC1.1 - Lyckad generering av alla emojis**
 
-##### **Input**
+###### **Input**
 
 - Starta testapplikationen genom att öppna ./test-app/index.html i webbläsaren.
 
@@ -258,7 +258,7 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 - Ingen emoji visas.
 - Ett felmeddelande visas i konsolen.
 
-#### **TC10.1 **
+#### **TC10.1 Lyckad bekräftelse av att biblioteket fungerar i webbläsaren**
 
 ###### **Input**
 
@@ -282,7 +282,7 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 - Fältet "dependencies" finns inte.
 - Biblioteket har inga externa beroenden.
 
-## Kodkvalitetskrav
+# Kodkvalitetskrav
 **Fetmarkera** de "regler" som används ur CC. Ni kan frångå tabellformat om ni vill. Skapa direktlänkar till er kod där det är lämpligt. Skriv så att jag kan förstå.
 
 ### Namngivning
@@ -295,5 +295,5 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 | -------------------  | ---------------------------------------------|
 |                      |                                              |
 
-## Laborationsreflektion
+# Laborationsreflektion
 Reflektera över uppgiften utifrån ett kodkvalitetsperspektiv. Använd begrepp ifrån boken. 
