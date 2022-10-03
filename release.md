@@ -55,7 +55,7 @@ Beskriv din kod på en hög abstraktionsnivå. En kort beskrivning av dina vikti
 
 ### Testmatris
 
-| Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | U7 | UC10 | UC11 |
+| Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC10 | UC11 |
 |------|-----|-----|-----|-----|------|-----|-----|-----|-----|
 | TC1.1 | 1/xx | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | TC2.1 | 0 | 1/xx | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
