@@ -50,7 +50,7 @@ customElements.define('text-input-form',
         .appendChild(template.content.cloneNode(true))
       this.#textInputButton = this.shadowRoot.querySelector('#textInputButton')
       this.#textInputButton.addEventListener('click', event => this.#onSubmitText(event))
-    }
+    }  
 
     #onSubmitText(event) {
       event.preventDefault()

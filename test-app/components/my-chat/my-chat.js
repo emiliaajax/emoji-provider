@@ -7,15 +7,10 @@
 
 import '../options-form/options-form.js'
 import '../text-input-form/text-input-form.js'
-import { emojiProvider } from '../../../lib/index.js'
-
 import '../my-emojis/index.js'
-
+import { emojiProvider } from '../../../lib/index.js'
 const sendIconImage = (new URL('images/send-icon.png', import.meta.url)).href
 
-/**
- * Defines template.
- */
 const template = document.createElement('template')
 template.innerHTML = `
   <div id="wrapper">
@@ -36,7 +31,8 @@ template.innerHTML = `
         <th>Tag</th>
       </tr>
     </table>
-    <text-input-form>
+    <text-input-form></text-input-form>
+    <div id='emojiFromTag'></div>
   </div>
   <style>
     #wrapper {
@@ -112,6 +108,11 @@ template.innerHTML = `
       margin-left: 15px;
       grid-column: 2/3;
     }
+    #emojiFromTag {
+      font-size: 2rem;
+      margin-left: -300px;
+      margin-top: 10px;
+    }
     #send-button {
       margin-left: 15px;
       grid-column: 2/3;
@@ -155,9 +156,6 @@ template.innerHTML = `
   </style>
 `
 
-/*
- * Defines custom element.
- */
 customElements.define('my-chat',
   class extends HTMLElement {
     #chatOutput
@@ -166,9 +164,6 @@ customElements.define('my-chat',
     #message
     #emojis
 
-    /**
-     * Creates an instance of current type.
-     */
     constructor () {
       super()
       this.attachShadow({ mode: 'open' })
@@ -180,12 +175,13 @@ customElements.define('my-chat',
       this.#message = this.shadowRoot.querySelector('#message')
       this.#emojis = this.shadowRoot.querySelector('my-emojis')
 
+      // Event listeners
       this.#optionsForm.addEventListener('categorySent', (event) => {
         this.#updateEmojisByCategory(event.detail.categories)
         this.#updateTableWithEmojisAndTags(event.detail.categories)
       })
       this.#optionsForm.addEventListener('textInputSent', (event) => this.#updateEmojisByTextInput(event.detail.input))
-
+      this.shadowRoot.querySelector('text-input-form').addEventListener('textInputSent', (event) => this.#generateEmojiFromTag(event.detail.input))
       this.#sendButton.addEventListener('click', event => this.#onSubmit(event))
       this.#message.addEventListener('keydown', event => {
         if (event.key === 'Enter') {
@@ -193,13 +189,12 @@ customElements.define('my-chat',
           this.#onSubmit(event)
         }
       })
-
       this.#emojis.addEventListener('clicked', event => this.#addEmojiToMessage(event))
       this.shadowRoot.querySelector('my-emojis').addEventListener('closed', () => this.#message.focus())
     }
 
     /**
-     * Sends the submitted message to the server over the WebSocket connection.
+     * Add the su
      *
      * @param {Event} event The click event.
      */
@@ -235,6 +230,13 @@ customElements.define('my-chat',
 
     #updateTableWithEmojisAndTags (categories) {
       this.shadowRoot.querySelector('#emojiTable').textContent = ''
+      this.#createAndAppendTableHeader()
+      for (const emojiObject of this.#getEmojiObjectsArray(categories)) {
+        this.#createAndAppendTableRow(emojiObject)
+      }
+    }
+
+    #createAndAppendTableHeader() {
       const tBodyHeader = document.createElement('tbody')
       const tableRowHeader = document.createElement('tr')
       const emojiColumnHeader = document.createElement('th')
@@ -245,22 +247,34 @@ customElements.define('my-chat',
       tableRowHeader.appendChild(tagColumnHeader)
       tBodyHeader.appendChild(tableRowHeader)
       this.shadowRoot.querySelector('#emojiTable').appendChild(tBodyHeader)
+    }
+
+    #getEmojiObjectsArray(categories) {
       const emojiObjectsArray = []
       for (const category of categories) {
         emojiObjectsArray.push(emojiProvider.getEmojiObjectsByCategory(category))
       }
-      for (const emojiObject of emojiObjectsArray.flat()) {
-        const tBody = document.createElement('tbody')
-        const tableRow = document.createElement('tr')
-        const emojiColumn = document.createElement('td')
-        const tagColumn = document.createElement('td')
-        emojiColumn.textContent = emojiObject.emoji
-        tagColumn.textContent = emojiObject.tag
-        tableRow.appendChild(emojiColumn)
-        tableRow.appendChild(tagColumn)
-        tBody.appendChild(tableRow)
-        this.shadowRoot.querySelector('#emojiTable').appendChild(tBody)
-      }
+      return emojiObjectsArray.flat()
+    }
+
+    #createAndAppendTableRow(emojiObject) {
+      const tBody = document.createElement('tbody')
+      const tableRow = document.createElement('tr')
+      const emojiColumn = document.createElement('td')
+      const tagColumn = document.createElement('td')
+      emojiColumn.textContent = emojiObject.emoji
+      tagColumn.textContent = emojiObject.tag
+      tableRow.appendChild(emojiColumn)
+      tableRow.appendChild(tagColumn)
+      tBody.appendChild(tableRow)
+      this.shadowRoot.querySelector('#emojiTable').appendChild(tBody)
+    }
+
+    #generateEmojiFromTag(tag) {
+      this.shadowRoot.querySelector('#emojiFromTag').textContent = ''
+      const emojiContainer = document.createElement('p')
+      emojiContainer.textContent = emojiProvider.getEmojiByTag(tag)
+      this.shadowRoot.querySelector('#emojiFromTag').appendChild(emojiContainer)
     }
   }
 )
