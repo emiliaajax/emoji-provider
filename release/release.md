@@ -52,7 +52,7 @@ Beskriv din kod på en hög abstraktionsnivå. En kort beskrivning av dina vikti
 | 11 | Biblioteket ska inte ha några externa beroenden | 1 |
 
 # Hur jag testat
-Jag har testat genom manuella tester och automatisk enhetstestning.
+Jag har testat genom manuella tester och automatisk enhetstestning. Krav som ännu inte har testfall är krav som kommer implementeras i nästa version.
 
 ## Automatiska enhetstester
 Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/tree/main/test](https://github.com/emiliaajax/emoticons/tree/main/test) och täcker alla implementerade krav (krav 1-7).
