@@ -27,7 +27,7 @@ console.log(emojiObjects)
   { tag: 'upside-down-face', emoji: '🙃' },
   { tag: 'winking-face', emoji: '😉' },
   { tag: 'smiley-face', emoji: '😊' },
-  .... } 
+  { ... } 
 */
 ```
 
@@ -35,7 +35,7 @@ console.log(emojiObjects)
 Returns a string array with emojis only.
 
 ```js
-const emojiObjects = getEmojisOnly()
+const emojis = getEmojisOnly()
 
 console.log(emojiObjects)
 /* => [
@@ -66,7 +66,7 @@ console.log(emojiObjects)
   { tag: 'dog-face', emoji: '🐶' },
   { tag: 'dog', emoji: '🐕' },
   { tag: 'poodle', emoji: '🐩' },
-  , ... ,
+  { ... }
   { tag: 'waiving-hand', emoji: '👋' },
   { tag: 'raised-back-of-hand', emoji: '🤚' },
   { tag: 'raised-hand', emoji: '✋' },
@@ -76,14 +76,53 @@ console.log(emojiObjects)
   { tag: 'i-love-you-hand-sign', emoji: '🤟' },
   { tag: 'heavy-metal-hand-sign', emoji: '🤘' },
   { tag: 'call-me-hand-sign', emoji: '🤙' },
+  { ... }
 ]
 */
 ```
 
 ### getEmojisOnlyByCategory(...categories)
 
+```js
+const emojis = getEmojisOnly()
+
+console.log(emojiObjects)
+/* => [
+  '🍇', '🍈', '🍉', '🍊', '🍋', '🍌', '🍍', '🥭', 
+  '🍎', '🍏', '🍐', '🍑', '🍒', '🍓', '🥝', '🍅', 
+  '🥥', '🥑', '🍆', '🥔', '🥕', '🌽', '🌶', '🥒', 
+  '🥬', '🥦', '🥜', '🍞', '🥐', '🥖', '🥨', '🥯', 
+  '🥞', '🧀', '🍖', '🍗', '🥩', '🥓', '🍔', '🍟',
+  '🍕', '🌭', '🥪', '🌮', '🌯', '🥙', '🥚', '🍳',
+  '🥘', '🍲', '🥣', '🥗', '🍿', '🧂', '🥫', '🍱',
+  '🍘', '🍙', '🍚', '🍛', '🍜', '🍝', '🍠', '🍢', 
+  '🍣', '🍤', '🍥', '🍮', '🍡', '🥟', '🥠', '🥡', 
+  '🍦', '🍧', '🍨', '🍩', ... 
+  ]
+*/
+```
+
 ### getEmojiByTag(tag)
 
+```js
+const emoji = getEmojiByTag(piano)
+
+console.log(emoji)
+// => '🎹'
+```
+
 ### replaceEmoticonsWithEmojis(text)
+```js
+const newText = replaceEmoticonsWithEmojis('Hi! :D How Are you? :)')
 
+console.log(newText)
+// => 'Hi! 😃 How Are you? 😊'
+```
 
+### getEmojisThatMatchesText(text)
+```js
+const emojis = getEmojisThatMatchesText('sad')
+
+console.log(emojis)
+// => [ '😢', '😞', '😓', '😿' ]
+```
