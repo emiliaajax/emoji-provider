@@ -29,6 +29,8 @@ Beskriv hur du anpassat din kod och instruktioner för att någon annan programm
 # Beskrivning av min kod
 Beskriv din kod på en hög abstraktionsnivå. En kort beskrivning av dina viktigaste klasser och metoder. Skapa gärna ett klassdiagram som bild. Använd det ni lärt er så här långt i 1dv607. Kommunicera så att jag kan förstå.
 
+![Class diagram](./images/class-diagram.png "Class diagram")
+
 # Kravspecifikation
 ### Funktionella krav
 
