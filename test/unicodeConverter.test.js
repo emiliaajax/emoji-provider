@@ -9,7 +9,15 @@ describe("Convert array property emoji from unicode representation to image repr
 
   test("Passing 'invalid-input' should throw an error", () => {
     function test() {
-      converter.allCodePointsToEmojis('invalid-input')
+      converter.convertUnicodesToEmojis('invalid-input')
+    }
+
+    expect(test).toThrowError(helpers.ERROR_MESSAGE_INVALID_ARGUMENT)
+  })
+
+  test("Passing '[{tag: 'happy-face', emoticon: ':D'}]' should throw an error", () => {
+    function test() {
+      converter.convertUnicodesToEmojis([{tag: 'happy-face', emoticon: ':D'}])
     }
 
     expect(test).toThrowError(helpers.ERROR_MESSAGE_INVALID_ARGUMENT)

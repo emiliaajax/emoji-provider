@@ -101,7 +101,7 @@ customElements.define('my-emojis',
     }
 
     connectedCallback() {
-      this.generateEmojis(emojiProvider.getAllEmojis())
+      this.generateEmojis(emojiProvider.getEmojisOnly())
     }
 
     generateEmojis(array) {

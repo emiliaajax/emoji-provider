@@ -12,7 +12,7 @@ export const converter = new UnicodeConverter()
 
 export const ERROR_MESSAGE_EMOJI_NOT_EXISTING = 'Sorry, it does not a exist an emoji with given tag!'
 export const ERROR_MESSAGE_NOT_VALID_CATEGORY = 'The category named "nonExistingCategory" does not exist. Please provide a valid category.'
-export const ERROR_MESSAGE_INVALID_ARGUMENT = 'Argument must be an object literal with at least properties "tag" and "emoji" where the emoji property must hold an array of strings'
+export const ERROR_MESSAGE_INVALID_ARGUMENT = 'Argument must be an array with object literals. The objects must have "tag" and "emoji" properties where the "emoji" property must hold an array of strings.'
 
 export const allEmojisArray = converter.convertUnicodesToEmojis(
   [

@@ -201,7 +201,7 @@ customElements.define('my-chat',
     #onSubmit (event) {
       event.preventDefault()
       const pElement = document.createElement('p')
-      pElement.textContent = emojiProvider.replaceEmoticonWithEmoji(this.#message.value)
+      pElement.textContent = emojiProvider.replaceEmoticonsWithEmojis(this.#message.value)
       this.#chatOutput.appendChild(pElement)
       this.#message.value = ''
     }
