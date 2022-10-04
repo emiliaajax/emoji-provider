@@ -34,7 +34,7 @@ console.log(emojis)
 ```
 
 ### getEmojisAndTags()
-Returns an object array with all emojis and tags.
+Returns an object array with emojis and tags.
 
 ```js
 const emojiObjects = getEmojisAndTags()
@@ -58,6 +58,20 @@ console.log(emojiObjects)
 ```
 
 ### getEmojisByCategory(...categories)
+Returns an object array with emojis.
+
+Allowed input arguments: 
+* 'activity'
+* 'animalsAndNature'
+* 'flags'
+* 'foodAndDrink'
+* 'objects'
+* 'peopleAndBody'
+* 'smileysAndEmotion'
+* 'symbols'
+* 'travelAndPlaces'
+
+OBS! Arguments are case sensitive and need to be exact.
 
 ```js
 const emojis = getEmojisByCategory('foodAndDrink')
@@ -78,10 +92,24 @@ console.log(emojis)
 */
 ```
 
-### getEmojiAndTagsByCategory(...categories)
+### getEmojisAndTagsByCategory(...categories)
+Returns an object array with emojis and tags.
+
+Allowed input arguments: 
+* 'activity'
+* 'animalsAndNature'
+* 'flags'
+* 'foodAndDrink'
+* 'objects'
+* 'peopleAndBody'
+* 'smileysAndEmotion'
+* 'symbols'
+* 'travelAndPlaces'
+
+OBS! Arguments are case sensitive and need to be exact.
 
 ```js
-const emojiObjects = getEmojiObjectsByCategory('animalAndNature', 'peopleAndBody')
+const emojiObjects = getEmojisObjectsByCategory('animalAndNature', 'peopleAndBody')
 
 console.log(emojiObjects)
 /* => [
@@ -110,6 +138,7 @@ console.log(emojiObjects)
 ```
 
 ### getEmojiByTag(tag)
+Returns the emoji as a string.
 
 ```js
 const emoji = getEmojiByTag(piano)
@@ -119,6 +148,8 @@ console.log(emoji)
 ```
 
 ### replaceEmoticonsWithEmojis(text)
+Returns a new text with emoticons replaced with emojis.
+
 ```js
 const newText = replaceEmoticonsWithEmojis('Hi! :D How Are you? :)')
 
@@ -127,6 +158,8 @@ console.log(newText)
 ```
 
 ### getMatchingEmojis(text)
+Returns an array with emojis matching input.
+
 ```js
 const emojis = getMatchingEmojis('sad')
 
