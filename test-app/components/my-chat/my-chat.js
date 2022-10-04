@@ -219,13 +219,13 @@ customElements.define('my-chat',
     #updateEmojisByCategory (categories) {
       const emojiArray = []
       for (const category of categories) {
-        emojiArray.push(emojiProvider.getEmojisOnlyFromCategory(category))
+        emojiArray.push(emojiProvider.getEmojisByCategory(category))
       }
       this.#emojis.generateEmojis(emojiArray.flat())
     }
 
     #updateEmojisByTextInput (textInput) {
-      this.#emojis.generateEmojis(emojiProvider.getEmojisThatMatchesText(textInput))
+      this.#emojis.generateEmojis(emojiProvider.getMatchingEmojis(textInput))
     }
 
     #updateTableWithEmojisAndTags (categories) {
@@ -252,7 +252,7 @@ customElements.define('my-chat',
     #getEmojiObjectsArray(categories) {
       const emojiObjectsArray = []
       for (const category of categories) {
-        emojiObjectsArray.push(emojiProvider.getEmojiObjectsByCategory(category))
+        emojiObjectsArray.push(emojiProvider.getEmojisAndTagsByCategory(category))
       }
       return emojiObjectsArray.flat()
     }

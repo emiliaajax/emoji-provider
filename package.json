@@ -1,6 +1,6 @@
 {
-  "name": "emoticons",
-  "description": "manages emoticons",
+  "name": "emoji-provider",
+  "description": "Provides emojis",
   "version": "1.0.0",
   "type": "module",
   "main": "./lib/index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/emiliaajax/emoticons.git"
+    "url": "git+https://github.com/emiliaajax/emoji-provider.git"
   },
   "author": "Emilia Hansson <eh222yn@student.lnu.se>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/emiliaajax/emoticons/issues"
+    "url": "https://github.com/emiliaajax/emoji-provider/issues"
   },
-  "homepage": "https://github.com/emiliaajax/emoticons#readme",
+  "homepage": "https://github.com/emiliaajax/emoji-provider#readme",
   "devDependencies": {
     "eslint": "^8.24.0",
     "eslint-plugin-jest": "^27.0.4",
