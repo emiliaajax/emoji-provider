@@ -14,12 +14,30 @@ import { emojiProvider } from 'emoji-provider'
 ```
 
 # API
-
-### getEmojiObjects()
-Returns an object array with all emoji objects.
+### getEmojis()
+Returns a string array with emojis.
 
 ```js
-const emojiObjects = getEmojiObjects()
+const emojis = getEmojis()
+
+console.log(emojis)
+/* => [
+  '😀', '😃', '😄', '😁', '😆', '😅', '🤣',
+  '😂', '🙂', '🙃', '😉', '😊', '😇', '🥰',
+  '😍', '🤩', '😘', '😗', '😚', '😙', '😋',
+  '😛', '😜', '🤪', '😝', '🤑', '🤗', '🤭',
+  '🤫', '🤔', '🤐', '🤨', '😐', '😑', '😶',
+  '😏', '😒', '🙄', '😬', '🤥', '😌', '😔', 
+  '😪', '🤤', '😴', '😷', '🤒', ... 
+]
+*/
+```
+
+### getEmojisAndTags()
+Returns an object array with all emojis and tags.
+
+```js
+const emojiObjects = getEmojisAndTags()
 
 console.log(emojiObjects)
 /* => [
@@ -39,26 +57,28 @@ console.log(emojiObjects)
 */
 ```
 
-### getEmojisOnly()
-Returns a string array with emojis only.
+### getEmojisByCategory(...categories)
 
 ```js
-const emojis = getEmojisOnly()
+const emojis = getEmojisByCategory('foodAndDrink')
 
-console.log(emojiObjects)
+console.log(emojis)
 /* => [
-  '😀', '😃', '😄', '😁', '😆', '😅', '🤣',
-  '😂', '🙂', '🙃', '😉', '😊', '😇', '🥰',
-  '😍', '🤩', '😘', '😗', '😚', '😙', '😋',
-  '😛', '😜', '🤪', '😝', '🤑', '🤗', '🤭',
-  '🤫', '🤔', '🤐', '🤨', '😐', '😑', '😶',
-  '😏', '😒', '🙄', '😬', '🤥', '😌', '😔', 
-  '😪', '🤤', '😴', '😷', '🤒', ... 
-]
+  '🍇', '🍈', '🍉', '🍊', '🍋', '🍌', '🍍', '🥭', 
+  '🍎', '🍏', '🍐', '🍑', '🍒', '🍓', '🥝', '🍅', 
+  '🥥', '🥑', '🍆', '🥔', '🥕', '🌽', '🌶', '🥒', 
+  '🥬', '🥦', '🥜', '🍞', '🥐', '🥖', '🥨', '🥯', 
+  '🥞', '🧀', '🍖', '🍗', '🥩', '🥓', '🍔', '🍟',
+  '🍕', '🌭', '🥪', '🌮', '🌯', '🥙', '🥚', '🍳',
+  '🥘', '🍲', '🥣', '🥗', '🍿', '🧂', '🥫', '🍱',
+  '🍘', '🍙', '🍚', '🍛', '🍜', '🍝', '🍠', '🍢', 
+  '🍣', '🍤', '🍥', '🍮', '🍡', '🥟', '🥠', '🥡', 
+  '🍦', '🍧', '🍨', '🍩', ... 
+  ]
 */
 ```
 
-### getEmojiObjectsByCategory(...categories)
+### getEmojiAndTagsByCategory(...categories)
 
 ```js
 const emojiObjects = getEmojiObjectsByCategory('animalAndNature', 'peopleAndBody')
@@ -86,27 +106,6 @@ console.log(emojiObjects)
   { tag: 'call-me-hand-sign', emoji: '🤙' },
   { ... }
 ]
-*/
-```
-
-### getEmojisOnlyByCategory(...categories)
-
-```js
-const emojis = getEmojisOnlyByCategory()
-
-console.log(emojiObjects)
-/* => [
-  '🍇', '🍈', '🍉', '🍊', '🍋', '🍌', '🍍', '🥭', 
-  '🍎', '🍏', '🍐', '🍑', '🍒', '🍓', '🥝', '🍅', 
-  '🥥', '🥑', '🍆', '🥔', '🥕', '🌽', '🌶', '🥒', 
-  '🥬', '🥦', '🥜', '🍞', '🥐', '🥖', '🥨', '🥯', 
-  '🥞', '🧀', '🍖', '🍗', '🥩', '🥓', '🍔', '🍟',
-  '🍕', '🌭', '🥪', '🌮', '🌯', '🥙', '🥚', '🍳',
-  '🥘', '🍲', '🥣', '🥗', '🍿', '🧂', '🥫', '🍱',
-  '🍘', '🍙', '🍚', '🍛', '🍜', '🍝', '🍠', '🍢', 
-  '🍣', '🍤', '🍥', '🍮', '🍡', '🥟', '🥠', '🥡', 
-  '🍦', '🍧', '🍨', '🍩', ... 
-  ]
 */
 ```
 
