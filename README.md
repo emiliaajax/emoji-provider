@@ -3,7 +3,15 @@
 
 # Installation
 
+Install with [npm](https://www.npmjs.org/):
+```bash
 npm install emoji-provider
+```
+
+ES6
+```js
+import { emojiProvider } from 'emoji-provider'
+```
 
 # API
 
@@ -84,7 +92,7 @@ console.log(emojiObjects)
 ### getEmojisOnlyByCategory(...categories)
 
 ```js
-const emojis = getEmojisOnly()
+const emojis = getEmojisOnlyByCategory()
 
 console.log(emojiObjects)
 /* => [
