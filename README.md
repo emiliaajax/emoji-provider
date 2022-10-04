@@ -126,9 +126,9 @@ console.log(newText)
 // => 'Hi! 😃 How Are you? 😊'
 ```
 
-### getEmojisThatMatchesText(text)
+### getMatchingEmojis(text)
 ```js
-const emojis = getEmojisThatMatchesText('sad')
+const emojis = getMatchingEmojis('sad')
 
 console.log(emojis)
 // => [ '😢', '😞', '😓', '😿' ]
