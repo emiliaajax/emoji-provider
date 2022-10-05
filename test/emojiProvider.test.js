@@ -1,29 +1,30 @@
 import { EmojiProvider } from '../lib/EmojiProvider.js'
-import * as helpers from './helpers.js'
 const emojiProvider = new EmojiProvider()
+import { Helper } from './Helper.js'
+const helper = new Helper()
 
 describe('Get all emoji objects', () => {
   test('Call to function should return an array containing all emoji objects', () => {
-    expect(emojiProvider.getEmojisAndTags()).toEqual(helpers.emojisAndTagsArray())
+    expect(emojiProvider.getEmojisAndTags()).toEqual(helper.emojisAndTagsArray())
   })
 })
 
 describe('Get emojis only', () => {
   test('Call to function should return an array containing all emoji images', () => {
-    expect(emojiProvider.getEmojis()).toEqual(helpers.emojisOnlyArray(helpers.emojisAndTagsArray()))
+    expect(emojiProvider.getEmojis()).toEqual(helper.emojisOnlyArray(helper.emojisAndTagsArray()))
   })
 })
 
 describe('Get all emoji objects from given categories', () => {
   test('Passing "smileysAndEmotion" and "activity" should return only the emojis belonging to those categories', () => {
-    expect(emojiProvider.getEmojisAndTagsByCategory('smileysAndEmotion', 'activity')).toEqual(helpers.emojisByCategoriesArray())
+    expect(emojiProvider.getEmojisAndTagsByCategory('smileysAndEmotion', 'activity')).toEqual(helper.emojisByCategoriesArray())
   })
 
-  test(`Passing "nonExistingCategory" should throw an error with message ${helpers.ERROR_MESSAGE_NOT_VALID_CATEGORY}`, () => {
+  test(`Passing "nonExistingCategory" should throw an error with message ${helper.ERROR_MESSAGE_NOT_VALID_CATEGORY}`, () => {
     function test () {
       emojiProvider.getEmojisAndTagsByCategory('nonExistingCategory')
     }
-    expect(test).toThrowError(helpers.ERROR_MESSAGE_NOT_VALID_CATEGORY)
+    expect(test).toThrowError(helper.ERROR_MESSAGE_NOT_VALID_CATEGORY)
   })
 })
 
@@ -39,12 +40,12 @@ describe('Get emoji from tag', () => {
     expect(emojiProvider.getEmojiByTag('happy-face')).toBe('😀')
   })
 
-  test(`Passing "made-up-tag" should throw an error with message ${helpers.ERROR_MESSAGE_EMOJI_NOT_EXISTING}`, () => {
+  test(`Passing "made-up-tag" should throw an error with message ${helper.ERROR_MESSAGE_EMOJI_NOT_EXISTING}`, () => {
     function test() {
       emojiProvider.getEmojiByTag('made-up-tag')
     }
 
-    expect(test).toThrowError(helpers.ERROR_MESSAGE_EMOJI_NOT_EXISTING)
+    expect(test).toThrowError(helper.ERROR_MESSAGE_EMOJI_NOT_EXISTING)
   })
 })
 

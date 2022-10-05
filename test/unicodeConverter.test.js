@@ -1,6 +1,7 @@
 import { UnicodeConverter } from '../lib/UnicodeConverter.js';
-import * as helpers from './helpers.js'
 const converter = new UnicodeConverter()
+import { Helper } from './Helper.js'
+const helper = new Helper()
 
 describe("Convert array property emoji from unicode representation to image representation", () => {
   test("Passing [{tag: 'happy-face', emoji: ['0x1F600']}] should return [{tag: 'happy-face', emoji: '😀'}]", () => {
@@ -12,7 +13,7 @@ describe("Convert array property emoji from unicode representation to image repr
       converter.convertUnicodesToEmojis('invalid-input')
     }
 
-    expect(test).toThrowError(helpers.ERROR_MESSAGE_INVALID_ARGUMENT)
+    expect(test).toThrowError(helper.ERROR_MESSAGE_INVALID_ARGUMENT)
   })
 
   test("Passing '[{tag: 'happy-face', emoticon: ':D'}]' should throw an error", () => {
@@ -20,6 +21,6 @@ describe("Convert array property emoji from unicode representation to image repr
       converter.convertUnicodesToEmojis([{tag: 'happy-face', emoticon: ':D'}])
     }
 
-    expect(test).toThrowError(helpers.ERROR_MESSAGE_INVALID_ARGUMENT)
+    expect(test).toThrowError(helper.ERROR_MESSAGE_INVALID_ARGUMENT)
   })
 })
