@@ -324,6 +324,10 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 | Namn och förklaring  | Reflektion                                   |
 | -------------------  | ---------------------------------------------|
 |                      |                                              |
+|                      |                                              |
+|                      |                                              |
+|                      |                                              |
+|                      |                                              |
 
 ### Funktioner
 | Metodnamn och förklaring  | Reflektion                                   |

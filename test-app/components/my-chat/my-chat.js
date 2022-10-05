@@ -1,10 +1,3 @@
-/**
- * My-chat web component module.
- *
- * @author Emilia Hansson <eh222yn@student.lnu.se>
- * @version 1.0.0
- */
-
 import '../options-form/options-form.js'
 import '../text-input-form/text-input-form.js'
 import '../my-emojis/index.js'
@@ -254,12 +247,12 @@ customElements.define('my-chat',
     #updateTableWithEmojisAndTags (categories) {
       this.shadowRoot.querySelector('#emojiTable').textContent = ''
       this.#createAndAppendTableHeader()
-      for (const emojiObject of this.#getEmojiObjectsArray(categories)) {
+      for (const emojiObject of this.#getEmojiAndTags(categories)) {
         this.#createAndAppendTableRow(emojiObject)
       }
     }
 
-    #getEmojiObjectsArray(categories) {
+    #getEmojiAndTags(categories) {
       const emojiObjectsArray = []
       for (const category of categories) {
         emojiObjectsArray.push(emojiProvider.getEmojisAndTagsByCategory(category))
