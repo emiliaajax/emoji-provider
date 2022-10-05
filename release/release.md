@@ -324,10 +324,10 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 | Namn och förklaring  | Reflektion                                   |
 | -------------------  | ---------------------------------------------|
 |                      |                                              |
-|                      |                                              |
-|                      |                                              |
-|                      |                                              |
-|                      |                                              |
+|       **getMatchingEmojis(text)**<br>Tar in en textsträng och returnerar en array med emojis som matchar den textsträngen<br>           |      **Make meaningful distinctions**<br>                                      |
+|   **checkIfPresentAndReplace(emojiObject)** Tar in ett emojiobjekt och i funktionen kollas om en emoticon existerar någonstans i objektet.                   |                                              |
+|         **getEmojis()** Returnerar en array med alla emojis som finns tillgängliga.            |                                              |
+|         EmojiProvider             |                                              |
 
 ### Funktioner
 | Metodnamn och förklaring  | Reflektion                                   |
