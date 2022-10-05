@@ -4,24 +4,24 @@ const emojiProvider = new EmojiProvider()
 
 describe('Get all emoji objects', () => {
   test('Call to function should return an array containing all emoji objects', () => {
-    expect(emojiProvider.getAllEmojiObjects()).toEqual(helpers.allEmojisArray)
+    expect(emojiProvider.getEmojisAndTags()).toEqual(helpers.emojisAndTagsArray())
   })
 })
 
 describe('Get emojis only', () => {
   test('Call to function should return an array containing all emoji images', () => {
-    expect(emojiProvider.getEmojisOnly()).toEqual(helpers.emojisOnlyArray(helpers.allEmojisArray))
+    expect(emojiProvider.getEmojis()).toEqual(helpers.emojisOnlyArray(helpers.emojisAndTagsArray()))
   })
 })
 
 describe('Get all emoji objects from given categories', () => {
   test('Passing "smileysAndEmotion" and "activity" should return only the emojis belonging to those categories', () => {
-    expect(emojiProvider.getEmojiObjectsByCategory('smileysAndEmotion', 'activity')).toEqual(helpers.emojisByCategoriesArray)
+    expect(emojiProvider.getEmojisAndTagsByCategory('smileysAndEmotion', 'activity')).toEqual(helpers.emojisByCategoriesArray())
   })
 
   test(`Passing "nonExistingCategory" should throw an error with message ${helpers.ERROR_MESSAGE_NOT_VALID_CATEGORY}`, () => {
     function test () {
-      emojiProvider.getEmojiObjectsByCategory('nonExistingCategory')
+      emojiProvider.getEmojisAndTagsByCategory('nonExistingCategory')
     }
     expect(test).toThrowError(helpers.ERROR_MESSAGE_NOT_VALID_CATEGORY)
   })
@@ -68,10 +68,10 @@ describe('Replace emoticons with emojis in text', () => {
 
 describe('get emojis that matches text', () => {
   test('get emojis that matches text', () => {
-    expect(emojiProvider.getEmojisThatMatchesText('sad')).toEqual(['😢', '😞', '😓', '😿'])
+    expect(emojiProvider.getMatchingEmojis('sad')).toEqual(['😢', '😞', '😓', '😿'])
   })
 
   test('get emojis that matches text', () => {
-    expect(emojiProvider.getEmojisThatMatchesText('')).toEqual([])
+    expect(emojiProvider.getMatchingEmojis('')).toEqual([])
   })
 })

@@ -14,7 +14,7 @@ export const ERROR_MESSAGE_EMOJI_NOT_EXISTING = 'Sorry, it does not a exist an e
 export const ERROR_MESSAGE_NOT_VALID_CATEGORY = 'The category named "nonExistingCategory" does not exist. Please provide a valid category.'
 export const ERROR_MESSAGE_INVALID_ARGUMENT = 'Argument must be an array with object literals. The objects must have "tag" and "emoji" properties where the "emoji" property must hold an array of strings.'
 
-export const allEmojisArray = converter.convertUnicodesToEmojis(
+export const allEmojiObjectsArray = converter.convertUnicodesToEmojis(
   [
     new SmileysEmotionCategory().getEmojis, 
     new PeopleBodyCategory().getEmojis, 
@@ -27,17 +27,28 @@ export const allEmojisArray = converter.convertUnicodesToEmojis(
     new FlagsCategory().getEmojis
   ].flat())
 
-export const emojisByCategoriesArray = converter.convertUnicodesToEmojis(
+export const emojisAndTagsArray = () => {
+  return allEmojiObjectsArray.map(element => {
+    return {
+      tag: element.tag,
+      emoji: element.emoji
+    }
+  })
+}
+
+export const emojisByCategoriesArray = () => {
+  const emojiObjects = converter.convertUnicodesToEmojis(
   [new SmileysEmotionCategory().getEmojis, new ActivityCategory().getEmojis].flat())
+  return emojiObjects.map(element => {
+    return {
+      tag: element.tag,
+      emoji: element.emoji
+    }
+  })
+}
 
 export const emojisOnlyArray = (array) => {
   return array.map(element => { 
     return element.emoji
-  })
-}
-
-export const tagsOnlyArray = () => {
-  return allEmojisArray.map(element => {
-    return element.tag
   })
 }
