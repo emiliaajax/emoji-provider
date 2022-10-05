@@ -1,5 +1,5 @@
 /**
- * The my-chat web component module.
+ * My-chat web component module.
  *
  * @author Emilia Hansson <eh222yn@student.lnu.se>
  * @version 1.0.0
@@ -9,6 +9,7 @@ import '../options-form/options-form.js'
 import '../text-input-form/text-input-form.js'
 import '../my-emojis/index.js'
 import { emojiProvider } from '../../../lib/index.js'
+
 const sendIconImage = (new URL('images/send-icon.png', import.meta.url)).href
 
 const template = document.createElement('template')
@@ -175,31 +176,44 @@ customElements.define('my-chat',
       this.#message = this.shadowRoot.querySelector('#message')
       this.#emojis = this.shadowRoot.querySelector('my-emojis')
 
-      // Event listeners
       this.#optionsForm.addEventListener('categorySent', (event) => {
         this.#updateEmojisByCategory(event.detail.categories)
         this.#updateTableWithEmojisAndTags(event.detail.categories)
       })
-      this.#optionsForm.addEventListener('textInputSent', (event) => this.#updateEmojisByTextInput(event.detail.input))
-      this.shadowRoot.querySelector('text-input-form').addEventListener('textInputSent', (event) => this.#generateEmojiFromTag(event.detail.input))
-      this.#sendButton.addEventListener('click', event => this.#onSubmit(event))
+
+      this.#optionsForm.addEventListener('textInputSent', (event) => {
+        this.#updateEmojisByTextInput(event.detail.input)
+      })
+
+      this.shadowRoot.querySelector('text-input-form').addEventListener('textInputSent', (event) => {
+        this.#generateEmojiFromTag(event.detail.input)
+      })
+
+      this.#sendButton.addEventListener('click', event => {
+        event.preventDefault()
+        this.#onSubmit()
+      })
+
       this.#message.addEventListener('keydown', event => {
         if (event.key === 'Enter') {
           event.preventDefault()
           this.#onSubmit(event)
         }
       })
-      this.#emojis.addEventListener('clicked', event => this.#addEmojiToMessage(event))
-      this.shadowRoot.querySelector('my-emojis').addEventListener('closed', () => this.#message.focus())
+
+      this.#emojis.addEventListener('clicked', event => { 
+        this.#addEmojiToMessage(event) 
+      })
+
+      this.shadowRoot.querySelector('my-emojis').addEventListener('closed', () => {
+        this.#message.focus()
+      })
     }
 
     /**
-     * Add the su
-     *
-     * @param {Event} event The click event.
+     * Adds the message to the message board.
      */
-    #onSubmit (event) {
-      event.preventDefault()
+    #onSubmit () {
       const pElement = document.createElement('p')
       pElement.textContent = emojiProvider.replaceEmoticonsWithEmojis(this.#message.value)
       this.#chatOutput.appendChild(pElement)
@@ -207,7 +221,7 @@ customElements.define('my-chat',
     }
 
     /**
-     * Adds the emoji to the message textarea.
+     * Adds the emoji to the message textarea when clicked.
      *
      * @param {Event} event The clicked event.
      */
@@ -216,6 +230,11 @@ customElements.define('my-chat',
       this.#message.value = this.#message.value + event.detail.emojiValue + ' '
     }
 
+    /**
+     * Updates the emoji component with emojis of the given categories.
+     * 
+     * @param {string} categories 
+     */
     #updateEmojisByCategory (categories) {
       const emojiArray = []
       for (const category of categories) {
@@ -224,6 +243,10 @@ customElements.define('my-chat',
       this.#emojis.generateEmojis(emojiArray.flat())
     }
 
+    /**
+     * 
+     * @param {*} textInput 
+     */
     #updateEmojisByTextInput (textInput) {
       this.#emojis.generateEmojis(emojiProvider.getMatchingEmojis(textInput))
     }
@@ -234,6 +257,21 @@ customElements.define('my-chat',
       for (const emojiObject of this.#getEmojiObjectsArray(categories)) {
         this.#createAndAppendTableRow(emojiObject)
       }
+    }
+
+    #getEmojiObjectsArray(categories) {
+      const emojiObjectsArray = []
+      for (const category of categories) {
+        emojiObjectsArray.push(emojiProvider.getEmojisAndTagsByCategory(category))
+      }
+      return emojiObjectsArray.flat()
+    }
+
+    #generateEmojiFromTag(tag) {
+      this.shadowRoot.querySelector('#emojiFromTag').textContent = ''
+      const emojiContainer = document.createElement('p')
+      emojiContainer.textContent = emojiProvider.getEmojiByTag(tag)
+      this.shadowRoot.querySelector('#emojiFromTag').appendChild(emojiContainer)
     }
 
     #createAndAppendTableHeader() {
@@ -249,14 +287,6 @@ customElements.define('my-chat',
       this.shadowRoot.querySelector('#emojiTable').appendChild(tBodyHeader)
     }
 
-    #getEmojiObjectsArray(categories) {
-      const emojiObjectsArray = []
-      for (const category of categories) {
-        emojiObjectsArray.push(emojiProvider.getEmojisAndTagsByCategory(category))
-      }
-      return emojiObjectsArray.flat()
-    }
-
     #createAndAppendTableRow(emojiObject) {
       const tBody = document.createElement('tbody')
       const tableRow = document.createElement('tr')
@@ -268,13 +298,6 @@ customElements.define('my-chat',
       tableRow.appendChild(tagColumn)
       tBody.appendChild(tableRow)
       this.shadowRoot.querySelector('#emojiTable').appendChild(tBody)
-    }
-
-    #generateEmojiFromTag(tag) {
-      this.shadowRoot.querySelector('#emojiFromTag').textContent = ''
-      const emojiContainer = document.createElement('p')
-      emojiContainer.textContent = emojiProvider.getEmojiByTag(tag)
-      this.shadowRoot.querySelector('#emojiFromTag').appendChild(emojiContainer)
     }
   }
 )
