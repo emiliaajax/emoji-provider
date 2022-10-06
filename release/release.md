@@ -318,8 +318,6 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 | COVERAGE & SUCCESS | 1/:white_check_mark: | 3/:white_check_mark:  | 1/xx  | 3/:white_check_mark: | 2/:white_check_mark: | 3/:white_check_mark: | 2/:white_check_mark: | 1/:white_check_mark: | 1/:white_check_mark: |
 
 # Kodkvalitetskrav
-**Fetmarkera** de "regler" som används ur CC. Ni kan frångå tabellformat om ni vill. Skapa direktlänkar till er kod där det är lämpligt. Skriv så att jag kan förstå.
-
 ### Namngivning
 | Namn och förklaring  | Reflektion                                   |
 | -------------------  | ---------------------------------------------|
@@ -339,7 +337,6 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 |  **```#getEmojiFromUnicode(unicodes)```**<br>En privat metod som konverterar arrayen med unicodes till en emoji och returnerar den emojin.                 | 7 |       <br>**One Level of Abstraction per Function**<br>Den här metoden uppfyller regeln väl och är på endast en abstraktionsnivå, nämligen låg abstraktionsnivå.<br><br>                                  |
 
 # Laborationsreflektion
-
 Det var väldigt intressant och lärorikt att analysera sin kod efter att ha läst boken. Det är många saker som jag har tagit med mig och kommer att tänka på när jag skriver kod i fortsättningen. **Use Intention-Revealing Names**, **Small!**, **Do One Thing**, **Function Arguments** och **One Level of Abstraction per Function** är de regler som jag upplever har gjort att min kod redan börjar bli mycket bättre. 
 
 **Small!**<br>
