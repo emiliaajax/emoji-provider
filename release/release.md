@@ -64,10 +64,10 @@ Alla emojikategorier har fått en egen klass (se namn på klasserna i klassdiagr
 | 11 | Biblioteket ska inte ha några externa beroenden | 1 |
 
 # Hur jag testat
-Jag har testat genom manuella tester och automatisk enhetstestning. Krav som ännu inte har testfall är krav som kommer implementeras i nästa version.
+Jag har testat genom manuella tester och automatisk enhetstestning. Krav som ännu inte har testfall är krav som kommer implementeras i nästa version. Tester har dokumenterats och finns under rubriken Testrapporter. Utöver de dokumenterade testerna har kontinuerlig testning utförts både manuellt och med automatisk testning när ändringar har gjorts i koden. Automatisk enhetstestning har varit till stort hjälp när jag har gjort ändringar i koden för att verifiera att jag inte har råkat göra ett misstag.
 
 ## Automatiska enhetstester
-Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/tree/main/test](https://github.com/emiliaajax/emoticons/tree/main/test) och täcker alla implementerade krav (krav 1-7). Testrapporter finns, men förutom de så har jag kört testen efter varje gång jag har gjort någon ändring av koden, till exempel när jag delat upp en metod i flera mindre, för att verifiera att jag inte har råkat göra ett misstag på vägen.
+Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/tree/main/test](https://github.com/emiliaajax/emoticons/tree/main/test) och täcker alla implementerade krav (krav 1-7). 
 
 ## Manuella tester
 ### Testmatris
