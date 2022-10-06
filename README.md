@@ -170,8 +170,13 @@ console.log(emojis)
 ```
 
 # Contributing
-If you wish to contribute, please create
+1. Fork the project!
+2. Install dev dependencies (```npm install```).
+3. Create a new feature branch.
+4. Add tests to your feature.
+5. Create a pull request!
+
 <br><br>
 # TODO List
 [ ] Tag-to-emoji conversion in text<br>
-[ ] Emoji support check
+[ ] Check of emoji support
