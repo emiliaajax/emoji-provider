@@ -1,4 +1,6 @@
-
+/**
+ * Defines template.
+ */
 const template = document.createElement('template')
 template.innerHTML = `
   <div id="wrapper">
@@ -67,7 +69,10 @@ template.innerHTML = `
   </style>
 `
 
-customElements.define('options-form',
+/*
+ * Defines custom element.
+ */
+customElements.define('my-options-form',
   class extends HTMLElement {
     #categoryButton
     #textInputButton
@@ -82,6 +87,10 @@ customElements.define('options-form',
       this.#textInputButton.addEventListener('click', event => this.#onSubmitText(event))
     }
 
+    /**
+     * Sends a custom event that text input is sent
+     * @param {Event} event 
+     */
     #onSubmitText(event) {
       event.preventDefault()
       this.dispatchEvent(new CustomEvent('textInputSent', {
@@ -94,6 +103,10 @@ customElements.define('options-form',
       this.shadowRoot.querySelector('#input').value = ''
     }
 
+     /**
+     * Sends a custom event that the choice of categories is sent
+     * @param {Event} event 
+     */
     #onSubmitCategory(event) {
       event.preventDefault()
       const chosenCategories = []

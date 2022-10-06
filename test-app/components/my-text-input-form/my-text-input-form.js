@@ -1,3 +1,6 @@
+/**
+ * Defines template.
+ */
 const template = document.createElement('template')
 template.innerHTML = `
   <form id='textInput'>
@@ -40,7 +43,10 @@ template.innerHTML = `
   </style>
 `
 
-customElements.define('text-input-form',
+/*
+ * Defines custom element.
+ */
+customElements.define('my-text-input-form',
   class extends HTMLElement {
     #textInputButton
   
@@ -52,6 +58,10 @@ customElements.define('text-input-form',
       this.#textInputButton.addEventListener('click', event => this.#onSubmitText(event))
     }  
 
+    /**
+     * Sends a custom event that text input is sent
+     * @param {Event} event 
+     */
     #onSubmitText(event) {
       event.preventDefault()
       this.dispatchEvent(new CustomEvent('textInputSent', {

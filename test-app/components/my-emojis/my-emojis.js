@@ -1,10 +1,3 @@
-/**
- * The my-emojis web component module.
- *
- * @author Emilia Hansson <eh222yn@student.lnu.se>
- * @version 1.0.0
- */
-
 import { emojiProvider } from "../../../lib/index.js"
 
 /**
@@ -14,9 +7,7 @@ const template = document.createElement('template')
 template.innerHTML = `
   <div id='emojis'>
     <button id='emoji-button'>😊</button>
-    <div id='emoji-container'>
-      <!-- <button class='emoji'>😊</button> -->
-    </div>
+    <div id='emoji-container'></div>
   </div>
   <style>
     #emojis {
@@ -51,7 +42,6 @@ template.innerHTML = `
       background-color: white;
       border-radius: 0px 10px 10px 10px;
       overflow: scroll;
-      /* Box-shadow code from https://getcssscan.com/css-box-shadow-examples */
       box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     }
     .emoji {
@@ -79,19 +69,9 @@ template.innerHTML = `
  * Defines custom element.
  */
 customElements.define('my-emojis',
-  /**
-   * Represents a my-emojis element.
-   */
   class extends HTMLElement {
-    /**
-     * Represents the element containing the emojis.
-     *
-     * @type {HTMLDivElement}
-     */
     #emojiContainer
-    /**
-     * Creates an instance of current type.
-     */
+
     constructor () {
       super()
       this.attachShadow({ mode: 'open' })
@@ -104,9 +84,14 @@ customElements.define('my-emojis',
       this.generateEmojis(emojiProvider.getEmojis())
     }
 
-    generateEmojis(array) {
+    /**
+     * Generates the emojis and add them to the parent element.
+     *
+     * @param {string[]} emojiArray 
+     */
+    generateEmojis(emojiArray) {
       this.#emojiContainer.textContent = ''
-      for (const emoji of array) {
+      for (const emoji of emojiArray) {
         const emojiButton = document.createElement('button')
         emojiButton.classList.add('emoji')
         emojiButton.textContent = emoji
