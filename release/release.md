@@ -29,15 +29,15 @@ Beskriv hur du anpassat din kod och instruktioner för att någon annan programm
 # Beskrivning av min kod
 Nedan följer en kort beskrivning av de klasser som ingår i modulen samt ett enkelt klassdiagram som ger en översikt. Modulen består av 13 klasser.
 
-Klassen ```EmojiProvider``` innehåller alla metoder som tillhör det publika interfacet och är själva knutpunkten för modulen. 
+Klassen ```EmojiProvider``` innehåller alla metoder som tillhör det publika interfacet och är själva knutpunkten för modulen. EmojiProvider har en association till UnicodeConverter och EmojiResources, och har ett beroende till UnicodeConverter.
 
 Klassen ```UnicodeConverter``` hanterar konvertering av unicodes till emojis.
 
 Klassen ```EmoticonConverter``` hanterar konvertering av emoticons till emojis.
 
-Klassen ```EmojiResources``` har en association till alla klasser av emojis. I EmojiResources fogas emojis samman till en enda array. Antingen allihopa eller endast ett urval baserat på efterfrågad kategori.
+Klassen ```EmojiResources``` har en association till alla klasser av emojikategorier. I EmojiResources fogas emojiobjekt samman till en enda array. Antingen alla emojiobjekt eller endast ett urval baserat på efterfrågad kategori.
 
-Alla emoji-kategorier har fått en egen klass (se namn på klasserna i klassdiagrammet nedan). Varje klass har som enda uppgift att returnera en kopia av en array av emojiobjekt.
+Alla emojikategorier har fått en egen klass (se namn på klasserna i klassdiagrammet nedan). Varje klass har som enda uppgift att returnera en kopia av en array av emojiobjekt.
 
 ![Class diagram](./images/class-diagram.png "Class diagram")
 
