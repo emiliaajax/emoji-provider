@@ -21,6 +21,10 @@ template.innerHTML = `
       </form>
     </div>
     <my-options-form></my-options-form>
+    <form id='allOption'>
+      <input type="checkbox" id="allEmojis" name="allEmojis" value="allEmojisy">
+      <label for="allEmojis">All emojis & tags</label>
+    </form>
     <table id='emojiTable'>
       <tr>
         <th>Emoji</th>
@@ -161,6 +165,8 @@ customElements.define('my-test-app',
     #sendButton
     #message
     #emojis
+    #allOption
+
 
     constructor () {
       super()
@@ -172,6 +178,7 @@ customElements.define('my-test-app',
       this.#sendButton = this.shadowRoot.querySelector('#send-button')
       this.#message = this.shadowRoot.querySelector('#message')
       this.#emojis = this.shadowRoot.querySelector('my-emojis')
+      this.#allOption = this.shadowRoot.querySelector('#allOption input')
 
       this.#optionsForm.addEventListener('categorySent', (event) => {
         this.#updateEmojisByCategory(event.detail.categories)
@@ -204,6 +211,14 @@ customElements.define('my-test-app',
 
       this.shadowRoot.querySelector('my-emojis').addEventListener('closed', () => {
         this.#message.focus()
+      })
+
+      this.#allOption.addEventListener('change', () => {
+        if (this.#allOption.checked) {
+          this.#getEmojisAndTags()
+        } else {
+          this.shadowRoot.querySelector('#emojiTable').textContent = ''
+        }
       })
     }
 
@@ -255,7 +270,15 @@ customElements.define('my-test-app',
     #updateTableWithEmojisAndTags (categories) {
       this.shadowRoot.querySelector('#emojiTable').textContent = ''
       this.#createAndAppendTableHeader()
-      for (const emojiObject of this.#getEmojiAndTags(categories)) {
+      for (const emojiObject of this.#getEmojiAndTagsByCategory(categories)) {
+        this.#createAndAppendTableRow(emojiObject)
+      }
+    }
+
+    #getEmojisAndTags() {
+      this.shadowRoot.querySelector('#emojiTable').textContent = ''
+      this.#createAndAppendTableHeader()
+      for (const emojiObject of emojiProvider.getEmojisAndTags()) {
         this.#createAndAppendTableRow(emojiObject)
       }
     }
@@ -266,7 +289,7 @@ customElements.define('my-test-app',
      * @param {string[]} categories 
      * @returns {string[]} An array with emoji objects containing emojis and tags.
      */
-    #getEmojiAndTags(categories) {
+    #getEmojiAndTagsByCategory(categories) {
       const emojiObjectsArray = []
       for (const category of categories) {
         emojiObjectsArray.push(emojiProvider.getEmojisAndTagsByCategory(category))
