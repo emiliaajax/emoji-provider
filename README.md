@@ -1,8 +1,7 @@
 # emoji-provider
-Adds a simple way of generating emojis. Currently supports emojis up to <span style='color: #F89880
-'>Unicode Version 15</span>.
+Adds a simple way of generating emojis. Currently supports emojis up to Unicode Version 15.
 
-<mark style="color: white; background-color: black">Zero-dependency</mark>
+A zero-dependency library.
 
 # Installation
 
