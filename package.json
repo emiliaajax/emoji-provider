@@ -1,6 +1,6 @@
 {
   "name": "emoji-provider",
-  "description": "Provides emojis",
+  "description": "Adds a simple way of generating emojis",
   "version": "1.0.0",
   "type": "module",
   "main": "./lib/index.js",
@@ -9,6 +9,14 @@
     "lint": "npx eslint ./lib || exit 0",
     "test": "npx --node-options=--experimental-vm-modules jest --verbose=true || exit 0"
   },
+  "keywords": [
+    "emojis", 
+    "emoji", 
+    "emoticon", 
+    "no-dependency", 
+    "javascript", 
+    "js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/emiliaajax/emoji-provider.git"
