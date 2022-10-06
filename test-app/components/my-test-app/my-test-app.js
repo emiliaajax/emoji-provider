@@ -275,6 +275,9 @@ customElements.define('my-test-app',
       }
     }
 
+    /**
+     * Gets all emojis and tags and appends them to table.
+     */
     #getEmojisAndTags() {
       this.shadowRoot.querySelector('#emojiTable').textContent = ''
       this.#createAndAppendTableHeader()
