@@ -1,6 +1,8 @@
 # emoji-provider
-*emoji-provider* adds a simple way of generating emojis. Currently supports emojis up to <span style='color: #F89880
+Adds a simple way of generating emojis. Currently supports emojis up to <span style='color: #F89880
 '>Unicode Version 15</span>.
+
+<mark style="color: white; background-color: black">Zero-dependency</mark>
 
 # Installation
 
@@ -14,7 +16,7 @@ ES6
 import { emojiProvider } from 'emoji-provider'
 ```
 
-# API
+# API & Examples
 ### getEmojis()
 Returns a string array with emojis.
 
@@ -167,3 +169,10 @@ const emojis = getMatchingEmojis('sad')
 console.log(emojis)
 // => [ '😢', '😞', '😓', '😿' ]
 ```
+
+# Contributing
+If you wish to contribute, please create
+<br><br>
+# TODO List
+[ ] Tag-to-emoji conversion in text<br>
+[ ] Emoji support check
