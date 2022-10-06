@@ -347,7 +347,7 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 | TC7.2 | 0 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: | 0 | 0 |
 | TC10.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: | 0 |
 | TC11.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: |
-| COVERAGE & SUCCESS | 1/:white_check_mark: | 3/:white_check_mark:  | 1/:white_check_mark  | 3/:white_check_mark: | 2/:white_check_mark: | 3/:white_check_mark: | 2/:white_check_mark: | 1/:white_check_mark: | 1/:white_check_mark: |
+| COVERAGE & SUCCESS | 1/:white_check_mark: | 3/:white_check_mark:  | 1/:white_check_mark:  | 3/:white_check_mark: | 2/:white_check_mark: | 3/:white_check_mark: | 2/:white_check_mark: | 1/:white_check_mark: | 1/:white_check_mark: |
 
 ![Automatic Test Results 6/10-22](./images/unit-tests-6-okt.png "Automatic test tesults 6/10-22")
 ![Automatic Test Results 6/10-22](./images/unit-tests-6-okt-2.png "Automatic test tesults 6/10-22")
