@@ -15,7 +15,7 @@ ES6
 import { emojiProvider } from 'emoji-provider'
 ```
 
-# API & Examples
+# API
 ### getEmojis()
 Returns a string array with emojis.
 
