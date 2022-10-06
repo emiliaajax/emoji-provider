@@ -24,7 +24,7 @@
 Förtydligande: Examinator kommer sätta betyg oberoende på vad ni anser. 
 
 # Återanvändning
-Beskriv hur du anpassat din kod och instruktioner för att någon annan programmerare skall kunna använda din modul. Om du skrivit instruktioner för din användare, länka till dessa. Om inte, beskriv här hur någon skall göra för att använda din modul.
+Hur modulen ska användas beskrivs här: [README.md](https://github.com/emiliaajax/emoji-provider/blob/main/README.md). I beskrivning av modulen antas det att användaren har kunskap om Javascript, npm och ECMAScript-moduler.
 
 # Beskrivning av min kod
 Nedan följer en kort beskrivning av de klasser som ingår i modulen samt ett enkelt klassdiagram som ger en översikt. Modulen består av 13 klasser.
