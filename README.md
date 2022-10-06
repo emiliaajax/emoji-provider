@@ -176,7 +176,6 @@ console.log(emojis)
 4. Add tests to your feature.
 5. Create a pull request!
 
-<br><br>
 # TODO List
 [ ] Tag-to-emoji conversion in text<br>
 [ ] Check of emoji support
