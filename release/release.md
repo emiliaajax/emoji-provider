@@ -29,7 +29,7 @@ Beskriv hur du anpassat din kod och instruktioner för att någon annan programm
 # Beskrivning av min kod
 Nedan följer en kort beskrivning av de klasser som ingår i modulen samt ett enkelt klassdiagram som ger en översikt. Modulen består av 13 klasser.
 
-Klassen ```EmojiProvider``` innehåller alla metoder som tillhör det publika interfacet och är själva knutpunkten för modulen. EmojiProvider har en association till UnicodeConverter och EmojiResources, och har ett beroende till UnicodeConverter.
+Klassen ```EmojiProvider``` innehåller alla metoder som tillhör det publika interfacet och är själva knutpunkten för modulen. ```EmojiProvider``` har en association till ```UnicodeConverter``` och ```EmojiResources```, och har ett beroende till ```UnicodeConverter```.
 
 Klassen ```UnicodeConverter``` hanterar konvertering av unicodes till emojis.
 
