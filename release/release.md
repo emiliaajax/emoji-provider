@@ -144,8 +144,7 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 
 ###### **Input**
 
-- Klicka i checkboxen ”Alla”.
-- Klicka på OK.
+- Klicka i checkboxen ”All emojis & tags”.
 - Se på tabellen till höger.
 
 ###### **Output**
@@ -176,7 +175,7 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 
 - Endast emojis av kategorin ”Flags” och ”Travel & Places” visas.
 
-#### **TC4.3 Lyckad generering av emojis och taggar från en otillåten kategori**
+#### **TC4.3 Misslyckad generering av emojis och taggar från en otillåten kategori**
 
 ###### **Input**
 

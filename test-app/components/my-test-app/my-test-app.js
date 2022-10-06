@@ -25,12 +25,14 @@ template.innerHTML = `
       <input type="checkbox" id="allEmojis" name="allEmojis" value="allEmojisy">
       <label for="allEmojis">All emojis & tags</label>
     </form>
-    <table id='emojiTable'>
-      <tr>
-        <th>Emoji</th>
-        <th>Tag</th>
-      </tr>
-    </table>
+    <div id=tableWrapper>
+      <table id='emojiTable'>
+        <!-- <tr>
+          <th>Emoji</th>
+          <th>Tag</th>
+        </tr> -->
+      </table>
+    </div>
     <my-text-input-form></my-text-input-form>
     <div id='emojiFromTag'></div>
   </div>
@@ -38,6 +40,8 @@ template.innerHTML = `
     #wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
+      margin-left: 50px;
+      font-family: 'Montserrat', sans-serif;
     }
     #chat {
       width: 500px;
@@ -108,10 +112,21 @@ template.innerHTML = `
       margin-left: 15px;
       grid-column: 2/3;
     }
+    my-text-input-form {
+      margin-top: 20px;
+    }
+    #allOption {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      margin-top: 70px;
+      margin-left: 50px;
+      color: white;
+      font-size: 2rem;
+    }
     #emojiFromTag {
       font-size: 2rem;
-      margin-left: -300px;
-      margin-top: 10px;
+      margin-left: -700px;
+      margin-top: 30px;
     }
     #send-button {
       margin-left: 15px;
@@ -138,6 +153,10 @@ template.innerHTML = `
     #chat-message button img {
       width: 35px;
       display: block;
+    }
+    #tableWrapper {
+      height: 500px;
+      overflow: scroll;
     }
     #emojiTable {
       margin-left: 50px;
