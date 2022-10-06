@@ -24,7 +24,7 @@
 Förtydligande: Examinator kommer sätta betyg oberoende på vad ni anser. 
 
 # Återanvändning
-Hur modulen ska användas beskrivs här i [README.md](https://github.com/emiliaajax/emoji-provider/blob/main/README.md) och på [npm](https://www.npmjs.com/package/emoji-provider). I beskrivning av modulen antas det att användaren har kunskap om Javascript, npm och ECMAScript-moduler.
+Hur modulen ska användas beskrivs på [npm](https://www.npmjs.com/package/emoji-provider) och i [README.md](https://github.com/emiliaajax/emoji-provider/blob/main/README.md). I beskrivning av modulen antas det att användaren har kunskap om Javascript, npm och ECMAScript-moduler.
 
 # Beskrivning av min kod
 Nedan följer en kort beskrivning av de klasser som ingår i modulen samt ett enkelt klassdiagram som ger en översikt. Modulen består av 13 klasser.
