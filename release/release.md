@@ -296,14 +296,14 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 ## Testrapporter
 ### Testrapport 1
 
-**Datum**: 1/10-2022<br>**Version**: 1.0.0<br>**Testmiljö**: Testerna utfördes i utvecklingsmiljö.
+**Datum**: 1/10-2022<br>**Version**: 1.0.0<br>
 
-![Autmatic Test Results 1/10-22](./images/TS1_1okt.png "Automatic test tesults 1/10-22")
-![Autmatic Test Results 1/10-22](./images/TS1_1okt_2.png "Automatic test tesults 1/10-22")
+![Automatic Test Results 1/10-22](./images/unit-tests-1-okt.png "Automatic test tesults 1/10-22")
+![Automatic Test Results 1/10-22](./images/unit-tests-1-okt-2.png "Automatic test tesults 1/10-22")
 
 ### Testrapport 2
 
-**Datum**: 3/10-2022<br>**Version**: 1.0.0<br>**Testmiljö**: Testerna utfördes i utvecklingsmiljö.
+**Datum**: 3/10-2022<br>**Version**: 1.0.0<br>
 
 | Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC10 | UC11 |
 |------|-----|-----|-----|-----|------|-----|-----|-----|-----|
@@ -325,6 +325,32 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 | TC10.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: | 0 |
 | TC11.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: |
 | COVERAGE & SUCCESS | 1/:white_check_mark: | 3/:white_check_mark:  | 1/xx  | 3/:white_check_mark: | 2/:white_check_mark: | 3/:white_check_mark: | 2/:white_check_mark: | 1/:white_check_mark: | 1/:white_check_mark: |
+
+**Datum**: 6/10-2022<br>**Version**: 1.0.0<br>
+
+| Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC10 | UC11 |
+|------|-----|-----|-----|-----|------|-----|-----|-----|-----|
+| TC1.1 | 1/:white_check_mark: | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| TC2.1 | 0 | 1/:white_check_mark: | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| TC2.2 | 0 | 1/:white_check_mark: | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| TC2.3 | 0 | 1/:white_check_mark: | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| TC3.1 | 0 | 0 | 1/:white_check_mark: | 0 | 0 | 0 | 0 | 0 | 0 |
+| TC4.1 | 0 | 0 | 0 | 1/:white_check_mark: | 0 | 0 | 0 | 0 | 0 |
+| TC4.2 | 0 | 0 | 0 | 1/:white_check_mark: | 0 | 0 | 0 | 0 | 0 |
+| TC4.3 | 0 | 0 | 0 | 1/:white_check_mark: | 0 | 0 | 0 | 0 | 0 |
+| TC5.1 | 0 | 0 | 0 | 0 | 1/:white_check_mark: | 0 | 0 | 0 | 0 |
+| TC5.2 | 0 | 0 | 0 | 0 | 1/:white_check_mark: | 0 | 0 | 0 | 0 |
+| TC6.1 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: | 0 | 0 | 0 |
+| TC6.2 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: | 0 | 0 | 0 |
+| TC6.3 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: | 0 | 0 | 0 |
+| TC7.1 | 0 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: | 0 | 0 |
+| TC7.2 | 0 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: | 0 | 0 |
+| TC10.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: | 0 |
+| TC11.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: |
+| COVERAGE & SUCCESS | 1/:white_check_mark: | 3/:white_check_mark:  | 1/:white_check_mark  | 3/:white_check_mark: | 2/:white_check_mark: | 3/:white_check_mark: | 2/:white_check_mark: | 1/:white_check_mark: | 1/:white_check_mark: |
+
+![Automatic Test Results 6/10-22](./images/unit-tests-6-okt.png "Automatic test tesults 6/10-22")
+![Automatic Test Results 6/10-22](./images/unit-tests-6-okt-2.png "Automatic test tesults 6/10-22")
 
 # Kodkvalitetskrav
 ### Namngivning
