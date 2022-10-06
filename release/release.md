@@ -35,7 +35,7 @@ Klassen ```UnicodeConverter``` hanterar konvertering av unicodes till emojis.
 
 Klassen ```EmoticonConverter``` hanterar konvertering av emoticons till emojis.
 
-Klassen ```EmojiResources``` har en association till alla klasser av emojikategorier. I EmojiResources fogas emojiobjekt samman till en enda array. Antingen alla emojiobjekt eller endast ett urval baserat på efterfrågad kategori.
+Klassen ```EmojiResources``` har en association till alla klasser av emojikategorier. I ```EmojiResources``` fogas emojiobjekt samman till en enda array. Antingen alla emojiobjekt eller endast ett urval baserat på efterfrågad kategori.
 
 Alla emojikategorier har fått en egen klass (se namn på klasserna i klassdiagrammet nedan). Varje klass har som enda uppgift att returnera en kopia av en array av emojiobjekt.
 
