@@ -1,5 +1,6 @@
 # emoji-provider
-*emoji-provider* adds a simple way of generating emojis for node or browser applications. *emoji-provider* is a zero dependency library.
+*emoji-provider* adds a simple way of generating emojis. Currently supports emojis up to <span style='color: #F89880
+'>Unicode Version 15</span>.
 
 # Installation
 
@@ -60,16 +61,16 @@ console.log(emojiObjects)
 ### getEmojisByCategory(...categories)
 Returns an object array with emojis.
 
-Allowed input arguments: 
-* 'activity'
-* 'animalsAndNature'
-* 'flags'
-* 'foodAndDrink'
-* 'objects'
-* 'peopleAndBody'
-* 'smileysAndEmotion'
-* 'symbols'
-* 'travelAndPlaces'
+Allowed input string arguments: 
+* activity
+* animalsAndNature
+* flags
+* foodAndDrink
+* objects
+* peopleAndBody
+* smileysAndEmotion
+* symbols
+* travelAndPlaces
 
 OBS! Arguments are case sensitive and need to be exact.
 
@@ -95,16 +96,16 @@ console.log(emojis)
 ### getEmojisAndTagsByCategory(...categories)
 Returns an object array with emojis and tags.
 
-Allowed input arguments: 
-* 'activity'
-* 'animalsAndNature'
-* 'flags'
-* 'foodAndDrink'
-* 'objects'
-* 'peopleAndBody'
-* 'smileysAndEmotion'
-* 'symbols'
-* 'travelAndPlaces'
+Allowed input string arguments: 
+* activity
+* animalsAndNature
+* flags
+* foodAndDrink
+* objects
+* peopleAndBody
+* smileysAndEmotion
+* symbols
+* travelAndPlaces
 
 OBS! Arguments are case sensitive and need to be exact.
 
