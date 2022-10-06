@@ -1,5 +1,5 @@
 # emoji-provider
-Adds a simple way of generating emojis. Currently supports emojis up to Unicode Version 15.
+Adds a simple way of generating emojis. Currently supports emojis up to **Unicode Version 15**.
 
 A zero-dependency library.
 
