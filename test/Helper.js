@@ -19,16 +19,16 @@ export class Helper {
     this.#converter = new UnicodeConverter()
     this.allEmojiObjectsArray = this.#converter.convertUnicodesToEmojis(
       [
-        new SmileysEmotionCategory().getEmojis, 
-        new PeopleBodyCategory().getEmojis, 
-        new AnimalsNatureCategory().getEmojis, 
-        new FoodDrinkCategory().getEmojis, 
-        new ActivityCategory().getEmojis, 
-        new TravelPlacesCategory().getEmojis, 
-        new ObjectsCategory().getEmojis, 
-        new SymbolsCategory().getEmojis, 
+        new SmileysEmotionCategory().getEmojis,
+        new PeopleBodyCategory().getEmojis,
+        new AnimalsNatureCategory().getEmojis,
+        new FoodDrinkCategory().getEmojis,
+        new ActivityCategory().getEmojis,
+        new TravelPlacesCategory().getEmojis,
+        new ObjectsCategory().getEmojis,
+        new SymbolsCategory().getEmojis,
         new FlagsCategory().getEmojis
-    ].flat())
+      ].flat())
   }
 
   /**
@@ -48,7 +48,7 @@ export class Helper {
    */
   emojisByCategoriesArray () {
     const emojiObjects = this.#converter.convertUnicodesToEmojis(
-    [new SmileysEmotionCategory().getEmojis, new ActivityCategory().getEmojis].flat())
+      [new SmileysEmotionCategory().getEmojis, new ActivityCategory().getEmojis].flat())
     return emojiObjects.map(element => {
       return {
         tag: element.tag,
@@ -56,12 +56,12 @@ export class Helper {
       }
     })
   }
-  
+
   /**
    * @returns [string[]]
    */
   emojisOnlyArray (array) {
-    return array.map(element => { 
+    return array.map(element => {
       return element.emoji
     })
   }
