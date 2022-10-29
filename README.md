@@ -1,5 +1,5 @@
 # emoji-provider
-Adds a simple way of generating emojis. Currently supports emojis up to **Unicode Version 15**.
+Adds a simple way of generating emojis to your front-end application. Currently supports emojis up to **Unicode Version 15**.
 
 A zero-dependency library.
 
@@ -15,9 +15,22 @@ ES6
 import { emojiProvider } from 'emoji-provider'
 ```
 
+# Usage example
+
+```js
+import { emojiProvider } from 'emoji-provider'
+
+const text = 'I love emojis :D <3'
+const emojiText = emojiProvider.replaceEmoticonsWithEmojis(text)
+
+console.log(emojiText)
+// => 'I love emojis 😃 ❤️'
+
+```
+
 # API
 ### getEmojis()
-Returns a string array with emojis.
+Returns a string array with all supported emojis (currently supports emojis up to **Unicode Version 15**).
 
 ```js
 const emojis = getEmojis()
@@ -36,7 +49,7 @@ console.log(emojis)
 ```
 
 ### getEmojisAndTags()
-Returns an object array with emojis and tags.
+Returns an object array with all supported emojis and corresponding tags (currently supports emojis up to **Unicode Version 15**).
 
 ```js
 const emojiObjects = getEmojisAndTags()
@@ -60,7 +73,7 @@ console.log(emojiObjects)
 ```
 
 ### getEmojisByCategory(...categories)
-Returns an object array with emojis.
+Returns a string array with emojis of chosen categories.
 
 Allowed input string arguments: 
 * activity
@@ -95,7 +108,7 @@ console.log(emojis)
 ```
 
 ### getEmojisAndTagsByCategory(...categories)
-Returns an object array with emojis and tags.
+Returns an object array with emojis and tags of chosen categories.
 
 Allowed input string arguments: 
 * activity
@@ -150,7 +163,7 @@ console.log(emoji)
 ```
 
 ### replaceEmoticonsWithEmojis(text)
-Returns a new text with emoticons replaced with emojis.
+Returns a new string with emoticons replaced with emojis.
 
 ```js
 const newText = replaceEmoticonsWithEmojis('Hi! :D How Are you? :)')
@@ -177,5 +190,6 @@ console.log(emojis)
 5. Create a pull request!
 
 # TODO List
-[ ] Tag-to-emoji conversion in text<br>
-[ ] Check of emoji support
+[ ] Tag-to-emoji conversion for text inputs<br>
+[ ] Check if the used browser supports an emoji<br>
+[ ] Move emoji data from classes to .json files
