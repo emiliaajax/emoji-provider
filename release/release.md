@@ -326,6 +326,8 @@ Automatiska enhetstester definieras i [https://github.com/emiliaajax/emoticons/t
 | TC11.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: |
 | COVERAGE & SUCCESS | 1/:white_check_mark: | 3/:white_check_mark:  | 1/xx  | 3/:white_check_mark: | 2/:white_check_mark: | 3/:white_check_mark: | 2/:white_check_mark: | 1/:white_check_mark: | 1/:white_check_mark: |
 
+### Testrapport 3
+
 **Datum**: 6/10-2022<br>**Version**: 1.0.0<br>
 
 | Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC10 | UC11 |
