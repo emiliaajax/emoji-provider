@@ -1,4 +1,4 @@
-import { emojiProvider } from "../../../lib/index.js"
+import { emojiProvider } from '../../../lib/index.js'
 
 /**
  * Defines template.
@@ -71,25 +71,29 @@ template.innerHTML = `
 customElements.define('my-emojis',
   class extends HTMLElement {
     #emojiContainer
+    #emojiButton
 
     constructor () {
       super()
+
       this.attachShadow({ mode: 'open' })
         .appendChild(template.content.cloneNode(true))
+
       this.#emojiContainer = this.shadowRoot.querySelector('#emoji-container')
-      this.shadowRoot.querySelector('#emoji-button').addEventListener('click', event => this.#openAndCloseEmojiContainer(event))
+      this.#emojiButton = this.shadowRoot.querySelector('#emoji-button')
+
+      this.#emojiButton.addEventListener('click', event => this.#openOrCloseEmojiContainer(event))
     }
 
-    connectedCallback() {
-      this.generateEmojis(emojiProvider.getEmojis())
+    connectedCallback () {
+      this.#createAndAppendEmojiButtons(emojiProvider.getEmojis())
+      this.#addListenersForEmojiButtons()
     }
 
     /**
-     * Generates the emojis and add them to the parent element.
-     *
-     * @param {string[]} emojiArray 
+     * @param {string[]} emojiArray
      */
-    generateEmojis(emojiArray) {
+    #createAndAppendEmojiButtons (emojiArray) {
       this.#emojiContainer.textContent = ''
       for (const emoji of emojiArray) {
         const emojiButton = document.createElement('button')
@@ -97,34 +101,55 @@ customElements.define('my-emojis',
         emojiButton.textContent = emoji
         this.#emojiContainer.appendChild(emojiButton)
       }
+    }
+
+    #addListenersForEmojiButtons () {
       this.shadowRoot.querySelectorAll('.emoji').forEach(emoji => emoji.addEventListener('click', event => {
         event.preventDefault()
-        this.dispatchEvent(new CustomEvent('clicked', 
-          { 
-            detail: 
-              { 
-                emojiValue: emoji.textContent 
-              } 
-          }))
+        this.#createCustomEventForEmoji(emoji)
       }))
     }
 
     /**
-     * Opens the emoji container if the container is not active, otherwise closes it.
-     *
-     * @param {Event} event The click event.
+     * @param {HTMLButtonElement}
      */
-    #openAndCloseEmojiContainer (event) {
+    #createCustomEventForEmoji (emoji) {
+      this.dispatchEvent(new CustomEvent('clicked',
+        {
+          detail:
+          {
+            emojiValue: emoji.textContent
+          }
+        }
+      ))
+    }
+
+    /**
+     * @param {ClickEvent} event
+     */
+    #openOrCloseEmojiContainer (event) {
       event.preventDefault()
-      if (!this.#emojiContainer.hasAttribute('active')) {
-        this.#emojiContainer.setAttribute('active', '')
-        this.#emojiContainer.classList.remove('hidden')
+      if (this.#isContainerClosed()) {
+        this.#openContainer()
       } else {
-        this.#emojiContainer.removeAttribute('active')
-        this.#emojiContainer.classList.add('hidden')
+        this.#closeContainer()
         event.target.blur()
         this.dispatchEvent(new CustomEvent('closed'))
       }
+    }
+
+    #isContainerClosed () {
+      return !this.#emojiContainer.hasAttribute('active')
+    }
+
+    #openContainer () {
+      this.#emojiContainer.setAttribute('active', '')
+      this.#emojiContainer.classList.remove('hidden')
+    }
+
+    #closeContainer () {
+      this.#emojiContainer.removeAttribute('active')
+      this.#emojiContainer.classList.add('hidden')
     }
   }
 )

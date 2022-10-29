@@ -195,7 +195,7 @@ customElements.define('my-test-app',
       this.#allOption = this.shadowRoot.querySelector('#allOption input')
 
       this.#optionsForm.addEventListener('categorySent', (event) => {
-        this.#updateEmojisByCategory(event.detail.categories)
+        this.#updateComponentWithEmojisFromCategory(event.detail.categories)
         this.#updateTableWithEmojisAndTags(event.detail.categories)
       })
 
@@ -209,18 +209,18 @@ customElements.define('my-test-app',
 
       this.#sendButton.addEventListener('click', event => {
         event.preventDefault()
-        this.#onSubmit()
+        this.#addMessageToChatWindow()
       })
 
       this.#message.addEventListener('keydown', event => {
         if (event.key === 'Enter') {
           event.preventDefault()
-          this.#onSubmit(event)
+          this.#addMessageToChatWindow(event)
         }
       })
 
       this.#emojis.addEventListener('clicked', event => {
-        this.#addEmojiToMessage(event)
+        this.#addEmojiToMessageArea(event)
       })
 
       this.shadowRoot.querySelector('my-emojis').addEventListener('closed', () => {
@@ -231,15 +231,12 @@ customElements.define('my-test-app',
         if (this.#allOption.checked) {
           this.#getEmojisAndTags()
         } else {
-          this.shadowRoot.querySelector('#emojiTable').textContent = ''
+          this.#clearTable()
         }
       })
     }
 
-    /**
-     * Adds the submitted message to the chat window.
-     */
-    #onSubmit () {
+    #addMessageToChatWindow () {
       const pElement = document.createElement('p')
       pElement.textContent = emojiProvider.replaceEmoticonsWithEmojis(this.#message.value)
       this.#chatOutput.appendChild(pElement)
@@ -247,21 +244,19 @@ customElements.define('my-test-app',
     }
 
     /**
-     * Adds the emoji to the chat message area when clicked.
-     *
-     * @param {Event} event The clicked event.
+     * @param {ClickEvent} event
      */
-    #addEmojiToMessage (event) {
+    #addEmojiToMessageArea (event) {
       this.#message.focus()
       this.#message.value = this.#message.value + event.detail.emojiValue + ' '
     }
 
     /**
-     * Updates the emoji component with emojis of the given categories.
+     * Updates the emoji component with emojis from given categories.
      *
-     * @param {string} categories
+     * @param {string[]} categories
      */
-    #updateEmojisByCategory (categories) {
+    #updateComponentWithEmojisFromCategory (categories) {
       const emojiArray = []
       for (const category of categories) {
         emojiArray.push(emojiProvider.getEmojisByCategory(category))
@@ -301,8 +296,6 @@ customElements.define('my-test-app',
     }
 
     /**
-     * Gets the emojis and tags from category input.
-     *
      * @param {string[]} categories
      * @returns {string[]} An array with emoji objects containing emojis and tags.
      */
@@ -326,9 +319,6 @@ customElements.define('my-test-app',
       this.shadowRoot.querySelector('#emojiFromTag').appendChild(emojiContainer)
     }
 
-    /**
-     * Creates a table header and appends it to the element with id "emojitable".
-     */
     #createAndAppendTableHeader () {
       const tBodyHeader = document.createElement('tbody')
       const tableRowHeader = document.createElement('tr')
@@ -342,9 +332,6 @@ customElements.define('my-test-app',
       this.shadowRoot.querySelector('#emojiTable').appendChild(tBodyHeader)
     }
 
-    /**
-     * Creates a table row and appends it to the element with id "emojitable".
-     */
     #createAndAppendTableRow (emojiObject) {
       const tBody = document.createElement('tbody')
       const tableRow = document.createElement('tr')
@@ -356,6 +343,10 @@ customElements.define('my-test-app',
       tableRow.appendChild(tagColumn)
       tBody.appendChild(tableRow)
       this.shadowRoot.querySelector('#emojiTable').appendChild(tBody)
+    }
+
+    #clearTable () {
+      this.shadowRoot.querySelector('#emojiTable').textContent = ''
     }
   }
 )

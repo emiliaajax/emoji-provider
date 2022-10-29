@@ -49,28 +49,41 @@ template.innerHTML = `
 customElements.define('my-text-input-form',
   class extends HTMLElement {
     #textInputButton
-  
+
     constructor () {
       super()
+
       this.attachShadow({ mode: 'open' })
         .appendChild(template.content.cloneNode(true))
+
       this.#textInputButton = this.shadowRoot.querySelector('#textInputButton')
+
       this.#textInputButton.addEventListener('click', event => this.#onSubmitText(event))
-    }  
+    }
 
     /**
      * Sends a custom event that text input is sent
-     * @param {Event} event 
+     * @param {Event} event
      */
-    #onSubmitText(event) {
+    #onSubmitText (event) {
       event.preventDefault()
+      this.#dispatchTextSentEvent()
+      this.#clearTextField()
+    }
+
+    /**
+     * Dispatches the custom event textInputSent.
+     */
+    #dispatchTextSentEvent () {
       this.dispatchEvent(new CustomEvent('textInputSent', {
         detail:
           {
             input: this.shadowRoot.querySelector('#input').value
           }
-        }
-      ))
+      }))
+    }
+
+    #clearTextField () {
       this.shadowRoot.querySelector('#input').value = ''
     }
   }

@@ -79,36 +79,67 @@ customElements.define('my-options-form',
 
     constructor () {
       super()
-      this.attachShadow({ mode: 'open' })
-        .appendChild(template.content.cloneNode(true))
+
+      this.attachShadow({ mode: 'open' }).appendChild(template.content.cloneNode(true))
+
       this.#categoryButton = this.shadowRoot.querySelector('#categoryButton')
       this.#textInputButton = this.shadowRoot.querySelector('#textInputButton')
+
       this.#categoryButton.addEventListener('click', event => this.#onSubmitCategory(event))
       this.#textInputButton.addEventListener('click', event => this.#onSubmitText(event))
     }
 
     /**
      * Sends a custom event that text input is sent
-     * @param {Event} event
+     *
+     * @param {SubmitEvent} event
      */
     #onSubmitText (event) {
       event.preventDefault()
+      this.#dispatchTextSentEvent()
+      this.#clearTextField()
+    }
+
+    /**
+     * Dispatches the custom event textInputSent.
+     */
+    #dispatchTextSentEvent () {
       this.dispatchEvent(new CustomEvent('textInputSent', {
         detail:
         {
           input: this.shadowRoot.querySelector('#input').value
         }
-      }
-      ))
+      }))
+    }
+
+    #clearTextField () {
       this.shadowRoot.querySelector('#input').value = ''
     }
 
     /**
-    * Sends a custom event that the choice of categories is sent
-    * @param {Event} event
-    */
+      * @param {SubmitEvent} event
+      */
     #onSubmitCategory (event) {
       event.preventDefault()
+      this.#dispatchCategorySentEvent(this.#getChosenCategories())
+    }
+
+    /**
+     * Dispatches the custom event categorySent.
+     */
+    #dispatchCategorySentEvent (chosenCategories) {
+      this.dispatchEvent(new CustomEvent('categorySent', {
+        detail:
+        {
+          categories: chosenCategories
+        }
+      }))
+    }
+
+    /**
+     * @returns {string[]}
+     */
+    #getChosenCategories () {
       const chosenCategories = []
       for (const input of this.shadowRoot.querySelectorAll('#categories input')) {
         if (input.checked) {
@@ -116,13 +147,7 @@ customElements.define('my-options-form',
           input.checked = false
         }
       }
-      this.dispatchEvent(new CustomEvent('categorySent', {
-        detail:
-        {
-          categories: chosenCategories
-        }
-      }
-      ))
+      return chosenCategories
     }
   }
 )
