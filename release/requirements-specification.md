@@ -2,7 +2,7 @@
 
 :white_check_mark: Implemented with passing tests. <br>
 :x: Implemented with failing tests. <br>
-\- Not implemented
+:heavy_minus_sign: Not implemented
 
 ### Functional requirements
 
@@ -15,8 +15,8 @@
 | 5 | The library should be able to generate all emojis where the corresponding tag begins with given characters | 1 | :white_check_mark: |
 | 6 | The library should be able to convert emoticons in text to emojis | 1 | :white_check_mark: |
 | 7 | The library should be able to translate a tag to an emoji | 1 | :white_check_mark: |
-| 8 | The library should be able to translate tags in text to emojis | 2 | - |
-| 9 | The library should be able to filter out emojis not supported by the user's operating system | 2 | - |
+| 8 | The library should be able to translate tags in text to emojis | 2 | :heavy_minus_sign: |
+| 9 | The library should be able to filter out emojis not supported by the user's operating system | 2 | :heavy_minus_sign: |
 
 ### Non-functional requirements
 

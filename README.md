@@ -182,14 +182,6 @@ console.log(emojis)
 // => [ '😢', '😞', '😓', '😿' ]
 ```
 
-# Contributing
-1. Fork the project!
-2. Install dev dependencies (```npm install```).
-3. Create a new feature branch.
-4. Add tests to your feature.
-5. Create a pull request!
+# Want to contribute?
+See [DEVELOPER.md](https://github.com/emiliaajax/emoji-provider/blob/main/DEVELOPER.md) for details.
 
-# TODO List
-[ ] Tag-to-emoji conversion for text inputs<br>
-[ ] Check if the used browser supports an emoji<br>
-[ ] Move emoji data from classes to .json files

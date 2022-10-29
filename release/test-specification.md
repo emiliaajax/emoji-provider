@@ -1,7 +1,9 @@
 # Test specification
 
 ## How the library is tested
-The library is tested with manual tests and automatic unit tests. Requirements that doesn't have test cases are yet to be implemented. Test suites are documented and the test reports can be found in the test reports folder. 
+The library is tested with manual testing and automatic unit tests. The manual tests is done using a test application located in the `./test-app` folder. For the automatic tests, the test framework Jest is used. 
+
+Requirements that doesn't have test cases are yet to be implemented. Test suites are documented and the test reports can be found in the test reports folder. 
 
 ## Automatic unit tests
 Automatic unit tests are defined in [https://github.com/emiliaajax/emoticons/tree/main/test](https://github.com/emiliaajax/emoticons/tree/main/test) and covers all the implemented requirements.
