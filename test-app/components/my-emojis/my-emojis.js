@@ -86,14 +86,14 @@ customElements.define('my-emojis',
     }
 
     connectedCallback () {
-      this.#createAndAppendEmojiButtons(emojiProvider.getEmojis())
+      this.createAndAppendEmojiButtons(emojiProvider.getEmojis())
       this.#addListenersForEmojiButtons()
     }
 
     /**
      * @param {string[]} emojiArray
      */
-    #createAndAppendEmojiButtons (emojiArray) {
+    createAndAppendEmojiButtons (emojiArray) {
       this.#emojiContainer.textContent = ''
       for (const emoji of emojiArray) {
         const emojiButton = document.createElement('button')

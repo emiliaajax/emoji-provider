@@ -118,6 +118,7 @@ template.innerHTML = `
       margin-left: 50px;
       color: white;
       font-size: 2rem;
+      z-index: 1;
     }
     #emojiFromTag {
       font-size: 2rem;
@@ -261,7 +262,7 @@ customElements.define('my-test-app',
       for (const category of categories) {
         emojiArray.push(emojiProvider.getEmojisByCategory(category))
       }
-      this.#emojis.generateEmojis(emojiArray.flat())
+      this.#emojis.createAndAppendEmojiButtons(emojiArray.flat())
     }
 
     /**
@@ -270,7 +271,7 @@ customElements.define('my-test-app',
      * @param {string} textInput
      */
     #updateEmojisByTextInput (textInput) {
-      this.#emojis.generateEmojis(emojiProvider.getMatchingEmojis(textInput))
+      this.#emojis.createAndAppendEmojiButtons(emojiProvider.getMatchingEmojis(textInput))
     }
 
     /**
