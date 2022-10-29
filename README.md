@@ -1,5 +1,5 @@
 # emoji-provider
-Adds a simple way of generating emojis to your front-end application. Currently supports emojis up to **Unicode Version 15**.
+Adds a simple way of generating emojis to your front-end application. Do you need emojis for a chat application? Maybe you want to convert emoticons to emojis in text? Look no further! Currently supports emojis up to **Unicode Version 15**.
 
 A zero-dependency library.
 
@@ -188,6 +188,8 @@ console.log(emojis)
 3. Create a new feature branch.
 4. Add tests to your feature.
 5. Create a pull request!
+
+<br />
 
 # TODO List
 [ ] Tag-to-emoji conversion for text inputs<br>
