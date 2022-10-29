@@ -76,7 +76,7 @@ customElements.define('my-options-form',
   class extends HTMLElement {
     #categoryButton
     #textInputButton
-  
+
     constructor () {
       super()
       this.attachShadow({ mode: 'open' })
@@ -89,25 +89,25 @@ customElements.define('my-options-form',
 
     /**
      * Sends a custom event that text input is sent
-     * @param {Event} event 
+     * @param {Event} event
      */
-    #onSubmitText(event) {
+    #onSubmitText (event) {
       event.preventDefault()
       this.dispatchEvent(new CustomEvent('textInputSent', {
         detail:
-          {
-            input: this.shadowRoot.querySelector('#input').value
-          }
+        {
+          input: this.shadowRoot.querySelector('#input').value
         }
+      }
       ))
       this.shadowRoot.querySelector('#input').value = ''
     }
 
-     /**
-     * Sends a custom event that the choice of categories is sent
-     * @param {Event} event 
-     */
-    #onSubmitCategory(event) {
+    /**
+    * Sends a custom event that the choice of categories is sent
+    * @param {Event} event
+    */
+    #onSubmitCategory (event) {
       event.preventDefault()
       const chosenCategories = []
       for (const input of this.shadowRoot.querySelectorAll('#categories input')) {
@@ -118,10 +118,10 @@ customElements.define('my-options-form',
       }
       this.dispatchEvent(new CustomEvent('categorySent', {
         detail:
-          {
-            categories: chosenCategories
-          }
+        {
+          categories: chosenCategories
         }
+      }
       ))
     }
   }

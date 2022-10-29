@@ -182,7 +182,6 @@ customElements.define('my-test-app',
     #emojis
     #allOption
 
-
     constructor () {
       super()
       this.attachShadow({ mode: 'open' })
@@ -220,8 +219,8 @@ customElements.define('my-test-app',
         }
       })
 
-      this.#emojis.addEventListener('clicked', event => { 
-        this.#addEmojiToMessage(event) 
+      this.#emojis.addEventListener('clicked', event => {
+        this.#addEmojiToMessage(event)
       })
 
       this.shadowRoot.querySelector('my-emojis').addEventListener('closed', () => {
@@ -252,15 +251,15 @@ customElements.define('my-test-app',
      *
      * @param {Event} event The clicked event.
      */
-    #addEmojiToMessage(event) {
+    #addEmojiToMessage (event) {
       this.#message.focus()
       this.#message.value = this.#message.value + event.detail.emojiValue + ' '
     }
 
     /**
      * Updates the emoji component with emojis of the given categories.
-     * 
-     * @param {string} categories 
+     *
+     * @param {string} categories
      */
     #updateEmojisByCategory (categories) {
       const emojiArray = []
@@ -272,15 +271,15 @@ customElements.define('my-test-app',
 
     /**
      * Updates the emoji component with emojis matching text input.
-     * 
-     * @param {string} textInput 
+     *
+     * @param {string} textInput
      */
     #updateEmojisByTextInput (textInput) {
       this.#emojis.generateEmojis(emojiProvider.getMatchingEmojis(textInput))
     }
 
     /**
-     * @param {string} categories 
+     * @param {string} categories
      */
     #updateTableWithEmojisAndTags (categories) {
       this.shadowRoot.querySelector('#emojiTable').textContent = ''
@@ -293,7 +292,7 @@ customElements.define('my-test-app',
     /**
      * Gets all emojis and tags and appends them to table.
      */
-    #getEmojisAndTags() {
+    #getEmojisAndTags () {
       this.shadowRoot.querySelector('#emojiTable').textContent = ''
       this.#createAndAppendTableHeader()
       for (const emojiObject of emojiProvider.getEmojisAndTags()) {
@@ -304,10 +303,10 @@ customElements.define('my-test-app',
     /**
      * Gets the emojis and tags from category input.
      *
-     * @param {string[]} categories 
+     * @param {string[]} categories
      * @returns {string[]} An array with emoji objects containing emojis and tags.
      */
-    #getEmojiAndTagsByCategory(categories) {
+    #getEmojiAndTagsByCategory (categories) {
       const emojiObjectsArray = []
       for (const category of categories) {
         emojiObjectsArray.push(emojiProvider.getEmojisAndTagsByCategory(category))
@@ -318,9 +317,9 @@ customElements.define('my-test-app',
     /**
      * Generates the emoji from input tag and appends it to the emojiContainer.
      *
-     * @param {string} tag 
+     * @param {string} tag
      */
-    #appendEmojiFromTag(tag) {
+    #appendEmojiFromTag (tag) {
       this.shadowRoot.querySelector('#emojiFromTag').textContent = ''
       const emojiContainer = document.createElement('p')
       emojiContainer.textContent = emojiProvider.getEmojiByTag(tag)
@@ -330,7 +329,7 @@ customElements.define('my-test-app',
     /**
      * Creates a table header and appends it to the element with id "emojitable".
      */
-    #createAndAppendTableHeader() {
+    #createAndAppendTableHeader () {
       const tBodyHeader = document.createElement('tbody')
       const tableRowHeader = document.createElement('tr')
       const emojiColumnHeader = document.createElement('th')
@@ -346,7 +345,7 @@ customElements.define('my-test-app',
     /**
      * Creates a table row and appends it to the element with id "emojitable".
      */
-    #createAndAppendTableRow(emojiObject) {
+    #createAndAppendTableRow (emojiObject) {
       const tBody = document.createElement('tbody')
       const tableRow = document.createElement('tr')
       const emojiColumn = document.createElement('td')
