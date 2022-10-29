@@ -64,7 +64,7 @@ Automatic unit tests are defined in [https://github.com/emiliaajax/emoticons/tre
 - Scroll through the emoji component.
 
 ###### **Output**
-- - Only emojis belonging to the kategori "Flags" and "Travel & Places are shown.
+- Only emojis belonging to the kategori "Flags" and "Travel & Places are shown.
 
 #### **TC2.3 Unsuccessful generation of emojis from an invalid category**
 
@@ -114,7 +114,7 @@ Automatic unit tests are defined in [https://github.com/emiliaajax/emoticons/tre
 
 - Only emojis belonging to the categories "Flags" and "Travel & Places" are shown.
 
-#### **TC4.3 Successful generation of emojis and tags from an invalid category**
+#### **TC4.3 Unsuccessful generation of emojis and tags from an invalid category**
 
 ###### **Input**
 

@@ -1,6 +1,6 @@
-### Test report 3
+### Test report 4
 
-**Datum**: 6/10-2022<br>**Version**: 1.0.0<br>
+**Datum**: 30/10-2022<br>**Version**: 1.0.0<br>
 
 | Test | UC1 | UC2 | UC3 | UC4 | UC5 | UC6 | UC7 | UC10 | UC11 |
 |------|-----|-----|-----|-----|------|-----|-----|-----|-----|
@@ -23,5 +23,5 @@
 | TC11.1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 1/:white_check_mark: |
 | COVERAGE & SUCCESS | 1/:white_check_mark: | 3/:white_check_mark:  | 1/:white_check_mark:  | 3/:white_check_mark: | 2/:white_check_mark: | 3/:white_check_mark: | 2/:white_check_mark: | 1/:white_check_mark: | 1/:white_check_mark: |
 
-![Automatic Test Results 6/10-22](../images/unit-tests-6-okt-1.png "Automatic test tesults 6/10-22")
-![Automatic Test Results 6/10-22](../images/unit-tests-6-okt-2.png "Automatic test tesults 6/10-22")
+![Automatic Test Results 30/10-22](../images/unit-tests-30-okt-1.png "Automatic test tesults 30/10-22")
+![Automatic Test Results 30/10-22](../images/unit-tests-30-okt-2.png "Automatic test tesults 30/10-22")
