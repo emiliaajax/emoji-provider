@@ -20,7 +20,7 @@ As of now, the emojis are stored in classes. All emoji categories have its own c
  The requirements specification can be found here: [./release/requirements-specification.md](https://github.com/emiliaajax/emoji-provider/blob/main/release/requirements-specification.md)
 
 # Test specification and test reports
-The test specification can be found here: [./release/test-specification.md](https://github.com/emiliaajax/emoji-provider/blob/main/release/test-specification.md)
+The test specification can be found here: [./release/test-specification.md](https://github.com/emiliaajax/emoji-provider/blob/main/release/test-specification.md) <br>
 The test reports can be found here: [./release/test-reports/](https://github.com/emiliaajax/emoji-provider/tree/main/release/test-reports) 
 
 # Code standard
