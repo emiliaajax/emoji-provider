@@ -22,15 +22,11 @@ template.innerHTML = `
     </div>
     <my-options-form></my-options-form>
     <form id='allOption'>
-      <input type="checkbox" id="allEmojis" name="allEmojis" value="allEmojisy">
+      <input type="checkbox" id="allEmojis" name="allEmojis" value="allEmojis">
       <label for="allEmojis">All emojis & tags</label>
     </form>
     <div id=tableWrapper>
       <table id='emojiTable'>
-        <!-- <tr>
-          <th>Emoji</th>
-          <th>Tag</th>
-        </tr> -->
       </table>
     </div>
     <my-text-input-form></my-text-input-form>

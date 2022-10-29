@@ -1,12 +1,12 @@
-import { SmileysEmotionCategory } from '../lib/SmileysEmotionCategory.js'
-import { ActivityCategory } from '../lib/ActivityCategory.js'
-import { AnimalsNatureCategory } from '../lib/AnimalsNatureCategory.js'
-import { FoodDrinkCategory } from '../lib/FoodDrinkCategory.js'
-import { ObjectsCategory } from '../lib/ObjectsCategory.js'
-import { TravelPlacesCategory } from '../lib/TravelPlacesCategory.js'
-import { FlagsCategory } from '../lib/FlagsCategory.js'
-import { SymbolsCategory } from '../lib/SymbolsCategory.js'
-import { PeopleBodyCategory } from '../lib/PeopleBodyCategory.js'
+import { SmileysEmotionCategory } from '../lib/emojis/SmileysEmotionCategory'
+import { ActivityCategory } from '../lib/emojis/ActivityCategory.js'
+import { AnimalsNatureCategory } from '../lib/emojis/AnimalsNatureCategory.js'
+import { FoodDrinkCategory } from '../lib/emojis/FoodDrinkCategory.js'
+import { ObjectsCategory } from '../lib/emojis/ObjectsCategory.js'
+import { TravelPlacesCategory } from '../lib/emojis/TravelPlacesCategory.js'
+import { FlagsCategory } from '../lib/emojis/FlagsCategory.js'
+import { SymbolsCategory } from '../lib/emojis/SymbolsCategory.js'
+import { PeopleBodyCategory } from '../lib/emojis/PeopleBodyCategory.js'
 
 describe('Call to method in AnimalsNatureCategory should return an array', () => {
   test('Checking if output is array should return true', () => {
