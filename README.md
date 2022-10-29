@@ -183,5 +183,5 @@ console.log(emojis)
 ```
 
 # Want to contribute?
-See [DEVELOPER.md](https://github.com/emiliaajax/emoji-provider/blob/main/DEVELOPER.md) for details.
+See [DEVELOPER.md](https://github.com/emiliaajax/emoji-provider/blob/main/DEVELOPER.md) for project information and contribution details.
 
