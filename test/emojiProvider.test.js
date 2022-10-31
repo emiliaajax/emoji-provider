@@ -1,6 +1,6 @@
+import { Helper } from './Helper.js'
 import { EmojiProvider } from '../lib/EmojiProvider.js'
 const emojiProvider = new EmojiProvider()
-import { Helper } from './Helper.js'
 const helper = new Helper()
 
 describe('Get all emoji objects', () => {
@@ -28,20 +28,13 @@ describe('Get all emoji objects from given categories', () => {
   })
 })
 
-// ///// Fixa
-// describe('Get emojis only from category', () => {
-//   test('Call to function should return an array containing all emoji images', () => {
-//     expect(emojiProvider.getEmojiObjectsByCategory('smileysAndEmotion', 'activity')).toEqual(helpers.emojisOnlyArray(helpers.emojisByCategoriesArray))
-//   })
-// })
-
 describe('Get emoji from tag', () => {
   test('Passing "happy-face" should return "😀"', () => {
     expect(emojiProvider.getEmojiByTag('happy-face')).toBe('😀')
   })
 
   test(`Passing "made-up-tag" should throw an error with message ${helper.ERROR_MESSAGE_EMOJI_NOT_EXISTING}`, () => {
-    function test() {
+    function test () {
       emojiProvider.getEmojiByTag('made-up-tag')
     }
 
@@ -67,12 +60,12 @@ describe('Replace emoticons with emojis in text', () => {
   })
 })
 
-describe('get emojis that matches text', () => {
-  test('get emojis that matches text', () => {
+describe('Get emojis that matches text', () => {
+  test('Passing "sad" should return [😢, 😞, 😓, 😿]', () => {
     expect(emojiProvider.getMatchingEmojis('sad')).toEqual(['😢', '😞', '😓', '😿'])
   })
 
-  test('get emojis that matches text', () => {
+  test('Passing an empty string should return an empty array', () => {
     expect(emojiProvider.getMatchingEmojis('')).toEqual([])
   })
 })
